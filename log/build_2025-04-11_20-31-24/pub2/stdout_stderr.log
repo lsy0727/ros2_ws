@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target pub2[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pub2.dir/src/pub.cpp.o[0m
+[100%] [32m[1mLinking CXX executable pub2[0m
+[100%] Built target pub2
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/linux/ros2_ws/install/pub2/lib/pub2/pub2
+-- Up-to-date symlink: /home/linux/ros2_ws/install/pub2/share/ament_index/resource_index/package_run_dependencies/pub2
+-- Up-to-date symlink: /home/linux/ros2_ws/install/pub2/share/ament_index/resource_index/parent_prefix_path/pub2
+-- Up-to-date symlink: /home/linux/ros2_ws/install/pub2/share/pub2/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/linux/ros2_ws/install/pub2/share/pub2/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/linux/ros2_ws/install/pub2/share/pub2/environment/path.sh
+-- Up-to-date symlink: /home/linux/ros2_ws/install/pub2/share/pub2/environment/path.dsv
+-- Up-to-date symlink: /home/linux/ros2_ws/install/pub2/share/pub2/local_setup.bash
+-- Up-to-date symlink: /home/linux/ros2_ws/install/pub2/share/pub2/local_setup.sh
+-- Up-to-date symlink: /home/linux/ros2_ws/install/pub2/share/pub2/local_setup.zsh
+-- Up-to-date symlink: /home/linux/ros2_ws/install/pub2/share/pub2/local_setup.dsv
+-- Symlinking: /home/linux/ros2_ws/install/pub2/share/pub2/package.dsv
+-- Up-to-date symlink: /home/linux/ros2_ws/install/pub2/share/ament_index/resource_index/packages/pub2
+-- Up-to-date symlink: /home/linux/ros2_ws/install/pub2/share/pub2/cmake/pub2Config.cmake
+-- Up-to-date symlink: /home/linux/ros2_ws/install/pub2/share/pub2/cmake/pub2Config-version.cmake
+-- Up-to-date symlink: /home/linux/ros2_ws/install/pub2/share/pub2/package.xml

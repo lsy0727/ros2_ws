@@ -1,0 +1,59 @@
+[0.010s] Invoking command in '/home/linux/ros2_ws/src/build/pub2-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/linux/ros2_ws/src/build/pub2-2 -- -j16 -l16
+[0.062s] [35m[1mScanning dependencies of target pub2-2[0m
+[0.084s] [ 50%] [32mBuilding CXX object CMakeFiles/pub2-2.dir/src/pub2-2.cpp.o[0m
+[0.938s] [01m[K/home/linux/ros2_ws/src/pub2-2/src/pub2-2.cpp:9:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ was not declared in this scope
+[0.938s]     9 | rclcpp::Publisher<[01;31m[Kgeometry_msgs[m[K::msg::Vector3>::SharedPtr pub)
+[0.938s]       |                   [01;31m[K^~~~~~~~~~~~~[m[K
+[0.938s] [01m[K/home/linux/ros2_ws/src/pub2-2/src/pub2-2.cpp:9:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[0.938s]     9 | rclcpp::Publisher<geometry_msgs::msg::Vector3[01;31m[K>[m[K::SharedPtr pub)
+[0.938s]       |                                              [01;31m[K^[m[K
+[0.939s] [01m[K/home/linux/ros2_ws/src/pub2-2/src/pub2-2.cpp:9:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ was not declared in this scope
+[0.939s]     9 | rclcpp::Publisher<[01;31m[Kgeometry_msgs[m[K::msg::Vector3>::SharedPtr pub)
+[0.939s]       |                   [01;31m[K^~~~~~~~~~~~~[m[K
+[0.939s] [01m[K/home/linux/ros2_ws/src/pub2-2/src/pub2-2.cpp:9:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[0.940s]     9 | rclcpp::Publisher<geometry_msgs::msg::Vector3[01;31m[K>[m[K::SharedPtr pub)
+[0.940s]       |                                              [01;31m[K^[m[K
+[0.941s] [01m[K/home/linux/ros2_ws/src/pub2-2/src/pub2-2.cpp:9:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ was not declared in this scope
+[0.941s]     9 | rclcpp::Publisher<[01;31m[Kgeometry_msgs[m[K::msg::Vector3>::SharedPtr pub)
+[0.941s]       |                   [01;31m[K^~~~~~~~~~~~~[m[K
+[0.941s] [01m[K/home/linux/ros2_ws/src/pub2-2/src/pub2-2.cpp:9:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[0.941s]     9 | rclcpp::Publisher<geometry_msgs::msg::Vector3[01;31m[K>[m[K::SharedPtr pub)
+[0.941s]       |                                              [01;31m[K^[m[K
+[0.941s] [01m[K/home/linux/ros2_ws/src/pub2-2/src/pub2-2.cpp:9:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::Publisher[m[K’ is not a type
+[0.941s]     9 | rclcpp::[01;31m[KPublisher[m[K<geometry_msgs::msg::Vector3>::SharedPtr pub)
+[0.941s]       |         [01;31m[K^~~~~~~~~[m[K
+[0.941s] [01m[K/home/linux/ros2_ws/src/pub2-2/src/pub2-2.cpp:9:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K<[m[K’ token
+[0.941s]     9 | rclcpp::Publisher[01;31m[K<[m[Kgeometry_msgs::msg::Vector3>::SharedPtr pub)
+[0.941s]       |                  [01;31m[K^[m[K
+[0.941s] [01m[K/home/linux/ros2_ws/src/pub2-2/src/pub2-2.cpp:[m[K In function ‘[01m[Kvoid callback(rclcpp::Node::SharedPtr, int)[m[K’:
+[0.941s] [01m[K/home/linux/ros2_ws/src/pub2-2/src/pub2-2.cpp:11:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ has not been declared
+[0.941s]    11 |     auto message = [01;31m[Kgeometry_msgs[m[K::msg::Vector3();
+[0.941s]       |                    [01;31m[K^~~~~~~~~~~~~[m[K
+[0.942s] [01m[K/home/linux/ros2_ws/src/pub2-2/src/pub2-2.cpp:15:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub[m[K’ was not declared in this scope
+[0.942s]    15 |     [01;31m[Kpub[m[K->publish(message);
+[0.942s]       |     [01;31m[K^~~[m[K
+[0.943s] [01m[K/home/linux/ros2_ws/src/pub2-2/src/pub2-2.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.943s] [01m[K/home/linux/ros2_ws/src/pub2-2/src/pub2-2.cpp:22:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ was not declared in this scope
+[0.944s]    22 |     auto pub = node->create_publisher<[01;31m[Kgeometry_msgs[m[K::msg::Vector3>("mytopic", qos_profile
+[0.944s]       |                                       [01;31m[K^~~~~~~~~~~~~[m[K
+[0.944s] [01m[K/home/linux/ros2_ws/src/pub2-2/src/pub2-2.cpp:22:22:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[0.944s]    22 |     auto pub = node->[01;31m[Kcreate_publisher<geometry_msgs::msg::Vector3>[m[K("mytopic", qos_profile
+[0.944s]       |                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.944s] [01m[K/home/linux/ros2_ws/src/pub2-2/src/pub2-2.cpp:23:5:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_publisher<<expression error> >(const char [8], rclcpp::QoS&)[m[K’
+[0.944s]    23 |     [01;31m[K)[m[K;
+[0.944s]       |     [01;31m[K^[m[K
+[0.944s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[0.944s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[0.944s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[0.944s]                  from [01m[K/home/linux/ros2_ws/src/pub2-2/src/pub2-2.cpp:1[m[K:
+[0.944s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[0.944s]   184 |   [01;36m[Kcreate_publisher[m[K(
+[0.944s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[0.944s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[0.944s] [01m[K/home/linux/ros2_ws/src/pub2-2/src/pub2-2.cpp:23:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[0.944s]    23 |     [01;31m[K)[m[K;
+[0.944s]       |     [01;31m[K^[m[K
+[1.179s] make[2]: *** [CMakeFiles/pub2-2.dir/build.make:63: CMakeFiles/pub2-2.dir/src/pub2-2.cpp.o] Error 1
+[1.180s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/pub2-2.dir/all] Error 2
+[1.180s] make: *** [Makefile:141: all] Error 2
+[1.181s] Invoked command in '/home/linux/ros2_ws/src/build/pub2-2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/linux/ros2_ws/src/build/pub2-2 -- -j16 -l16

@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target pub2-2[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pub2-2.dir/src/pub2-2.cpp.o[0m
+[100%] [32m[1mLinking CXX executable pub2-2[0m
+[100%] Built target pub2-2
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/linux/ros2_ws/src/install/pub2-2/lib/pub2-2/pub2-2
+-- Symlinking: /home/linux/ros2_ws/src/install/pub2-2/share/ament_index/resource_index/package_run_dependencies/pub2-2
+-- Symlinking: /home/linux/ros2_ws/src/install/pub2-2/share/ament_index/resource_index/parent_prefix_path/pub2-2
+-- Symlinking: /home/linux/ros2_ws/src/install/pub2-2/share/pub2-2/environment/ament_prefix_path.sh
+-- Symlinking: /home/linux/ros2_ws/src/install/pub2-2/share/pub2-2/environment/ament_prefix_path.dsv
+-- Symlinking: /home/linux/ros2_ws/src/install/pub2-2/share/pub2-2/environment/path.sh
+-- Symlinking: /home/linux/ros2_ws/src/install/pub2-2/share/pub2-2/environment/path.dsv
+-- Symlinking: /home/linux/ros2_ws/src/install/pub2-2/share/pub2-2/local_setup.bash
+-- Symlinking: /home/linux/ros2_ws/src/install/pub2-2/share/pub2-2/local_setup.sh
+-- Symlinking: /home/linux/ros2_ws/src/install/pub2-2/share/pub2-2/local_setup.zsh
+-- Symlinking: /home/linux/ros2_ws/src/install/pub2-2/share/pub2-2/local_setup.dsv
+-- Symlinking: /home/linux/ros2_ws/src/install/pub2-2/share/pub2-2/package.dsv
+-- Symlinking: /home/linux/ros2_ws/src/install/pub2-2/share/ament_index/resource_index/packages/pub2-2
+-- Symlinking: /home/linux/ros2_ws/src/install/pub2-2/share/pub2-2/cmake/pub2-2Config.cmake
+-- Symlinking: /home/linux/ros2_ws/src/install/pub2-2/share/pub2-2/cmake/pub2-2Config-version.cmake
+-- Symlinking: /home/linux/ros2_ws/src/install/pub2-2/share/pub2-2/package.xml
