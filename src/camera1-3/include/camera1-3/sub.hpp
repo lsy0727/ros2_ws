@@ -13,7 +13,10 @@ private:
     void image_callback(const sensor_msgs::msg::CompressedImage::SharedPtr msg);
     
     // GStreamer pipeline for H.264 streaming
-    std::string dst_ = "appsrc ! videoconvert ! video/x-raw,format=I420 ! queue ! x264enc tune=zerolatency bitrate=500 ! rtph264pay pt=96 ! udpsink host=192.168.0.61 port=8001 sync=false";
+    std::string dst = "appsrc ! videoconvert ! video/x-raw, format=BGRx ! \
+	nvvidconv ! nvv4l2h264enc insert-sps-pps=true ! \
+	h264parse ! rtph264pay pt=96 ! \
+	udpsink host = 192.168.0.xx port = 9007 sync=false";
     
     rclcpp::Subscription<sensor_msgs::msg::CompressedImage>::SharedPtr subscription_;
     cv::VideoWriter writer_;
