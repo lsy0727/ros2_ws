@@ -10,7 +10,7 @@ using std::placeholders::_1;
 std::string dst = "appsrc ! videoconvert ! video/x-raw, format=BGRx ! \
 	nvvidconv ! nvv4l2h264enc insert-sps-pps=true ! \
 	h264parse ! rtph264pay pt=96 ! \
-	udpsink host = 203.234.58.121 port = 8001 sync=false";
+	udpsink host = 192.168.0.xx port = 9007 sync=false";
 cv::VideoWriter writer, outputVideo;    //writer : 스트리밍용, outputVideo : 저장용용
 volatile sig_atomic_t running = 1;
 
