@@ -1,14 +1,12 @@
 # camera1-1
 
-* build
+### build & 설정적용
 
 colcon build --symlink-install --packages-select camera1-1
 
-* 설정파일 적용
-
 source ~/ros2_ws/install/local_setup.bash
 
-* 실행
+### 실행
 
 - jetson
 
