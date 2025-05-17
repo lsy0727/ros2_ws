@@ -14,7 +14,11 @@ private:
     void publish_image();
     
     // GStreamer pipeline for TurtleBot3 CSI camera
-    std::string src_ = "v4l2src device=/dev/video0 ! video/x-raw,width=640,height=480,framerate=30/1 ! videoconvert ! video/x-raw,format=BGR ! appsink";
+    std::string src = "nvarguscamerasrc sensor-id=0 ! \
+	video/x-raw(memory:NVMM), width=(int)640, height=(int)360, \
+    format=(string)NV12 ! nvvidconv flip-method=0 ! video/x-raw, \
+    width=(int)640, height=(int)360, format=(string)BGRx ! \
+	videoconvert ! video/x-raw, format=(string)BGR ! appsink";
     
     rclcpp::Publisher<sensor_msgs::msg::CompressedImage>::SharedPtr publisher_;
     rclcpp::TimerBase::SharedPtr timer_;
