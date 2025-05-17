@@ -1,0 +1,1 @@
+/home/ubuntu/ros2_ws/build/camera/ament_cmake_core/cameraConfig-version.cmake

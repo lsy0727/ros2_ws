@@ -1,0 +1,17 @@
+/home/ubuntu/ros2_ws/install/camera1-3/lib/camera1-3/pub
+/home/ubuntu/ros2_ws/install/camera1-3/lib/camera1-3/sub
+/home/ubuntu/ros2_ws/install/camera1-3/share/ament_index/resource_index/package_run_dependencies/camera1-3
+/home/ubuntu/ros2_ws/install/camera1-3/share/ament_index/resource_index/parent_prefix_path/camera1-3
+/home/ubuntu/ros2_ws/install/camera1-3/share/camera1-3/environment/ament_prefix_path.sh
+/home/ubuntu/ros2_ws/install/camera1-3/share/camera1-3/environment/ament_prefix_path.dsv
+/home/ubuntu/ros2_ws/install/camera1-3/share/camera1-3/environment/path.sh
+/home/ubuntu/ros2_ws/install/camera1-3/share/camera1-3/environment/path.dsv
+/home/ubuntu/ros2_ws/install/camera1-3/share/camera1-3/local_setup.bash
+/home/ubuntu/ros2_ws/install/camera1-3/share/camera1-3/local_setup.sh
+/home/ubuntu/ros2_ws/install/camera1-3/share/camera1-3/local_setup.zsh
+/home/ubuntu/ros2_ws/install/camera1-3/share/camera1-3/local_setup.dsv
+/home/ubuntu/ros2_ws/install/camera1-3/share/camera1-3/package.dsv
+/home/ubuntu/ros2_ws/install/camera1-3/share/ament_index/resource_index/packages/camera1-3
+/home/ubuntu/ros2_ws/install/camera1-3/share/camera1-3/cmake/camera1-3Config.cmake
+/home/ubuntu/ros2_ws/install/camera1-3/share/camera1-3/cmake/camera1-3Config-version.cmake
+/home/ubuntu/ros2_ws/install/camera1-3/share/camera1-3/package.xml

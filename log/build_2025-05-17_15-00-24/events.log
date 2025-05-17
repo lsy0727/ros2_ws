@@ -1,0 +1,516 @@
+[0.000000] (-) TimerEvent: {}
+[0.000962] (camera) JobQueued: {'identifier': 'camera', 'dependencies': OrderedDict()}
+[0.001844] (camera) JobStarted: {'identifier': 'camera'}
+[0.050979] (camera) JobProgress: {'identifier': 'camera', 'progress': 'cmake'}
+[0.052846] (camera) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/ros2_ws/src/camera', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/install/camera'], 'cwd': '/home/ubuntu/ros2_ws/build/camera', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.0.61 64640 22'), ('ROS_NAMESPACE', 'robot0'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8da6e395-f5d5-4c25-a325-2d67cfc953bf.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/ubuntu/ros2_ws'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/remote-cli:/home/ubuntu/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7e16c5de25.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/ubuntu/ros2_ws/build/camera'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.61 64640 192.168.0.78 22'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.099257] (-) TimerEvent: {}
+[0.199993] (-) TimerEvent: {}
+[0.300824] (-) TimerEvent: {}
+[0.401762] (-) TimerEvent: {}
+[0.475774] (camera) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.501929] (-) TimerEvent: {}
+[0.602640] (-) TimerEvent: {}
+[0.702209] (camera) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.702865] (-) TimerEvent: {}
+[0.732222] (camera) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.803071] (-) TimerEvent: {}
+[0.903819] (-) TimerEvent: {}
+[1.004573] (-) TimerEvent: {}
+[1.015047] (camera) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.021193] (camera) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.104764] (-) TimerEvent: {}
+[1.205487] (-) TimerEvent: {}
+[1.300508] (camera) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.305691] (-) TimerEvent: {}
+[1.337846] (camera) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.339640] (camera) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.352028] (camera) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.406008] (-) TimerEvent: {}
+[1.506863] (-) TimerEvent: {}
+[1.607838] (-) TimerEvent: {}
+[1.658818] (camera) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.663344] (camera) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.707997] (-) TimerEvent: {}
+[1.808714] (-) TimerEvent: {}
+[1.909540] (-) TimerEvent: {}
+[1.979317] (camera) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.009710] (-) TimerEvent: {}
+[2.016805] (camera) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.018724] (camera) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.053188] (camera) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[2.109980] (-) TimerEvent: {}
+[2.186054] (camera) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[2.186704] (camera) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.210162] (-) TimerEvent: {}
+[2.310974] (-) TimerEvent: {}
+[2.411621] (-) TimerEvent: {}
+[2.512257] (-) TimerEvent: {}
+[2.612860] (-) TimerEvent: {}
+[2.713465] (-) TimerEvent: {}
+[2.814133] (-) TimerEvent: {}
+[2.914972] (-) TimerEvent: {}
+[2.932161] (camera) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.015117] (-) TimerEvent: {}
+[3.115846] (-) TimerEvent: {}
+[3.176628] (camera) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[3.216071] (-) TimerEvent: {}
+[3.317074] (-) TimerEvent: {}
+[3.418160] (-) TimerEvent: {}
+[3.518909] (-) TimerEvent: {}
+[3.619618] (-) TimerEvent: {}
+[3.720366] (-) TimerEvent: {}
+[3.723077] (camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.783721] (camera) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[3.820534] (-) TimerEvent: {}
+[3.921214] (-) TimerEvent: {}
+[4.021942] (-) TimerEvent: {}
+[4.122707] (-) TimerEvent: {}
+[4.223392] (-) TimerEvent: {}
+[4.324330] (-) TimerEvent: {}
+[4.357044] (camera) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[4.424495] (-) TimerEvent: {}
+[4.525286] (-) TimerEvent: {}
+[4.575168] (camera) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[4.625539] (-) TimerEvent: {}
+[4.726301] (-) TimerEvent: {}
+[4.826961] (-) TimerEvent: {}
+[4.927614] (-) TimerEvent: {}
+[5.028281] (-) TimerEvent: {}
+[5.128938] (-) TimerEvent: {}
+[5.131952] (camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.229112] (-) TimerEvent: {}
+[5.329820] (-) TimerEvent: {}
+[5.430504] (-) TimerEvent: {}
+[5.443278] (camera) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[5.451358] (camera) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.458510] (camera) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.530678] (-) TimerEvent: {}
+[5.631401] (-) TimerEvent: {}
+[5.732231] (-) TimerEvent: {}
+[5.757503] (camera) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[5.758379] (camera) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.832415] (-) TimerEvent: {}
+[5.933099] (-) TimerEvent: {}
+[6.033896] (-) TimerEvent: {}
+[6.053316] (camera) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[6.054084] (camera) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[6.134089] (-) TimerEvent: {}
+[6.234804] (-) TimerEvent: {}
+[6.298410] (camera) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[6.299057] (camera) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[6.334972] (-) TimerEvent: {}
+[6.435866] (-) TimerEvent: {}
+[6.537105] (-) TimerEvent: {}
+[6.587710] (camera) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[6.591109] (camera) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.637263] (-) TimerEvent: {}
+[6.737972] (-) TimerEvent: {}
+[6.838648] (-) TimerEvent: {}
+[6.939415] (-) TimerEvent: {}
+[7.040104] (-) TimerEvent: {}
+[7.140894] (-) TimerEvent: {}
+[7.241567] (-) TimerEvent: {}
+[7.282749] (camera) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[7.341750] (-) TimerEvent: {}
+[7.442460] (-) TimerEvent: {}
+[7.560783] (-) TimerEvent: {}
+[7.661441] (-) TimerEvent: {}
+[7.739697] (camera) StdoutLine: {'line': b'-- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)\n'}
+[7.761616] (-) TimerEvent: {}
+[7.862272] (-) TimerEvent: {}
+[7.873869] (camera) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.2.0") \n'}
+[7.962465] (-) TimerEvent: {}
+[8.063242] (-) TimerEvent: {}
+[8.164139] (-) TimerEvent: {}
+[8.220921] (camera) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.264261] (-) TimerEvent: {}
+[8.363035] (camera) StdoutLine: {'line': b'-- Generating done\n'}
+[8.364394] (-) TimerEvent: {}
+[8.433313] (camera) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/ros2_ws/build/camera\n'}
+[8.464376] (camera) CommandEnded: {'returncode': 0}
+[8.465744] (-) TimerEvent: {}
+[8.466632] (camera) JobProgress: {'identifier': 'camera', 'progress': 'build'}
+[8.469079] (camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/build/camera', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_ws/build/camera', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.0.61 64640 22'), ('ROS_NAMESPACE', 'robot0'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8da6e395-f5d5-4c25-a325-2d67cfc953bf.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/ubuntu/ros2_ws'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/remote-cli:/home/ubuntu/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7e16c5de25.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/ubuntu/ros2_ws/build/camera'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.61 64640 192.168.0.78 22'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[8.565972] (-) TimerEvent: {}
+[8.636569] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sub_wsl\x1b[0m\n'}
+[8.637307] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sub_jetson\x1b[0m\n'}
+[8.639096] (camera) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pub\x1b[0m\n'}
+[8.666198] (-) TimerEvent: {}
+[8.767660] (-) TimerEvent: {}
+[8.868342] (-) TimerEvent: {}
+[8.969154] (-) TimerEvent: {}
+[9.069934] (-) TimerEvent: {}
+[9.170631] (-) TimerEvent: {}
+[9.189354] (camera) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/sub_jetson.dir/src/sub_jetson.cpp.o\x1b[0m\n'}
+[9.194169] (camera) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pub.dir/src/pub.cpp.o\x1b[0m\n'}
+[9.195095] (camera) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/sub_wsl.dir/src/sub_wsl.cpp.o\x1b[0m\n'}
+[9.270837] (-) TimerEvent: {}
+[9.371626] (-) TimerEvent: {}
+[9.472932] (-) TimerEvent: {}
+[9.573763] (-) TimerEvent: {}
+[9.675298] (-) TimerEvent: {}
+[9.776942] (-) TimerEvent: {}
+[9.878085] (-) TimerEvent: {}
+[9.979370] (-) TimerEvent: {}
+[10.080642] (-) TimerEvent: {}
+[10.181542] (-) TimerEvent: {}
+[10.282621] (-) TimerEvent: {}
+[10.383538] (-) TimerEvent: {}
+[10.484961] (-) TimerEvent: {}
+[10.586558] (-) TimerEvent: {}
+[10.687512] (-) TimerEvent: {}
+[10.788447] (-) TimerEvent: {}
+[10.889461] (-) TimerEvent: {}
+[10.990664] (-) TimerEvent: {}
+[11.091967] (-) TimerEvent: {}
+[11.192963] (-) TimerEvent: {}
+[11.293950] (-) TimerEvent: {}
+[11.394933] (-) TimerEvent: {}
+[11.496376] (-) TimerEvent: {}
+[11.598459] (-) TimerEvent: {}
+[11.699644] (-) TimerEvent: {}
+[11.801703] (-) TimerEvent: {}
+[11.903683] (-) TimerEvent: {}
+[12.006127] (-) TimerEvent: {}
+[12.107549] (-) TimerEvent: {}
+[12.209050] (-) TimerEvent: {}
+[12.310211] (-) TimerEvent: {}
+[12.411141] (-) TimerEvent: {}
+[12.512084] (-) TimerEvent: {}
+[12.613117] (-) TimerEvent: {}
+[12.714213] (-) TimerEvent: {}
+[12.815215] (-) TimerEvent: {}
+[12.916321] (-) TimerEvent: {}
+[13.018113] (-) TimerEvent: {}
+[13.119066] (-) TimerEvent: {}
+[13.220056] (-) TimerEvent: {}
+[13.321034] (-) TimerEvent: {}
+[13.422144] (-) TimerEvent: {}
+[13.523129] (-) TimerEvent: {}
+[13.624129] (-) TimerEvent: {}
+[13.725097] (-) TimerEvent: {}
+[13.826148] (-) TimerEvent: {}
+[13.927298] (-) TimerEvent: {}
+[14.028632] (-) TimerEvent: {}
+[14.129674] (-) TimerEvent: {}
+[14.230692] (-) TimerEvent: {}
+[14.331687] (-) TimerEvent: {}
+[14.432788] (-) TimerEvent: {}
+[14.533847] (-) TimerEvent: {}
+[14.634784] (-) TimerEvent: {}
+[14.735776] (-) TimerEvent: {}
+[14.836747] (-) TimerEvent: {}
+[14.937814] (-) TimerEvent: {}
+[15.038806] (-) TimerEvent: {}
+[15.139779] (-) TimerEvent: {}
+[15.240827] (-) TimerEvent: {}
+[15.341745] (-) TimerEvent: {}
+[15.442697] (-) TimerEvent: {}
+[15.543597] (-) TimerEvent: {}
+[15.644652] (-) TimerEvent: {}
+[15.745622] (-) TimerEvent: {}
+[15.846607] (-) TimerEvent: {}
+[15.947509] (-) TimerEvent: {}
+[16.048438] (-) TimerEvent: {}
+[16.149315] (-) TimerEvent: {}
+[16.250500] (-) TimerEvent: {}
+[16.351905] (-) TimerEvent: {}
+[16.452825] (-) TimerEvent: {}
+[16.553715] (-) TimerEvent: {}
+[16.654707] (-) TimerEvent: {}
+[16.755649] (-) TimerEvent: {}
+[16.857541] (-) TimerEvent: {}
+[16.959594] (-) TimerEvent: {}
+[17.061552] (-) TimerEvent: {}
+[17.162611] (-) TimerEvent: {}
+[17.263677] (-) TimerEvent: {}
+[17.364800] (-) TimerEvent: {}
+[17.466361] (-) TimerEvent: {}
+[17.567550] (-) TimerEvent: {}
+[17.668674] (-) TimerEvent: {}
+[17.769664] (-) TimerEvent: {}
+[17.871551] (-) TimerEvent: {}
+[17.973530] (-) TimerEvent: {}
+[18.074594] (-) TimerEvent: {}
+[18.175628] (-) TimerEvent: {}
+[18.276620] (-) TimerEvent: {}
+[18.377563] (-) TimerEvent: {}
+[18.478637] (-) TimerEvent: {}
+[18.579518] (-) TimerEvent: {}
+[18.680465] (-) TimerEvent: {}
+[18.781569] (-) TimerEvent: {}
+[18.883388] (-) TimerEvent: {}
+[18.984363] (-) TimerEvent: {}
+[19.085463] (-) TimerEvent: {}
+[19.186928] (-) TimerEvent: {}
+[19.288247] (-) TimerEvent: {}
+[19.389229] (-) TimerEvent: {}
+[19.490225] (-) TimerEvent: {}
+[19.591119] (-) TimerEvent: {}
+[19.692151] (-) TimerEvent: {}
+[19.793170] (-) TimerEvent: {}
+[19.894531] (-) TimerEvent: {}
+[19.995587] (-) TimerEvent: {}
+[20.096565] (-) TimerEvent: {}
+[20.197774] (-) TimerEvent: {}
+[20.298940] (-) TimerEvent: {}
+[20.399882] (-) TimerEvent: {}
+[20.500936] (-) TimerEvent: {}
+[20.601960] (-) TimerEvent: {}
+[20.702890] (-) TimerEvent: {}
+[20.803928] (-) TimerEvent: {}
+[20.904855] (-) TimerEvent: {}
+[21.005988] (-) TimerEvent: {}
+[21.107121] (-) TimerEvent: {}
+[21.208378] (-) TimerEvent: {}
+[21.309695] (-) TimerEvent: {}
+[21.410741] (-) TimerEvent: {}
+[21.511971] (-) TimerEvent: {}
+[21.613109] (-) TimerEvent: {}
+[21.714156] (-) TimerEvent: {}
+[21.815478] (-) TimerEvent: {}
+[21.918028] (-) TimerEvent: {}
+[22.020072] (-) TimerEvent: {}
+[22.121146] (-) TimerEvent: {}
+[22.222309] (-) TimerEvent: {}
+[22.323308] (-) TimerEvent: {}
+[22.424284] (-) TimerEvent: {}
+[22.525370] (-) TimerEvent: {}
+[22.629277] (-) TimerEvent: {}
+[22.730299] (-) TimerEvent: {}
+[22.831240] (-) TimerEvent: {}
+[22.932220] (-) TimerEvent: {}
+[23.034151] (-) TimerEvent: {}
+[23.135088] (-) TimerEvent: {}
+[23.236014] (-) TimerEvent: {}
+[23.336996] (-) TimerEvent: {}
+[23.438013] (-) TimerEvent: {}
+[23.538956] (-) TimerEvent: {}
+[23.639908] (-) TimerEvent: {}
+[23.740871] (-) TimerEvent: {}
+[23.841960] (-) TimerEvent: {}
+[23.942912] (-) TimerEvent: {}
+[24.043825] (-) TimerEvent: {}
+[24.144787] (-) TimerEvent: {}
+[24.245770] (-) TimerEvent: {}
+[24.346859] (-) TimerEvent: {}
+[24.447812] (-) TimerEvent: {}
+[24.548773] (-) TimerEvent: {}
+[24.649761] (-) TimerEvent: {}
+[24.751013] (-) TimerEvent: {}
+[24.852011] (-) TimerEvent: {}
+[24.952970] (-) TimerEvent: {}
+[25.054013] (-) TimerEvent: {}
+[25.154919] (-) TimerEvent: {}
+[25.255908] (-) TimerEvent: {}
+[25.356886] (-) TimerEvent: {}
+[25.458060] (-) TimerEvent: {}
+[25.559116] (-) TimerEvent: {}
+[25.660202] (-) TimerEvent: {}
+[25.761262] (-) TimerEvent: {}
+[25.862407] (-) TimerEvent: {}
+[25.963479] (-) TimerEvent: {}
+[26.064806] (-) TimerEvent: {}
+[26.165987] (-) TimerEvent: {}
+[26.267228] (-) TimerEvent: {}
+[26.368513] (-) TimerEvent: {}
+[26.469676] (-) TimerEvent: {}
+[26.570803] (-) TimerEvent: {}
+[26.671850] (-) TimerEvent: {}
+[26.772847] (-) TimerEvent: {}
+[26.874723] (-) TimerEvent: {}
+[26.976677] (-) TimerEvent: {}
+[27.078686] (-) TimerEvent: {}
+[27.179836] (-) TimerEvent: {}
+[27.280932] (-) TimerEvent: {}
+[27.382034] (-) TimerEvent: {}
+[27.483005] (-) TimerEvent: {}
+[27.584003] (-) TimerEvent: {}
+[27.688875] (-) TimerEvent: {}
+[27.789962] (-) TimerEvent: {}
+[27.891282] (-) TimerEvent: {}
+[27.993004] (-) TimerEvent: {}
+[28.094032] (-) TimerEvent: {}
+[28.194995] (-) TimerEvent: {}
+[28.295928] (-) TimerEvent: {}
+[28.397209] (-) TimerEvent: {}
+[28.498270] (-) TimerEvent: {}
+[28.599682] (-) TimerEvent: {}
+[28.700641] (-) TimerEvent: {}
+[28.801556] (-) TimerEvent: {}
+[28.902564] (-) TimerEvent: {}
+[29.003702] (-) TimerEvent: {}
+[29.105490] (-) TimerEvent: {}
+[29.206585] (-) TimerEvent: {}
+[29.307519] (-) TimerEvent: {}
+[29.408519] (-) TimerEvent: {}
+[29.509504] (-) TimerEvent: {}
+[29.610594] (-) TimerEvent: {}
+[29.711646] (-) TimerEvent: {}
+[29.813329] (-) TimerEvent: {}
+[29.914252] (-) TimerEvent: {}
+[30.015103] (-) TimerEvent: {}
+[30.116175] (-) TimerEvent: {}
+[30.217578] (-) TimerEvent: {}
+[30.318582] (-) TimerEvent: {}
+[30.419538] (-) TimerEvent: {}
+[30.520616] (-) TimerEvent: {}
+[30.621737] (-) TimerEvent: {}
+[30.723411] (-) TimerEvent: {}
+[30.824645] (-) TimerEvent: {}
+[30.925592] (-) TimerEvent: {}
+[31.026548] (-) TimerEvent: {}
+[31.127647] (-) TimerEvent: {}
+[31.229569] (-) TimerEvent: {}
+[31.331640] (-) TimerEvent: {}
+[31.433396] (-) TimerEvent: {}
+[31.534467] (-) TimerEvent: {}
+[31.635515] (-) TimerEvent: {}
+[31.738051] (-) TimerEvent: {}
+[31.839994] (-) TimerEvent: {}
+[31.941930] (-) TimerEvent: {}
+[32.043791] (-) TimerEvent: {}
+[32.144798] (-) TimerEvent: {}
+[32.246010] (-) TimerEvent: {}
+[32.348179] (-) TimerEvent: {}
+[32.450568] (-) TimerEvent: {}
+[32.551528] (-) TimerEvent: {}
+[32.652496] (-) TimerEvent: {}
+[32.753503] (-) TimerEvent: {}
+[32.854542] (-) TimerEvent: {}
+[32.922397] (camera) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable pub\x1b[0m\n'}
+[32.954770] (-) TimerEvent: {}
+[33.055678] (-) TimerEvent: {}
+[33.158766] (-) TimerEvent: {}
+[33.260373] (-) TimerEvent: {}
+[33.362169] (-) TimerEvent: {}
+[33.463737] (-) TimerEvent: {}
+[33.565525] (-) TimerEvent: {}
+[33.667538] (-) TimerEvent: {}
+[33.769406] (-) TimerEvent: {}
+[33.872241] (-) TimerEvent: {}
+[33.973886] (-) TimerEvent: {}
+[34.075414] (-) TimerEvent: {}
+[34.177583] (-) TimerEvent: {}
+[34.279920] (-) TimerEvent: {}
+[34.381053] (-) TimerEvent: {}
+[34.482797] (-) TimerEvent: {}
+[34.584340] (-) TimerEvent: {}
+[34.685674] (-) TimerEvent: {}
+[34.786615] (-) TimerEvent: {}
+[34.887496] (-) TimerEvent: {}
+[34.988319] (-) TimerEvent: {}
+[35.089131] (-) TimerEvent: {}
+[35.190130] (-) TimerEvent: {}
+[35.291178] (-) TimerEvent: {}
+[35.392110] (-) TimerEvent: {}
+[35.492973] (-) TimerEvent: {}
+[35.593831] (-) TimerEvent: {}
+[35.694617] (-) TimerEvent: {}
+[35.795459] (-) TimerEvent: {}
+[35.896341] (-) TimerEvent: {}
+[35.997133] (-) TimerEvent: {}
+[36.097942] (-) TimerEvent: {}
+[36.199013] (-) TimerEvent: {}
+[36.299799] (-) TimerEvent: {}
+[36.388809] (camera) StdoutLine: {'line': b'[ 66%] Built target pub\n'}
+[36.400074] (-) TimerEvent: {}
+[36.500976] (-) TimerEvent: {}
+[36.601843] (-) TimerEvent: {}
+[36.702647] (-) TimerEvent: {}
+[36.803494] (-) TimerEvent: {}
+[36.905394] (-) TimerEvent: {}
+[37.006248] (-) TimerEvent: {}
+[37.107024] (-) TimerEvent: {}
+[37.207857] (-) TimerEvent: {}
+[37.308709] (-) TimerEvent: {}
+[37.409566] (-) TimerEvent: {}
+[37.510389] (-) TimerEvent: {}
+[37.611258] (-) TimerEvent: {}
+[37.712142] (-) TimerEvent: {}
+[37.813037] (-) TimerEvent: {}
+[37.913964] (-) TimerEvent: {}
+[38.014806] (-) TimerEvent: {}
+[38.115609] (-) TimerEvent: {}
+[38.216842] (-) TimerEvent: {}
+[38.318241] (-) TimerEvent: {}
+[38.419310] (-) TimerEvent: {}
+[38.520200] (-) TimerEvent: {}
+[38.621004] (-) TimerEvent: {}
+[38.722200] (-) TimerEvent: {}
+[38.822975] (-) TimerEvent: {}
+[38.923786] (-) TimerEvent: {}
+[39.024636] (-) TimerEvent: {}
+[39.125410] (-) TimerEvent: {}
+[39.226410] (-) TimerEvent: {}
+[39.328510] (-) TimerEvent: {}
+[39.430287] (-) TimerEvent: {}
+[39.531595] (-) TimerEvent: {}
+[39.632541] (-) TimerEvent: {}
+[39.661386] (camera) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable sub_wsl\x1b[0m\n'}
+[39.718482] (camera) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable sub_jetson\x1b[0m\n'}
+[39.732729] (-) TimerEvent: {}
+[39.833578] (-) TimerEvent: {}
+[39.934857] (-) TimerEvent: {}
+[40.036758] (-) TimerEvent: {}
+[40.138127] (-) TimerEvent: {}
+[40.239946] (-) TimerEvent: {}
+[40.341662] (-) TimerEvent: {}
+[40.442866] (-) TimerEvent: {}
+[40.544950] (-) TimerEvent: {}
+[40.646908] (-) TimerEvent: {}
+[40.748833] (-) TimerEvent: {}
+[40.850510] (-) TimerEvent: {}
+[40.951675] (-) TimerEvent: {}
+[41.053860] (-) TimerEvent: {}
+[41.154816] (-) TimerEvent: {}
+[41.255738] (-) TimerEvent: {}
+[41.356889] (-) TimerEvent: {}
+[41.457749] (-) TimerEvent: {}
+[41.558795] (-) TimerEvent: {}
+[41.659896] (-) TimerEvent: {}
+[41.760614] (-) TimerEvent: {}
+[41.862193] (-) TimerEvent: {}
+[41.963177] (-) TimerEvent: {}
+[42.064453] (-) TimerEvent: {}
+[42.165710] (-) TimerEvent: {}
+[42.266804] (-) TimerEvent: {}
+[42.367617] (-) TimerEvent: {}
+[42.468350] (-) TimerEvent: {}
+[42.546553] (camera) StdoutLine: {'line': b'[100%] Built target sub_wsl\n'}
+[42.568554] (-) TimerEvent: {}
+[42.569467] (camera) StdoutLine: {'line': b'[100%] Built target sub_jetson\n'}
+[42.620356] (camera) CommandEnded: {'returncode': 0}
+[42.623677] (camera) JobProgress: {'identifier': 'camera', 'progress': 'install'}
+[42.663173] (camera) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/ros2_ws/build/camera'], 'cwd': '/home/ubuntu/ros2_ws/build/camera', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.0.61 64640 22'), ('ROS_NAMESPACE', 'robot0'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8da6e395-f5d5-4c25-a325-2d67cfc953bf.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/ubuntu/ros2_ws'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/remote-cli:/home/ubuntu/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7e16c5de25.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/ubuntu/ros2_ws/build/camera'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.61 64640 192.168.0.78 22'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[42.671524] (-) TimerEvent: {}
+[42.699121] (camera) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[42.700520] (camera) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[42.702384] (camera) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/camera/lib/camera/pub\n'}
+[42.734539] (camera) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/camera/lib/camera/sub_jetson\n'}
+[42.768279] (camera) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/camera/lib/camera/sub_wsl\n'}
+[42.771628] (-) TimerEvent: {}
+[42.803508] (camera) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/camera/share/ament_index/resource_index/package_run_dependencies/camera\n'}
+[42.836646] (camera) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/camera/share/ament_index/resource_index/parent_prefix_path/camera\n'}
+[42.871130] (camera) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/camera/share/camera/environment/ament_prefix_path.sh\n'}
+[42.871958] (-) TimerEvent: {}
+[42.906479] (camera) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/camera/share/camera/environment/ament_prefix_path.dsv\n'}
+[42.937881] (camera) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/camera/share/camera/environment/path.sh\n'}
+[42.970452] (camera) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/camera/share/camera/environment/path.dsv\n'}
+[42.972076] (-) TimerEvent: {}
+[43.004004] (camera) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/camera/share/camera/local_setup.bash\n'}
+[43.036150] (camera) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/camera/share/camera/local_setup.sh\n'}
+[43.067297] (camera) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/camera/share/camera/local_setup.zsh\n'}
+[43.072328] (-) TimerEvent: {}
+[43.099052] (camera) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/camera/share/camera/local_setup.dsv\n'}
+[43.130663] (camera) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/camera/share/camera/package.dsv\n'}
+[43.163721] (camera) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/camera/share/ament_index/resource_index/packages/camera\n'}
+[43.172502] (-) TimerEvent: {}
+[43.196402] (camera) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/camera/share/camera/cmake/cameraConfig.cmake\n'}
+[43.228654] (camera) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/camera/share/camera/cmake/cameraConfig-version.cmake\n'}
+[43.261339] (camera) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/ros2_ws/install/camera/share/camera/package.xml\n'}
+[43.272694] (-) TimerEvent: {}
+[43.299288] (camera) CommandEnded: {'returncode': 0}
+[43.372811] (-) TimerEvent: {}
+[43.397044] (camera) JobEnded: {'identifier': 'camera', 'rc': 0}
+[43.399441] (-) EventReactorShutdown: {}

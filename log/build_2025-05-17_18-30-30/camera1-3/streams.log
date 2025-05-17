@@ -1,0 +1,23 @@
+[0.048s] Invoking command in '/home/ubuntu/ros2_ws/build/camera1-3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/camera1-3 -- -j4 -l4
+[0.154s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.241s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.947s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.978s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.133s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.145s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.982s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.155s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.160s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.654s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[3.041s] -- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)
+[3.189s] CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):
+[3.190s]   ament_target_dependencies() the first argument must be a valid target name
+[3.190s] Call Stack (most recent call first):
+[3.190s]   CMakeLists.txt:26 (ament_target_dependencies)
+[3.191s] 
+[3.191s] 
+[3.203s] -- Configuring incomplete, errors occurred!
+[3.204s] See also "/home/ubuntu/ros2_ws/build/camera1-3/CMakeFiles/CMakeOutput.log".
+[3.204s] See also "/home/ubuntu/ros2_ws/build/camera1-3/CMakeFiles/CMakeError.log".
+[3.227s] make: *** [Makefile:370: cmake_check_build_system] Error 1
+[3.233s] Invoked command in '/home/ubuntu/ros2_ws/build/camera1-3' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/camera1-3 -- -j4 -l4

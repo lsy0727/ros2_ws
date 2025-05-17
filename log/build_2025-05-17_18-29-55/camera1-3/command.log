@@ -1,0 +1,2 @@
+Invoking command in '/home/ubuntu/ros2_ws/build/camera1-3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/camera1-3 -- -j4 -l4
+Invoked command in '/home/ubuntu/ros2_ws/build/camera1-3' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/camera1-3 -- -j4 -l4

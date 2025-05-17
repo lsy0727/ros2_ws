@@ -1,0 +1,479 @@
+[0.000000] (-) TimerEvent: {}
+[0.001226] (-) JobUnselected: {'identifier': 'camera'}
+[0.001595] (-) JobUnselected: {'identifier': 'camera1-1'}
+[0.002522] (camera1-2) JobQueued: {'identifier': 'camera1-2', 'dependencies': OrderedDict()}
+[0.003256] (camera1-2) JobStarted: {'identifier': 'camera1-2'}
+[0.045800] (camera1-2) JobProgress: {'identifier': 'camera1-2', 'progress': 'cmake'}
+[0.049012] (camera1-2) JobProgress: {'identifier': 'camera1-2', 'progress': 'build'}
+[0.051762] (camera1-2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/build/camera1-2', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_ws/build/camera1-2', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.0.61 64640 22'), ('ROS_NAMESPACE', 'robot0'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8da6e395-f5d5-4c25-a325-2d67cfc953bf.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/ubuntu/ros2_ws'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/remote-cli:/home/ubuntu/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7e16c5de25.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/camera1-1:/home/ubuntu/ros2_ws/install/camera:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/ubuntu/ros2_ws/build/camera1-2'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.61 64640 192.168.0.78 22'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/camera1-1:/home/ubuntu/ros2_ws/install/camera:/opt/ros/foxy')]), 'shell': False}
+[0.099108] (-) TimerEvent: {}
+[0.199987] (-) TimerEvent: {}
+[0.248450] (camera1-2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sub_jetson\x1b[0m\n'}
+[0.300205] (-) TimerEvent: {}
+[0.377889] (camera1-2) StdoutLine: {'line': b'[ 33%] Built target pub\n'}
+[0.378804] (camera1-2) StdoutLine: {'line': b'[ 66%] Built target sub_wsl\n'}
+[0.400487] (-) TimerEvent: {}
+[0.430177] (camera1-2) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/sub_jetson.dir/src/sub_jetson.cpp.o\x1b[0m\n'}
+[0.500696] (-) TimerEvent: {}
+[0.601475] (-) TimerEvent: {}
+[0.702499] (-) TimerEvent: {}
+[0.803320] (-) TimerEvent: {}
+[0.904126] (-) TimerEvent: {}
+[1.004944] (-) TimerEvent: {}
+[1.105728] (-) TimerEvent: {}
+[1.206730] (-) TimerEvent: {}
+[1.307753] (-) TimerEvent: {}
+[1.408576] (-) TimerEvent: {}
+[1.509437] (-) TimerEvent: {}
+[1.610241] (-) TimerEvent: {}
+[1.711078] (-) TimerEvent: {}
+[1.811871] (-) TimerEvent: {}
+[1.912732] (-) TimerEvent: {}
+[2.013565] (-) TimerEvent: {}
+[2.114518] (-) TimerEvent: {}
+[2.215377] (-) TimerEvent: {}
+[2.316184] (-) TimerEvent: {}
+[2.417041] (-) TimerEvent: {}
+[2.518119] (-) TimerEvent: {}
+[2.619158] (-) TimerEvent: {}
+[2.720043] (-) TimerEvent: {}
+[2.820980] (-) TimerEvent: {}
+[2.921787] (-) TimerEvent: {}
+[3.022621] (-) TimerEvent: {}
+[3.123428] (-) TimerEvent: {}
+[3.224292] (-) TimerEvent: {}
+[3.325189] (-) TimerEvent: {}
+[3.426000] (-) TimerEvent: {}
+[3.526863] (-) TimerEvent: {}
+[3.627684] (-) TimerEvent: {}
+[3.728574] (-) TimerEvent: {}
+[3.829392] (-) TimerEvent: {}
+[3.930256] (-) TimerEvent: {}
+[4.031075] (-) TimerEvent: {}
+[4.131888] (-) TimerEvent: {}
+[4.232734] (-) TimerEvent: {}
+[4.333560] (-) TimerEvent: {}
+[4.434372] (-) TimerEvent: {}
+[4.535253] (-) TimerEvent: {}
+[4.636063] (-) TimerEvent: {}
+[4.736974] (-) TimerEvent: {}
+[4.837827] (-) TimerEvent: {}
+[4.938681] (-) TimerEvent: {}
+[5.039498] (-) TimerEvent: {}
+[5.140359] (-) TimerEvent: {}
+[5.241187] (-) TimerEvent: {}
+[5.342005] (-) TimerEvent: {}
+[5.442791] (-) TimerEvent: {}
+[5.543755] (-) TimerEvent: {}
+[5.644742] (-) TimerEvent: {}
+[5.745619] (-) TimerEvent: {}
+[5.846546] (-) TimerEvent: {}
+[5.947455] (-) TimerEvent: {}
+[6.048292] (-) TimerEvent: {}
+[6.149173] (-) TimerEvent: {}
+[6.249976] (-) TimerEvent: {}
+[6.350802] (-) TimerEvent: {}
+[6.451589] (-) TimerEvent: {}
+[6.552498] (-) TimerEvent: {}
+[6.653295] (-) TimerEvent: {}
+[6.754084] (-) TimerEvent: {}
+[6.854936] (-) TimerEvent: {}
+[6.955785] (-) TimerEvent: {}
+[7.056628] (-) TimerEvent: {}
+[7.157429] (-) TimerEvent: {}
+[7.258220] (-) TimerEvent: {}
+[7.359015] (-) TimerEvent: {}
+[7.459829] (-) TimerEvent: {}
+[7.560644] (-) TimerEvent: {}
+[7.661500] (-) TimerEvent: {}
+[7.762365] (-) TimerEvent: {}
+[7.863217] (-) TimerEvent: {}
+[7.964061] (-) TimerEvent: {}
+[8.064928] (-) TimerEvent: {}
+[8.165768] (-) TimerEvent: {}
+[8.266640] (-) TimerEvent: {}
+[8.367460] (-) TimerEvent: {}
+[8.468371] (-) TimerEvent: {}
+[8.569348] (-) TimerEvent: {}
+[8.671369] (-) TimerEvent: {}
+[8.772263] (-) TimerEvent: {}
+[8.873103] (-) TimerEvent: {}
+[8.973931] (-) TimerEvent: {}
+[9.074759] (-) TimerEvent: {}
+[9.175601] (-) TimerEvent: {}
+[9.276552] (-) TimerEvent: {}
+[9.377451] (-) TimerEvent: {}
+[9.478258] (-) TimerEvent: {}
+[9.579136] (-) TimerEvent: {}
+[9.679930] (-) TimerEvent: {}
+[9.780804] (-) TimerEvent: {}
+[9.881608] (-) TimerEvent: {}
+[9.982391] (-) TimerEvent: {}
+[10.083238] (-) TimerEvent: {}
+[10.184057] (-) TimerEvent: {}
+[10.285046] (-) TimerEvent: {}
+[10.385878] (-) TimerEvent: {}
+[10.486697] (-) TimerEvent: {}
+[10.587512] (-) TimerEvent: {}
+[10.688334] (-) TimerEvent: {}
+[10.789171] (-) TimerEvent: {}
+[10.890014] (-) TimerEvent: {}
+[10.994901] (-) TimerEvent: {}
+[11.095777] (-) TimerEvent: {}
+[11.196741] (-) TimerEvent: {}
+[11.297579] (-) TimerEvent: {}
+[11.398367] (-) TimerEvent: {}
+[11.499178] (-) TimerEvent: {}
+[11.600138] (-) TimerEvent: {}
+[11.700964] (-) TimerEvent: {}
+[11.801781] (-) TimerEvent: {}
+[11.902564] (-) TimerEvent: {}
+[12.003372] (-) TimerEvent: {}
+[12.104199] (-) TimerEvent: {}
+[12.205047] (-) TimerEvent: {}
+[12.305891] (-) TimerEvent: {}
+[12.406718] (-) TimerEvent: {}
+[12.507550] (-) TimerEvent: {}
+[12.608885] (-) TimerEvent: {}
+[12.617373] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid keyboard_handler(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.618268] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:14:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksignum\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[12.618856] (camera1-2) StderrLine: {'line': b'   14 | void keyboard_handler(\x1b[01;35m\x1b[Kint signum\x1b[m\x1b[K)\n'}
+[12.619385] (camera1-2) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~^~~~~~\x1b[m\x1b[K\n'}
+[12.635972] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid mysub_callback(rclcpp::Node::SharedPtr, sensor_msgs::msg::CompressedImage_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.637222] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:29:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMat\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[12.637864] (camera1-2) StderrLine: {'line': b'   29 |     \x1b[01;31m\x1b[KMat\x1b[m\x1b[K gray, thresh;\n'}
+[12.638544] (camera1-2) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[12.639332] (camera1-2) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kcv::Mat\x1b[m\x1b[K\n'}
+[12.640284] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[12.641162] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[12.641875] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.642543] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:791:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcv::Mat\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[12.643256] (camera1-2) StderrLine: {'line': b'  791 | class CV_EXPORTS \x1b[01;36m\x1b[KMat\x1b[m\x1b[K\n'}
+[12.643990] (camera1-2) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[12.645081] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:30:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgray\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.645722] (camera1-2) StderrLine: {'line': b'   30 |     cv::cvtColor(frame, \x1b[01;31m\x1b[Kgray\x1b[m\x1b[K, cv::COLOR_BGR2GRAY);\n'}
+[12.646367] (camera1-2) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[12.652739] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:31:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthresh\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.653680] (camera1-2) StderrLine: {'line': b'   31 |     cv::threshold(gray, \x1b[01;31m\x1b[Kthresh\x1b[m\x1b[K, 0, 255, cv::THRESH_BINARY | cv::THRESH_OTSU);\n'}
+[12.655583] (camera1-2) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[12.657399] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator<<\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[12.662463] (camera1-2) StderrLine: {'line': b'   34 |     \x1b[32m\x1b[Kwriter\x1b[m\x1b[K \x1b[01;31m\x1b[K<<\x1b[m\x1b[K \x1b[34m\x1b[Koutput_video\x1b[m\x1b[K;\n'}
+[12.664183] (camera1-2) StderrLine: {'line': b'      |     \x1b[32m\x1b[K~~~~~~\x1b[m\x1b[K \x1b[01;31m\x1b[K^~\x1b[m\x1b[K \x1b[34m\x1b[K~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.664837] (camera1-2) StderrLine: {'line': b'      |     \x1b[32m\x1b[K|\x1b[m\x1b[K         \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[12.665424] (camera1-2) StderrLine: {'line': b'      |     \x1b[32m\x1b[K|\x1b[m\x1b[K         \x1b[34m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\n'}
+[12.665967] (camera1-2) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\n'}
+[12.666495] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/highgui.hpp:51\x1b[m\x1b[K,\n'}
+[12.667020] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:68\x1b[m\x1b[K,\n'}
+[12.667516] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.668018] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/videoio.hpp:921:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvirtual cv::VideoWriter& cv::VideoWriter::operator<<(const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.668585] (camera1-2) StderrLine: {'line': b'  921 |     virtual VideoWriter& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (const Mat& image);\n'}
+[12.669146] (camera1-2) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.669678] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/videoio.hpp:921:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.670272] (camera1-2) StderrLine: {'line': b'  921 |     virtual VideoWriter& operator << (\x1b[01;36m\x1b[Kconst Mat& image\x1b[m\x1b[K);\n'}
+[12.670809] (camera1-2) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[12.671340] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/videoio.hpp:926:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvirtual cv::VideoWriter& cv::VideoWriter::operator<<(const cv::UMat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.671867] (camera1-2) StderrLine: {'line': b'  926 |     virtual VideoWriter& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (const UMat& image);\n'}
+[12.672381] (camera1-2) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.673052] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/videoio.hpp:926:51:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::UMat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.673894] (camera1-2) StderrLine: {'line': b'  926 |     virtual VideoWriter& operator << (\x1b[01;36m\x1b[Kconst UMat& image\x1b[m\x1b[K);\n'}
+[12.674647] (camera1-2) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[12.675197] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[12.675711] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[12.676214] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.676798] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:938:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _T2, int m, int n> cv::MatxCommaInitializer<_Tp, m, n> cv::operator<<(const cv::Matx<_Tp, m, n>&, _T2)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.677335] (camera1-2) StderrLine: {'line': b'  938 | MatxCommaInitializer<_Tp, m, n> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (const Matx<_Tp, m, n>& mtx, _T2 val)\n'}
+[12.677865] (camera1-2) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.678382] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:938:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.678903] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.679414] (camera1-2) StderrLine: {'line': b'   34 |     writer << \x1b[01;36m\x1b[Koutput_video\x1b[m\x1b[K;\n'}
+[12.679910] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.680435] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[12.680984] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[12.681469] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.681935] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1151:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _T2, int cn> cv::VecCommaInitializer<_Tp, cn> cv::operator<<(const cv::Vec<_Tp, n>&, _T2)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.682438] (camera1-2) StderrLine: {'line': b' 1151 | VecCommaInitializer<_Tp, cn> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (const Vec<_Tp, cn>& vec, _T2 val)\n'}
+[12.682943] (camera1-2) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.683429] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1151:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.683958] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Vec<_Tp, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.684531] (camera1-2) StderrLine: {'line': b'   34 |     writer << \x1b[01;36m\x1b[Koutput_video\x1b[m\x1b[K;\n'}
+[12.685082] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.685658] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3724\x1b[m\x1b[K,\n'}
+[12.686170] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[12.686679] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[12.687187] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.687732] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3345:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class T2> cv::MatCommaInitializer_<_Tp> cv::operator<<(const cv::Mat_<_Tp>&, T2)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.688252] (camera1-2) StderrLine: {'line': b' 3345 | MatCommaInitializer_<_Tp> \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (const Mat_<_Tp>& m, T2 val)\n'}
+[12.688877] (camera1-2) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.689398] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3345:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.689928] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.690432] (camera1-2) StderrLine: {'line': b'   34 |     writer << \x1b[01;36m\x1b[Koutput_video\x1b[m\x1b[K;\n'}
+[12.690934] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.691424] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:60\x1b[m\x1b[K,\n'}
+[12.691936] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[12.692486] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.693033] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:791:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::FileStorage& cv::operator<<(cv::FileStorage&, const String&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.693593] (camera1-2) StderrLine: {'line': b'  791 | CV_EXPORTS FileStorage& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (FileStorage& fs, const String& str);\n'}
+[12.694115] (camera1-2) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.694711] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:791:51:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kcv::FileStorage&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.695234] (camera1-2) StderrLine: {'line': b'  791 | CV_EXPORTS FileStorage& operator << (\x1b[01;36m\x1b[KFileStorage& fs\x1b[m\x1b[K, const String& str);\n'}
+[12.695749] (camera1-2) StderrLine: {'line': b'      |                                      \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[12.696264] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1206:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::FileStorage& cv::operator<<(cv::FileStorage&, const _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.696881] (camera1-2) StderrLine: {'line': b' 1206 | FileStorage& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (FileStorage& fs, const _Tp& value)\n'}
+[12.697481] (camera1-2) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.698004] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1206:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.698554] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Kwriter\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kcv::FileStorage&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.699137] (camera1-2) StderrLine: {'line': b'   34 |     \x1b[01;36m\x1b[Kwriter\x1b[m\x1b[K << output_video;\n'}
+[12.699651] (camera1-2) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[12.700167] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:60\x1b[m\x1b[K,\n'}
+[12.700772] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[12.701308] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.701838] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1221:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::FileStorage& cv::operator<<(cv::FileStorage&, const char*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.702370] (camera1-2) StderrLine: {'line': b' 1221 | FileStorage& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (FileStorage& fs, const char* str)\n'}
+[12.702912] (camera1-2) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.703434] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1221:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kcv::FileStorage&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.703969] (camera1-2) StderrLine: {'line': b' 1221 | FileStorage& operator << (\x1b[01;36m\x1b[KFileStorage& fs\x1b[m\x1b[K, const char* str)\n'}
+[12.704536] (camera1-2) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[12.705111] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1229:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::FileStorage& cv::operator<<(cv::FileStorage&, char*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.705651] (camera1-2) StderrLine: {'line': b' 1229 | FileStorage& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (FileStorage& fs, char* value)\n'}
+[12.706165] (camera1-2) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.706679] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/persistence.hpp:1229:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kcv::FileStorage&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.707255] (camera1-2) StderrLine: {'line': b' 1229 | FileStorage& operator << (\x1b[01;36m\x1b[KFileStorage& fs\x1b[m\x1b[K, char* value)\n'}
+[12.707788] (camera1-2) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[12.708343] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[12.708909] (-) TimerEvent: {}
+[12.709888] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.710599] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3044:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::String& cv::operator<<(cv::String&, cv::Ptr<cv::Formatted>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.711165] (camera1-2) StderrLine: {'line': b' 3044 | String& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (String& out, Ptr<Formatted> fmtd)\n'}
+[12.711699] (camera1-2) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.712220] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3044:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kcv::String&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<char>&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[12.712848] (camera1-2) StderrLine: {'line': b' 3044 | String& operator << (\x1b[01;36m\x1b[KString& out\x1b[m\x1b[K, Ptr<Formatted> fmtd)\n'}
+[12.713392] (camera1-2) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[12.713907] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3053:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::String& cv::operator<<(cv::String&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.714453] (camera1-2) StderrLine: {'line': b' 3053 | String& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (String& out, const Mat& mtx)\n'}
+[12.715181] (camera1-2) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.715916] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3053:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kcv::String&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<char>&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[12.716639] (camera1-2) StderrLine: {'line': b' 3053 | String& operator << (\x1b[01;36m\x1b[KString& out\x1b[m\x1b[K, const Mat& mtx)\n'}
+[12.717316] (camera1-2) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[12.717994] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3292\x1b[m\x1b[K,\n'}
+[12.718593] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[12.719112] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.719615] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:77:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::ostream& cv::operator<<(std::ostream&, cv::Ptr<cv::Formatted>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.720129] (camera1-2) StderrLine: {'line': b'   77 | std::ostream& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (std::ostream& out, Ptr<Formatted> fmtd)\n'}
+[12.720719] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.721267] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:77:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::ostream&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[12.721841] (camera1-2) StderrLine: {'line': b'   77 | std::ostream& operator << (\x1b[01;36m\x1b[Kstd::ostream& out\x1b[m\x1b[K, Ptr<Formatted> fmtd)\n'}
+[12.722363] (camera1-2) StderrLine: {'line': b'      |                            \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[12.722963] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:86:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::ostream& cv::operator<<(std::ostream&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.723501] (camera1-2) StderrLine: {'line': b'   86 | std::ostream& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (std::ostream& out, const Mat& mtx)\n'}
+[12.724002] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.724540] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:86:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::ostream&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[12.725133] (camera1-2) StderrLine: {'line': b'   86 | std::ostream& operator << (\x1b[01;36m\x1b[Kstd::ostream& out\x1b[m\x1b[K, const Mat& mtx)\n'}
+[12.725669] (camera1-2) StderrLine: {'line': b'      |                            \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[12.726196] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:92:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::ostream& cv::operator<<(std::ostream&, const cv::UMat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.726705] (camera1-2) StderrLine: {'line': b'   92 | std::ostream& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (std::ostream& out, const UMat& m)\n'}
+[12.727229] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.727769] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:92:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::ostream&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[12.728334] (camera1-2) StderrLine: {'line': b'   92 | std::ostream& operator << (\x1b[01;36m\x1b[Kstd::ostream& out\x1b[m\x1b[K, const UMat& m)\n'}
+[12.728956] (camera1-2) StderrLine: {'line': b'      |                            \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[12.729500] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:98:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::ostream& cv::operator<<(std::ostream&, const cv::Complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.730032] (camera1-2) StderrLine: {'line': b'   98 | std::ostream& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (std::ostream& out, const Complex<_Tp>& c)\n'}
+[12.730558] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.731077] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:98:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.731593] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.732109] (camera1-2) StderrLine: {'line': b'   34 |     writer << \x1b[01;36m\x1b[Koutput_video\x1b[m\x1b[K;\n'}
+[12.732706] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.733230] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3292\x1b[m\x1b[K,\n'}
+[12.733830] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[12.734391] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.734907] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:104:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::ostream& cv::operator<<(std::ostream&, const std::vector<cv::Point_<_Tp> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.735474] (camera1-2) StderrLine: {'line': b'  104 | std::ostream& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (std::ostream& out, const std::vector<Point_<_Tp> >& vec)\n'}
+[12.736001] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.736588] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:104:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.737158] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<cv::Point_<_Tp> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.737687] (camera1-2) StderrLine: {'line': b'   34 |     writer << \x1b[01;36m\x1b[Koutput_video\x1b[m\x1b[K;\n'}
+[12.738184] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.738691] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3292\x1b[m\x1b[K,\n'}
+[12.739191] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[12.739697] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.740215] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:111:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::ostream& cv::operator<<(std::ostream&, const std::vector<cv::Point3_<_Tp> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.740820] (camera1-2) StderrLine: {'line': b'  111 | std::ostream& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (std::ostream& out, const std::vector<Point3_<_Tp> >& vec)\n'}
+[12.741408] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.741898] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:111:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.742394] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<cv::Point3_<_Tp> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.742899] (camera1-2) StderrLine: {'line': b'   34 |     writer << \x1b[01;36m\x1b[Koutput_video\x1b[m\x1b[K;\n'}
+[12.743410] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.743945] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3292\x1b[m\x1b[K,\n'}
+[12.744509] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[12.745045] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.745558] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:118:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> std::ostream& cv::operator<<(std::ostream&, const cv::Matx<_Tp, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.746191] (camera1-2) StderrLine: {'line': b'  118 | std::ostream& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (std::ostream& out, const Matx<_Tp, m, n>& matx)\n'}
+[12.746726] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.747236] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:118:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.747756] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.748271] (camera1-2) StderrLine: {'line': b'   34 |     writer << \x1b[01;36m\x1b[Koutput_video\x1b[m\x1b[K;\n'}
+[12.748867] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.749373] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3292\x1b[m\x1b[K,\n'}
+[12.749880] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[12.750401] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.750924] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:124:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::ostream& cv::operator<<(std::ostream&, const cv::Point_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.751460] (camera1-2) StderrLine: {'line': b'  124 | std::ostream& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (std::ostream& out, const Point_<_Tp>& p)\n'}
+[12.751979] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.752555] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:124:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.753121] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Point_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.753645] (camera1-2) StderrLine: {'line': b'   34 |     writer << \x1b[01;36m\x1b[Koutput_video\x1b[m\x1b[K;\n'}
+[12.754158] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.754694] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3292\x1b[m\x1b[K,\n'}
+[12.755235] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[12.755827] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.756356] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:131:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::ostream& cv::operator<<(std::ostream&, const cv::Point3_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.757015] (camera1-2) StderrLine: {'line': b'  131 | std::ostream& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (std::ostream& out, const Point3_<_Tp>& p)\n'}
+[12.757564] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.758133] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:131:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.758654] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Point3_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.759196] (camera1-2) StderrLine: {'line': b'   34 |     writer << \x1b[01;36m\x1b[Koutput_video\x1b[m\x1b[K;\n'}
+[12.759747] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.760259] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3292\x1b[m\x1b[K,\n'}
+[12.760853] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[12.761378] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.761917] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:138:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int n> std::ostream& cv::operator<<(std::ostream&, const cv::Vec<_Tp, m>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.762449] (camera1-2) StderrLine: {'line': b'  138 | std::ostream& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (std::ostream& out, const Vec<_Tp, n>& vec)\n'}
+[12.762946] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.763449] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:138:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.763943] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Vec<_Tp, m>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.764558] (camera1-2) StderrLine: {'line': b'   34 |     writer << \x1b[01;36m\x1b[Koutput_video\x1b[m\x1b[K;\n'}
+[12.765100] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.765607] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3292\x1b[m\x1b[K,\n'}
+[12.766103] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[12.766616] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.767144] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:160:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::ostream& cv::operator<<(std::ostream&, const cv::Size_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.767703] (camera1-2) StderrLine: {'line': b'  160 | std::ostream& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (std::ostream& out, const Size_<_Tp>& size)\n'}
+[12.768200] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.768738] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:160:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.769255] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Size_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.769833] (camera1-2) StderrLine: {'line': b'   34 |     writer << \x1b[01;36m\x1b[Koutput_video\x1b[m\x1b[K;\n'}
+[12.770344] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.770836] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3292\x1b[m\x1b[K,\n'}
+[12.771338] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[12.771839] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.772333] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:166:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> std::ostream& cv::operator<<(std::ostream&, const cv::Rect_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.772954] (camera1-2) StderrLine: {'line': b'  166 | std::ostream& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (std::ostream& out, const Rect_<_Tp>& rect)\n'}
+[12.773494] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.774197] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:166:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.774920] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Rect_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.775594] (camera1-2) StderrLine: {'line': b'   34 |     writer << \x1b[01;36m\x1b[Koutput_video\x1b[m\x1b[K;\n'}
+[12.776124] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.776730] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3292\x1b[m\x1b[K,\n'}
+[12.777352] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[12.777893] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.778483] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:171:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::ostream& cv::operator<<(std::ostream&, const cv::MatSize&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.779020] (camera1-2) StderrLine: {'line': b'  171 | static inline std::ostream& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (std::ostream& out, const MatSize& msize)\n'}
+[12.779532] (camera1-2) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.780037] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:171:56:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::ostream&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[12.780603] (camera1-2) StderrLine: {'line': b'  171 | static inline std::ostream& operator << (\x1b[01;36m\x1b[Kstd::ostream& out\x1b[m\x1b[K, const MatSize& msize)\n'}
+[12.781124] (camera1-2) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[12.781619] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:183:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::ostream& cv::operator<<(std::ostream&, cv::Range&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.782175] (camera1-2) StderrLine: {'line': b'  183 | static inline std::ostream &\x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<< (std::ostream &s, cv::Range &r)\n'}
+[12.782699] (camera1-2) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.783181] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:183:55:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::ostream&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[12.783747] (camera1-2) StderrLine: {'line': b'  183 | static inline std::ostream &operator<< (\x1b[01;36m\x1b[Kstd::ostream &s\x1b[m\x1b[K, cv::Range &r)\n'}
+[12.784282] (camera1-2) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[12.784955] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3293\x1b[m\x1b[K,\n'}
+[12.785521] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[12.786038] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3\x1b[m\x1b[K:\n'}
+[12.786522] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/utility.hpp:407:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::ostream& cv::operator<<(std::ostream&, const cv::TickMeter&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.787203] (camera1-2) StderrLine: {'line': b'  407 | std::ostream& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K << (std::ostream& out, const TickMeter& tm)\n'}
+[12.787795] (camera1-2) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.788327] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/utility.hpp:407:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::VideoWriter\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::ostream&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ostream<char>&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[12.789061] (camera1-2) StderrLine: {'line': b'  407 | std::ostream& operator << (\x1b[01;36m\x1b[Kstd::ostream& out\x1b[m\x1b[K, const TickMeter& tm)\n'}
+[12.789576] (camera1-2) StderrLine: {'line': b'      |                            \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[12.809135] (-) TimerEvent: {}
+[12.909944] (-) TimerEvent: {}
+[13.010781] (-) TimerEvent: {}
+[13.111636] (-) TimerEvent: {}
+[13.212511] (-) TimerEvent: {}
+[13.313343] (-) TimerEvent: {}
+[13.414150] (-) TimerEvent: {}
+[13.515018] (-) TimerEvent: {}
+[13.615826] (-) TimerEvent: {}
+[13.716605] (-) TimerEvent: {}
+[13.817360] (-) TimerEvent: {}
+[13.918082] (-) TimerEvent: {}
+[14.018923] (-) TimerEvent: {}
+[14.119654] (-) TimerEvent: {}
+[14.220540] (-) TimerEvent: {}
+[14.321350] (-) TimerEvent: {}
+[14.422140] (-) TimerEvent: {}
+[14.522977] (-) TimerEvent: {}
+[14.623735] (-) TimerEvent: {}
+[14.724582] (-) TimerEvent: {}
+[14.825365] (-) TimerEvent: {}
+[14.926184] (-) TimerEvent: {}
+[15.027048] (-) TimerEvent: {}
+[15.127834] (-) TimerEvent: {}
+[15.228667] (-) TimerEvent: {}
+[15.329434] (-) TimerEvent: {}
+[15.430216] (-) TimerEvent: {}
+[15.530966] (-) TimerEvent: {}
+[15.631737] (-) TimerEvent: {}
+[15.732584] (-) TimerEvent: {}
+[15.833351] (-) TimerEvent: {}
+[15.934160] (-) TimerEvent: {}
+[16.035047] (-) TimerEvent: {}
+[16.135918] (-) TimerEvent: {}
+[16.236754] (-) TimerEvent: {}
+[16.337549] (-) TimerEvent: {}
+[16.438359] (-) TimerEvent: {}
+[16.539240] (-) TimerEvent: {}
+[16.640041] (-) TimerEvent: {}
+[16.740953] (-) TimerEvent: {}
+[16.841818] (-) TimerEvent: {}
+[16.942786] (-) TimerEvent: {}
+[17.043789] (-) TimerEvent: {}
+[17.144759] (-) TimerEvent: {}
+[17.245784] (-) TimerEvent: {}
+[17.346927] (-) TimerEvent: {}
+[17.447808] (-) TimerEvent: {}
+[17.548699] (-) TimerEvent: {}
+[17.649519] (-) TimerEvent: {}
+[17.750322] (-) TimerEvent: {}
+[17.851151] (-) TimerEvent: {}
+[17.951975] (-) TimerEvent: {}
+[18.052815] (-) TimerEvent: {}
+[18.153627] (-) TimerEvent: {}
+[18.254468] (-) TimerEvent: {}
+[18.355248] (-) TimerEvent: {}
+[18.456095] (-) TimerEvent: {}
+[18.556964] (-) TimerEvent: {}
+[18.657784] (-) TimerEvent: {}
+[18.758595] (-) TimerEvent: {}
+[18.859394] (-) TimerEvent: {}
+[18.960198] (-) TimerEvent: {}
+[19.061031] (-) TimerEvent: {}
+[19.161858] (-) TimerEvent: {}
+[19.262676] (-) TimerEvent: {}
+[19.363457] (-) TimerEvent: {}
+[19.464254] (-) TimerEvent: {}
+[19.565098] (-) TimerEvent: {}
+[19.665889] (-) TimerEvent: {}
+[19.766693] (-) TimerEvent: {}
+[19.867504] (-) TimerEvent: {}
+[19.968321] (-) TimerEvent: {}
+[20.069158] (-) TimerEvent: {}
+[20.169943] (-) TimerEvent: {}
+[20.270757] (-) TimerEvent: {}
+[20.371579] (-) TimerEvent: {}
+[20.472343] (-) TimerEvent: {}
+[20.573149] (-) TimerEvent: {}
+[20.673915] (-) TimerEvent: {}
+[20.774721] (-) TimerEvent: {}
+[20.875517] (-) TimerEvent: {}
+[20.976315] (-) TimerEvent: {}
+[21.077154] (-) TimerEvent: {}
+[21.178011] (-) TimerEvent: {}
+[21.243232] (camera1-2) StderrLine: {'line': b'make[2]: *** [CMakeFiles/sub_jetson.dir/build.make:63: CMakeFiles/sub_jetson.dir/src/sub_jetson.cpp.o] Error 1\n'}
+[21.244278] (camera1-2) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/sub_jetson.dir/all] Error 2\n'}
+[21.246105] (camera1-2) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[21.251853] (camera1-2) CommandEnded: {'returncode': 2}
+[21.280078] (-) TimerEvent: {}
+[21.298075] (camera1-2) JobEnded: {'identifier': 'camera1-2', 'rc': 2}
+[21.311750] (-) EventReactorShutdown: {}

@@ -1,0 +1,30 @@
+[0.053s] Invoking command in '/home/ubuntu/ros2_ws/build/camera1-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/camera1-2 -- -j4 -l4
+[0.251s] [35m[1mScanning dependencies of target sub_jetson[0m
+[0.376s] [ 33%] Built target sub_wsl
+[0.406s] [ 66%] Built target pub
+[0.437s] [ 83%] [32mBuilding CXX object CMakeFiles/sub_jetson.dir/src/sub_jetson.cpp.o[0m
+[27.350s] [100%] [32m[1mLinking CXX executable sub_jetson[0m
+[29.663s] [100%] Built target sub_jetson
+[29.700s] Invoked command in '/home/ubuntu/ros2_ws/build/camera1-2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/camera1-2 -- -j4 -l4
+[29.748s] Invoking command in '/home/ubuntu/ros2_ws/build/camera1-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/camera1-2
+[29.779s] -- Install configuration: ""
+[29.780s] -- Execute custom install script
+[29.782s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/lib/camera1-2/pub
+[29.783s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/lib/camera1-2/sub_jetson
+[29.784s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/lib/camera1-2/sub_wsl
+[29.786s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/ament_index/resource_index/package_run_dependencies/camera1-2
+[29.787s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/ament_index/resource_index/parent_prefix_path/camera1-2
+[29.788s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/environment/ament_prefix_path.sh
+[29.790s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/environment/ament_prefix_path.dsv
+[29.791s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/environment/path.sh
+[29.792s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/environment/path.dsv
+[29.793s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/local_setup.bash
+[29.794s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/local_setup.sh
+[29.796s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/local_setup.zsh
+[29.797s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/local_setup.dsv
+[29.797s] -- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/package.dsv
+[29.832s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/ament_index/resource_index/packages/camera1-2
+[29.833s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/cmake/camera1-2Config.cmake
+[29.834s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/cmake/camera1-2Config-version.cmake
+[29.835s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/package.xml
+[29.841s] Invoked command in '/home/ubuntu/ros2_ws/build/camera1-2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/camera1-2

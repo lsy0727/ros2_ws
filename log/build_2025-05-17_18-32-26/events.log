@@ -1,0 +1,388 @@
+[0.000000] (-) TimerEvent: {}
+[0.000982] (-) JobUnselected: {'identifier': 'camera1-1'}
+[0.001257] (-) JobUnselected: {'identifier': 'camera1-2'}
+[0.001885] (camera1-3) JobQueued: {'identifier': 'camera1-3', 'dependencies': OrderedDict()}
+[0.002367] (camera1-3) JobStarted: {'identifier': 'camera1-3'}
+[0.040422] (camera1-3) JobProgress: {'identifier': 'camera1-3', 'progress': 'cmake'}
+[0.043236] (camera1-3) JobProgress: {'identifier': 'camera1-3', 'progress': 'build'}
+[0.046215] (camera1-3) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/build/camera1-3', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_ws/build/camera1-3', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.0.61 63178 22'), ('ROS_NAMESPACE', 'robot0'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-a7f75301-4684-4604-a9b0-a57b63ee3d91.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/ubuntu/ros2_ws'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/remote-cli:/home/ubuntu/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-924e80d648.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/camera1-3:/home/ubuntu/ros2_ws/install/camera1-2:/home/ubuntu/ros2_ws/install/camera1-1:/home/ubuntu/ros2_ws/install/camera:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/ubuntu/ros2_ws/build/camera1-3'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.61 63178 192.168.0.78 22'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/camera1-3:/home/ubuntu/ros2_ws/install/camera1-2:/home/ubuntu/ros2_ws/install/camera1-1:/home/ubuntu/ros2_ws/install/camera:/opt/ros/foxy')]), 'shell': False}
+[0.099299] (-) TimerEvent: {}
+[0.158712] (camera1-3) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.199435] (-) TimerEvent: {}
+[0.249130] (camera1-3) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.299608] (-) TimerEvent: {}
+[0.400229] (-) TimerEvent: {}
+[0.500855] (-) TimerEvent: {}
+[0.601470] (-) TimerEvent: {}
+[0.702097] (-) TimerEvent: {}
+[0.802691] (-) TimerEvent: {}
+[0.903342] (-) TimerEvent: {}
+[0.957717] (camera1-3) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.988358] (camera1-3) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.003506] (-) TimerEvent: {}
+[1.104221] (-) TimerEvent: {}
+[1.144609] (camera1-3) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.156562] (camera1-3) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.204376] (-) TimerEvent: {}
+[1.305023] (-) TimerEvent: {}
+[1.405716] (-) TimerEvent: {}
+[1.506473] (-) TimerEvent: {}
+[1.607152] (-) TimerEvent: {}
+[1.707825] (-) TimerEvent: {}
+[1.808508] (-) TimerEvent: {}
+[1.909423] (-) TimerEvent: {}
+[2.000562] (camera1-3) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.009551] (-) TimerEvent: {}
+[2.110180] (-) TimerEvent: {}
+[2.174850] (camera1-3) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[2.180455] (camera1-3) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.210376] (-) TimerEvent: {}
+[2.311083] (-) TimerEvent: {}
+[2.411741] (-) TimerEvent: {}
+[2.512455] (-) TimerEvent: {}
+[2.613147] (-) TimerEvent: {}
+[2.679517] (camera1-3) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[2.713311] (-) TimerEvent: {}
+[2.813969] (-) TimerEvent: {}
+[2.914632] (-) TimerEvent: {}
+[3.015306] (-) TimerEvent: {}
+[3.070730] (camera1-3) StdoutLine: {'line': b'-- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)\n'}
+[3.115490] (-) TimerEvent: {}
+[3.216152] (-) TimerEvent: {}
+[3.316791] (-) TimerEvent: {}
+[3.417416] (-) TimerEvent: {}
+[3.518068] (-) TimerEvent: {}
+[3.519410] (camera1-3) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.618242] (-) TimerEvent: {}
+[3.620974] (camera1-3) StdoutLine: {'line': b'-- Generating done\n'}
+[3.679686] (camera1-3) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/ros2_ws/build/camera1-3\n'}
+[3.718470] (-) TimerEvent: {}
+[3.790874] (camera1-3) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pub\x1b[0m\n'}
+[3.792563] (camera1-3) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sub\x1b[0m\n'}
+[3.818643] (-) TimerEvent: {}
+[3.877768] (camera1-3) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/pub.dir/src/pub.cpp.o\x1b[0m\n'}
+[3.880305] (camera1-3) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/pub.dir/src/pmain.cpp.o\x1b[0m\n'}
+[3.894527] (camera1-3) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/sub.dir/src/sub.cpp.o\x1b[0m\n'}
+[3.914015] (camera1-3) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/sub.dir/src/smain.cpp.o\x1b[0m\n'}
+[3.918941] (-) TimerEvent: {}
+[3.947174] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pmain.cpp:1:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcamera1-3pub.hpp: No such file or directory\n'}
+[3.948564] (camera1-3) StderrLine: {'line': b'    1 | #include \x1b[01;31m\x1b[K"camera1-3pub.hpp"\x1b[m\x1b[K\n'}
+[3.949785] (camera1-3) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.951254] (camera1-3) StderrLine: {'line': b'compilation terminated.\n'}
+[3.956934] (camera1-3) StderrLine: {'line': b'make[2]: *** [CMakeFiles/pub.dir/build.make:76: CMakeFiles/pub.dir/src/pmain.cpp.o] Error 1\n'}
+[3.957811] (camera1-3) StderrLine: {'line': b'make[2]: *** Waiting for unfinished jobs....\n'}
+[4.019145] (-) TimerEvent: {}
+[4.120638] (-) TimerEvent: {}
+[4.223180] (-) TimerEvent: {}
+[4.324686] (-) TimerEvent: {}
+[4.426396] (-) TimerEvent: {}
+[4.531449] (-) TimerEvent: {}
+[4.632579] (-) TimerEvent: {}
+[4.734054] (-) TimerEvent: {}
+[4.835323] (-) TimerEvent: {}
+[4.936295] (-) TimerEvent: {}
+[5.037277] (-) TimerEvent: {}
+[5.138211] (-) TimerEvent: {}
+[5.239242] (-) TimerEvent: {}
+[5.340474] (-) TimerEvent: {}
+[5.441694] (-) TimerEvent: {}
+[5.542887] (-) TimerEvent: {}
+[5.644145] (-) TimerEvent: {}
+[5.745062] (-) TimerEvent: {}
+[5.846004] (-) TimerEvent: {}
+[5.946923] (-) TimerEvent: {}
+[6.047948] (-) TimerEvent: {}
+[6.149130] (-) TimerEvent: {}
+[6.250451] (-) TimerEvent: {}
+[6.351344] (-) TimerEvent: {}
+[6.452436] (-) TimerEvent: {}
+[6.553408] (-) TimerEvent: {}
+[6.654583] (-) TimerEvent: {}
+[6.755687] (-) TimerEvent: {}
+[6.856604] (-) TimerEvent: {}
+[6.957464] (-) TimerEvent: {}
+[7.058394] (-) TimerEvent: {}
+[7.159303] (-) TimerEvent: {}
+[7.260284] (-) TimerEvent: {}
+[7.361200] (-) TimerEvent: {}
+[7.462194] (-) TimerEvent: {}
+[7.563189] (-) TimerEvent: {}
+[7.664435] (-) TimerEvent: {}
+[7.766283] (-) TimerEvent: {}
+[7.867264] (-) TimerEvent: {}
+[7.968208] (-) TimerEvent: {}
+[8.069185] (-) TimerEvent: {}
+[8.170442] (-) TimerEvent: {}
+[8.271341] (-) TimerEvent: {}
+[8.372263] (-) TimerEvent: {}
+[8.473139] (-) TimerEvent: {}
+[8.574036] (-) TimerEvent: {}
+[8.676309] (-) TimerEvent: {}
+[8.778247] (-) TimerEvent: {}
+[8.879150] (-) TimerEvent: {}
+[8.981079] (-) TimerEvent: {}
+[9.082862] (-) TimerEvent: {}
+[9.183872] (-) TimerEvent: {}
+[9.284991] (-) TimerEvent: {}
+[9.385987] (-) TimerEvent: {}
+[9.486937] (-) TimerEvent: {}
+[9.587926] (-) TimerEvent: {}
+[9.689130] (-) TimerEvent: {}
+[9.790144] (-) TimerEvent: {}
+[9.891440] (-) TimerEvent: {}
+[9.992487] (-) TimerEvent: {}
+[10.093487] (-) TimerEvent: {}
+[10.194540] (-) TimerEvent: {}
+[10.295520] (-) TimerEvent: {}
+[10.396509] (-) TimerEvent: {}
+[10.497443] (-) TimerEvent: {}
+[10.598390] (-) TimerEvent: {}
+[10.699287] (-) TimerEvent: {}
+[10.800321] (-) TimerEvent: {}
+[10.901314] (-) TimerEvent: {}
+[11.002770] (-) TimerEvent: {}
+[11.103669] (-) TimerEvent: {}
+[11.204591] (-) TimerEvent: {}
+[11.305501] (-) TimerEvent: {}
+[11.406499] (-) TimerEvent: {}
+[11.507439] (-) TimerEvent: {}
+[11.608552] (-) TimerEvent: {}
+[11.709971] (-) TimerEvent: {}
+[11.811042] (-) TimerEvent: {}
+[11.912162] (-) TimerEvent: {}
+[12.013369] (-) TimerEvent: {}
+[12.114398] (-) TimerEvent: {}
+[12.215521] (-) TimerEvent: {}
+[12.316547] (-) TimerEvent: {}
+[12.417544] (-) TimerEvent: {}
+[12.518650] (-) TimerEvent: {}
+[12.619663] (-) TimerEvent: {}
+[12.720967] (-) TimerEvent: {}
+[12.822468] (-) TimerEvent: {}
+[12.923542] (-) TimerEvent: {}
+[13.024660] (-) TimerEvent: {}
+[13.125724] (-) TimerEvent: {}
+[13.226684] (-) TimerEvent: {}
+[13.327724] (-) TimerEvent: {}
+[13.428720] (-) TimerEvent: {}
+[13.529807] (-) TimerEvent: {}
+[13.630876] (-) TimerEvent: {}
+[13.731999] (-) TimerEvent: {}
+[13.833108] (-) TimerEvent: {}
+[13.934995] (-) TimerEvent: {}
+[14.036416] (-) TimerEvent: {}
+[14.137395] (-) TimerEvent: {}
+[14.238601] (-) TimerEvent: {}
+[14.339697] (-) TimerEvent: {}
+[14.440849] (-) TimerEvent: {}
+[14.541989] (-) TimerEvent: {}
+[14.642921] (-) TimerEvent: {}
+[14.744212] (-) TimerEvent: {}
+[14.845512] (-) TimerEvent: {}
+[14.946974] (-) TimerEvent: {}
+[15.049066] (-) TimerEvent: {}
+[15.150107] (-) TimerEvent: {}
+[15.251205] (-) TimerEvent: {}
+[15.352469] (-) TimerEvent: {}
+[15.453651] (-) TimerEvent: {}
+[15.554591] (-) TimerEvent: {}
+[15.655519] (-) TimerEvent: {}
+[15.756478] (-) TimerEvent: {}
+[15.857420] (-) TimerEvent: {}
+[15.958573] (-) TimerEvent: {}
+[16.059641] (-) TimerEvent: {}
+[16.161386] (-) TimerEvent: {}
+[16.262545] (-) TimerEvent: {}
+[16.363616] (-) TimerEvent: {}
+[16.464768] (-) TimerEvent: {}
+[16.565812] (-) TimerEvent: {}
+[16.666711] (-) TimerEvent: {}
+[16.768288] (-) TimerEvent: {}
+[16.870443] (-) TimerEvent: {}
+[16.971553] (-) TimerEvent: {}
+[17.072589] (-) TimerEvent: {}
+[17.173523] (-) TimerEvent: {}
+[17.274544] (-) TimerEvent: {}
+[17.375526] (-) TimerEvent: {}
+[17.476539] (-) TimerEvent: {}
+[17.577514] (-) TimerEvent: {}
+[17.678558] (-) TimerEvent: {}
+[17.779604] (-) TimerEvent: {}
+[17.880606] (-) TimerEvent: {}
+[17.981608] (-) TimerEvent: {}
+[18.082607] (-) TimerEvent: {}
+[18.183564] (-) TimerEvent: {}
+[18.284545] (-) TimerEvent: {}
+[18.385504] (-) TimerEvent: {}
+[18.486481] (-) TimerEvent: {}
+[18.587477] (-) TimerEvent: {}
+[18.688559] (-) TimerEvent: {}
+[18.790639] (-) TimerEvent: {}
+[18.891529] (-) TimerEvent: {}
+[18.993031] (-) TimerEvent: {}
+[19.093990] (-) TimerEvent: {}
+[19.194977] (-) TimerEvent: {}
+[19.295937] (-) TimerEvent: {}
+[19.396957] (-) TimerEvent: {}
+[19.497904] (-) TimerEvent: {}
+[19.598892] (-) TimerEvent: {}
+[19.699829] (-) TimerEvent: {}
+[19.800834] (-) TimerEvent: {}
+[19.901820] (-) TimerEvent: {}
+[20.002792] (-) TimerEvent: {}
+[20.103802] (-) TimerEvent: {}
+[20.204901] (-) TimerEvent: {}
+[20.305941] (-) TimerEvent: {}
+[20.408618] (-) TimerEvent: {}
+[20.510286] (-) TimerEvent: {}
+[20.611298] (-) TimerEvent: {}
+[20.712364] (-) TimerEvent: {}
+[20.813720] (-) TimerEvent: {}
+[20.914831] (-) TimerEvent: {}
+[21.017378] (-) TimerEvent: {}
+[21.118986] (-) TimerEvent: {}
+[21.220389] (-) TimerEvent: {}
+[21.321914] (-) TimerEvent: {}
+[21.422736] (-) TimerEvent: {}
+[21.523633] (-) TimerEvent: {}
+[21.624447] (-) TimerEvent: {}
+[21.725241] (-) TimerEvent: {}
+[21.826105] (-) TimerEvent: {}
+[21.926975] (-) TimerEvent: {}
+[22.027891] (-) TimerEvent: {}
+[22.128759] (-) TimerEvent: {}
+[22.229556] (-) TimerEvent: {}
+[22.330397] (-) TimerEvent: {}
+[22.431656] (-) TimerEvent: {}
+[22.532490] (-) TimerEvent: {}
+[22.633369] (-) TimerEvent: {}
+[22.734203] (-) TimerEvent: {}
+[22.835142] (-) TimerEvent: {}
+[22.936165] (-) TimerEvent: {}
+[23.036997] (-) TimerEvent: {}
+[23.137857] (-) TimerEvent: {}
+[23.238701] (-) TimerEvent: {}
+[23.339568] (-) TimerEvent: {}
+[23.440496] (-) TimerEvent: {}
+[23.541435] (-) TimerEvent: {}
+[23.642293] (-) TimerEvent: {}
+[23.743050] (-) TimerEvent: {}
+[23.843994] (-) TimerEvent: {}
+[23.944871] (-) TimerEvent: {}
+[24.045667] (-) TimerEvent: {}
+[24.146514] (-) TimerEvent: {}
+[24.247301] (-) TimerEvent: {}
+[24.348141] (-) TimerEvent: {}
+[24.448884] (-) TimerEvent: {}
+[24.549667] (-) TimerEvent: {}
+[24.650427] (-) TimerEvent: {}
+[24.751256] (-) TimerEvent: {}
+[24.852079] (-) TimerEvent: {}
+[24.953070] (-) TimerEvent: {}
+[25.054001] (-) TimerEvent: {}
+[25.155121] (-) TimerEvent: {}
+[25.255936] (-) TimerEvent: {}
+[25.356763] (-) TimerEvent: {}
+[25.457582] (-) TimerEvent: {}
+[25.558758] (-) TimerEvent: {}
+[25.660006] (-) TimerEvent: {}
+[25.760848] (-) TimerEvent: {}
+[25.861787] (-) TimerEvent: {}
+[25.962617] (-) TimerEvent: {}
+[26.064059] (-) TimerEvent: {}
+[26.164869] (-) TimerEvent: {}
+[26.265641] (-) TimerEvent: {}
+[26.366462] (-) TimerEvent: {}
+[26.467313] (-) TimerEvent: {}
+[26.472307] (camera1-3) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/pub.dir/all] Error 2\n'}
+[26.472904] (camera1-3) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[26.567472] (-) TimerEvent: {}
+[26.668226] (-) TimerEvent: {}
+[26.768925] (-) TimerEvent: {}
+[26.869639] (-) TimerEvent: {}
+[26.970341] (-) TimerEvent: {}
+[27.071044] (-) TimerEvent: {}
+[27.171797] (-) TimerEvent: {}
+[27.272509] (-) TimerEvent: {}
+[27.373192] (-) TimerEvent: {}
+[27.473920] (-) TimerEvent: {}
+[27.574630] (-) TimerEvent: {}
+[27.675342] (-) TimerEvent: {}
+[27.776066] (-) TimerEvent: {}
+[27.876829] (-) TimerEvent: {}
+[27.977538] (-) TimerEvent: {}
+[28.078248] (-) TimerEvent: {}
+[28.178923] (-) TimerEvent: {}
+[28.279683] (-) TimerEvent: {}
+[28.380419] (-) TimerEvent: {}
+[28.481111] (-) TimerEvent: {}
+[28.581815] (-) TimerEvent: {}
+[28.682526] (-) TimerEvent: {}
+[28.783261] (-) TimerEvent: {}
+[28.883959] (-) TimerEvent: {}
+[28.984657] (-) TimerEvent: {}
+[29.085355] (-) TimerEvent: {}
+[29.186067] (-) TimerEvent: {}
+[29.286769] (-) TimerEvent: {}
+[29.387483] (-) TimerEvent: {}
+[29.488263] (-) TimerEvent: {}
+[29.588988] (-) TimerEvent: {}
+[29.689688] (-) TimerEvent: {}
+[29.790387] (-) TimerEvent: {}
+[29.891087] (-) TimerEvent: {}
+[29.991788] (-) TimerEvent: {}
+[30.092523] (-) TimerEvent: {}
+[30.193223] (-) TimerEvent: {}
+[30.293943] (-) TimerEvent: {}
+[30.394683] (-) TimerEvent: {}
+[30.495413] (-) TimerEvent: {}
+[30.596157] (-) TimerEvent: {}
+[30.696859] (-) TimerEvent: {}
+[30.797566] (-) TimerEvent: {}
+[30.898287] (-) TimerEvent: {}
+[30.999075] (-) TimerEvent: {}
+[31.100149] (-) TimerEvent: {}
+[31.201241] (-) TimerEvent: {}
+[31.302196] (-) TimerEvent: {}
+[31.402988] (-) TimerEvent: {}
+[31.503736] (-) TimerEvent: {}
+[31.604485] (-) TimerEvent: {}
+[31.705192] (-) TimerEvent: {}
+[31.805893] (-) TimerEvent: {}
+[31.906596] (-) TimerEvent: {}
+[32.007304] (-) TimerEvent: {}
+[32.108147] (-) TimerEvent: {}
+[32.209106] (-) TimerEvent: {}
+[32.310002] (-) TimerEvent: {}
+[32.410844] (-) TimerEvent: {}
+[32.424039] (camera1-3) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable sub\x1b[0m\n'}
+[32.511033] (-) TimerEvent: {}
+[32.611933] (-) TimerEvent: {}
+[32.713069] (-) TimerEvent: {}
+[32.814144] (-) TimerEvent: {}
+[32.915511] (-) TimerEvent: {}
+[33.016542] (-) TimerEvent: {}
+[33.117517] (-) TimerEvent: {}
+[33.218799] (-) TimerEvent: {}
+[33.319723] (-) TimerEvent: {}
+[33.420564] (-) TimerEvent: {}
+[33.521287] (-) TimerEvent: {}
+[33.622052] (-) TimerEvent: {}
+[33.722873] (-) TimerEvent: {}
+[33.823723] (-) TimerEvent: {}
+[33.924571] (-) TimerEvent: {}
+[34.025454] (-) TimerEvent: {}
+[34.126383] (-) TimerEvent: {}
+[34.227047] (-) TimerEvent: {}
+[34.327907] (-) TimerEvent: {}
+[34.429038] (-) TimerEvent: {}
+[34.529860] (-) TimerEvent: {}
+[34.630681] (-) TimerEvent: {}
+[34.731482] (-) TimerEvent: {}
+[34.832271] (-) TimerEvent: {}
+[34.893283] (camera1-3) StdoutLine: {'line': b'[ 83%] Built target sub\n'}
+[34.896737] (camera1-3) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[34.902773] (camera1-3) CommandEnded: {'returncode': 2}
+[34.932489] (-) TimerEvent: {}
+[34.953371] (camera1-3) JobEnded: {'identifier': 'camera1-3', 'rc': 2}
+[34.965121] (-) EventReactorShutdown: {}

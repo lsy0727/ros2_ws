@@ -1,0 +1,254 @@
+[0.000000] (-) TimerEvent: {}
+[0.001040] (-) JobUnselected: {'identifier': 'camera'}
+[0.001348] (-) JobUnselected: {'identifier': 'camera1-1'}
+[0.002001] (camera1-2) JobQueued: {'identifier': 'camera1-2', 'dependencies': OrderedDict()}
+[0.002488] (camera1-2) JobStarted: {'identifier': 'camera1-2'}
+[0.054801] (camera1-2) JobProgress: {'identifier': 'camera1-2', 'progress': 'cmake'}
+[0.059824] (camera1-2) JobProgress: {'identifier': 'camera1-2', 'progress': 'build'}
+[0.062691] (camera1-2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/build/camera1-2', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_ws/build/camera1-2', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.0.61 63178 22'), ('ROS_NAMESPACE', 'robot0'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-9f175813-2936-487d-ba6c-164f1e567b3b.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/ubuntu/ros2_ws'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/remote-cli:/home/ubuntu/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7e16c5de25.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/camera1-2:/home/ubuntu/ros2_ws/install/camera1-1:/home/ubuntu/ros2_ws/install/camera:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/ubuntu/ros2_ws/build/camera1-2'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.61 63178 192.168.0.78 22'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/camera1-2:/home/ubuntu/ros2_ws/install/camera1-1:/home/ubuntu/ros2_ws/install/camera:/opt/ros/foxy')]), 'shell': False}
+[0.099389] (-) TimerEvent: {}
+[0.200240] (-) TimerEvent: {}
+[0.301075] (-) TimerEvent: {}
+[0.380027] (camera1-2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sub_jetson\x1b[0m\n'}
+[0.401271] (-) TimerEvent: {}
+[0.502943] (-) TimerEvent: {}
+[0.506966] (camera1-2) StdoutLine: {'line': b'[ 33%] Built target sub_wsl\n'}
+[0.510190] (camera1-2) StdoutLine: {'line': b'[ 66%] Built target pub\n'}
+[0.557918] (camera1-2) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/sub_jetson.dir/src/sub_jetson.cpp.o\x1b[0m\n'}
+[0.603152] (-) TimerEvent: {}
+[0.703965] (-) TimerEvent: {}
+[0.804695] (-) TimerEvent: {}
+[0.905626] (-) TimerEvent: {}
+[1.006339] (-) TimerEvent: {}
+[1.107096] (-) TimerEvent: {}
+[1.207828] (-) TimerEvent: {}
+[1.308540] (-) TimerEvent: {}
+[1.409252] (-) TimerEvent: {}
+[1.509974] (-) TimerEvent: {}
+[1.610760] (-) TimerEvent: {}
+[1.711904] (-) TimerEvent: {}
+[1.812751] (-) TimerEvent: {}
+[1.913565] (-) TimerEvent: {}
+[2.014561] (-) TimerEvent: {}
+[2.115318] (-) TimerEvent: {}
+[2.216036] (-) TimerEvent: {}
+[2.316865] (-) TimerEvent: {}
+[2.417584] (-) TimerEvent: {}
+[2.518325] (-) TimerEvent: {}
+[2.619122] (-) TimerEvent: {}
+[2.719875] (-) TimerEvent: {}
+[2.820602] (-) TimerEvent: {}
+[2.921383] (-) TimerEvent: {}
+[3.022131] (-) TimerEvent: {}
+[3.122930] (-) TimerEvent: {}
+[3.223784] (-) TimerEvent: {}
+[3.324571] (-) TimerEvent: {}
+[3.425362] (-) TimerEvent: {}
+[3.526157] (-) TimerEvent: {}
+[3.626894] (-) TimerEvent: {}
+[3.727634] (-) TimerEvent: {}
+[3.828373] (-) TimerEvent: {}
+[3.929160] (-) TimerEvent: {}
+[4.029919] (-) TimerEvent: {}
+[4.130651] (-) TimerEvent: {}
+[4.231407] (-) TimerEvent: {}
+[4.332155] (-) TimerEvent: {}
+[4.432937] (-) TimerEvent: {}
+[4.533686] (-) TimerEvent: {}
+[4.634469] (-) TimerEvent: {}
+[4.735241] (-) TimerEvent: {}
+[4.835986] (-) TimerEvent: {}
+[4.936769] (-) TimerEvent: {}
+[5.037540] (-) TimerEvent: {}
+[5.138309] (-) TimerEvent: {}
+[5.239137] (-) TimerEvent: {}
+[5.339880] (-) TimerEvent: {}
+[5.440752] (-) TimerEvent: {}
+[5.541474] (-) TimerEvent: {}
+[5.642214] (-) TimerEvent: {}
+[5.742938] (-) TimerEvent: {}
+[5.843703] (-) TimerEvent: {}
+[5.944542] (-) TimerEvent: {}
+[6.045319] (-) TimerEvent: {}
+[6.146038] (-) TimerEvent: {}
+[6.246757] (-) TimerEvent: {}
+[6.347521] (-) TimerEvent: {}
+[6.448265] (-) TimerEvent: {}
+[6.549010] (-) TimerEvent: {}
+[6.649739] (-) TimerEvent: {}
+[6.750479] (-) TimerEvent: {}
+[6.851255] (-) TimerEvent: {}
+[6.952012] (-) TimerEvent: {}
+[7.052846] (-) TimerEvent: {}
+[7.153593] (-) TimerEvent: {}
+[7.254312] (-) TimerEvent: {}
+[7.355042] (-) TimerEvent: {}
+[7.455788] (-) TimerEvent: {}
+[7.556497] (-) TimerEvent: {}
+[7.657243] (-) TimerEvent: {}
+[7.757998] (-) TimerEvent: {}
+[7.858757] (-) TimerEvent: {}
+[7.959531] (-) TimerEvent: {}
+[8.060404] (-) TimerEvent: {}
+[8.161182] (-) TimerEvent: {}
+[8.261899] (-) TimerEvent: {}
+[8.362649] (-) TimerEvent: {}
+[8.463405] (-) TimerEvent: {}
+[8.564160] (-) TimerEvent: {}
+[8.664912] (-) TimerEvent: {}
+[8.765682] (-) TimerEvent: {}
+[8.866419] (-) TimerEvent: {}
+[8.967210] (-) TimerEvent: {}
+[9.068046] (-) TimerEvent: {}
+[9.168794] (-) TimerEvent: {}
+[9.269518] (-) TimerEvent: {}
+[9.370252] (-) TimerEvent: {}
+[9.470983] (-) TimerEvent: {}
+[9.571807] (-) TimerEvent: {}
+[9.672633] (-) TimerEvent: {}
+[9.773397] (-) TimerEvent: {}
+[9.874142] (-) TimerEvent: {}
+[9.974903] (-) TimerEvent: {}
+[10.075636] (-) TimerEvent: {}
+[10.176401] (-) TimerEvent: {}
+[10.277155] (-) TimerEvent: {}
+[10.377881] (-) TimerEvent: {}
+[10.478726] (-) TimerEvent: {}
+[10.579457] (-) TimerEvent: {}
+[10.680222] (-) TimerEvent: {}
+[10.781016] (-) TimerEvent: {}
+[10.881759] (-) TimerEvent: {}
+[10.979371] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/context.hpp:19\x1b[m\x1b[K,\n'}
+[10.980166] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/contexts/default_context.hpp:18\x1b[m\x1b[K,\n'}
+[10.980592] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:32\x1b[m\x1b[K,\n'}
+[10.981123] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[10.981573] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[10.981906] (-) TimerEvent: {}
+[10.982314] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[10.982906] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:1\x1b[m\x1b[K:\n'}
+[10.983310] (camera1-2) StderrLine: {'line': b'/usr/include/c++/9/functional: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstruct std::_Bind_check_arity<void (*)(std::shared_ptr<rclcpp::Node>, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >), std::shared_ptr<rclcpp::Node>&, const std::_Placeholder<1>&, cv::VideoWriter&>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.983735] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/functional:787:12:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstruct std::_Bind_helper<false, void (&)(std::shared_ptr<rclcpp::Node>, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >), std::shared_ptr<rclcpp::Node>&, const std::_Placeholder<1>&, cv::VideoWriter&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.984107] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/functional:808:5:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...) [with _Func = void (&)(std::shared_ptr<rclcpp::Node>, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >); _BoundArgs = {std::shared_ptr<rclcpp::Node>&, const std::_Placeholder<1>&, cv::VideoWriter&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.984450] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:58:57:\x1b[m\x1b[K   required from here\n'}
+[10.984865] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/functional:758:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: Wrong number of arguments for function\n'}
+[10.985237] (camera1-2) StderrLine: {'line': b'  758 |       static_assert(\x1b[01;31m\x1b[Ksizeof...(_BoundArgs) == sizeof...(_Args)\x1b[m\x1b[K,\n'}
+[10.985540] (camera1-2) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.021168] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.022461] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:58:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd::function<void(std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (&)(std::shared_ptr<rclcpp::Node>, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >), std::shared_ptr<rclcpp::Node>&, const std::_Placeholder<1>&, cv::VideoWriter&>::type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>, cv::VideoWriter))(std::shared_ptr<rclcpp::Node>, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)>\x1b[m\x1b[K\xe2\x80\x99})\n'}
+[11.023145] (camera1-2) StderrLine: {'line': b'   58 |     fn = std::bind(mysub_callback, node, _1, outputVideo\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[11.023526] (camera1-2) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.023867] (camera1-2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/future:48\x1b[m\x1b[K,\n'}
+[11.024201] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[11.024549] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[11.024972] (camera1-2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:1\x1b[m\x1b[K:\n'}
+[11.025358] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/std_function.h:462:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>& std::function<_Res(_ArgTypes ...)>::operator=(const std::function<_Res(_ArgTypes ...)>&) [with _Res = void; _ArgTypes = {std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.025747] (camera1-2) StderrLine: {'line': b'  462 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const function& __x)\n'}
+[11.026129] (camera1-2) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.026448] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/std_function.h:462:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (&)(std::shared_ptr<rclcpp::Node>, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >), std::shared_ptr<rclcpp::Node>&, const std::_Placeholder<1>&, cv::VideoWriter&>::type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>, cv::VideoWriter))(std::shared_ptr<rclcpp::Node>, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::function<void(std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.026848] (camera1-2) StderrLine: {'line': b'  462 |       operator=(\x1b[01;36m\x1b[Kconst function& __x\x1b[m\x1b[K)\n'}
+[11.027172] (camera1-2) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[11.027476] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/std_function.h:480:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>& std::function<_Res(_ArgTypes ...)>::operator=(std::function<_Res(_ArgTypes ...)>&&) [with _Res = void; _ArgTypes = {std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.027807] (camera1-2) StderrLine: {'line': b'  480 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(function&& __x) noexcept\n'}
+[11.028170] (camera1-2) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.028501] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/std_function.h:480:28:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (&)(std::shared_ptr<rclcpp::Node>, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >), std::shared_ptr<rclcpp::Node>&, const std::_Placeholder<1>&, cv::VideoWriter&>::type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>, cv::VideoWriter))(std::shared_ptr<rclcpp::Node>, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::function<void(std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)>&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.029028] (camera1-2) StderrLine: {'line': b'  480 |       operator=(\x1b[01;36m\x1b[Kfunction&& __x\x1b[m\x1b[K) noexcept\n'}
+[11.029406] (camera1-2) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[11.029754] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/std_function.h:494:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>& std::function<_Res(_ArgTypes ...)>::operator=(std::nullptr_t) [with _Res = void; _ArgTypes = {std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >}; std::nullptr_t = std::nullptr_t]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.030138] (camera1-2) StderrLine: {'line': b'  494 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(nullptr_t) noexcept\n'}
+[11.030529] (camera1-2) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.030849] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/std_function.h:494:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (&)(std::shared_ptr<rclcpp::Node>, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >), std::shared_ptr<rclcpp::Node>&, const std::_Placeholder<1>&, cv::VideoWriter&>::type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>, cv::VideoWriter))(std::shared_ptr<rclcpp::Node>, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::nullptr_t\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.031189] (camera1-2) StderrLine: {'line': b'  494 |       operator=(\x1b[01;36m\x1b[Knullptr_t\x1b[m\x1b[K) noexcept\n'}
+[11.031495] (camera1-2) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[11.031806] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/std_function.h:523:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Functor> std::function<_Res(_ArgTypes ...)>::_Requires<std::function<_Res(_ArgTypes ...)>::_Callable<typename std::decay<_Functor>::type>, std::function<_Res(_ArgTypes ...)>&> std::function<_Res(_ArgTypes ...)>::operator=(_Functor&&) [with _Functor = _Functor; _Res = void; _ArgTypes = {std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.032192] (camera1-2) StderrLine: {'line': b'  523 |  \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(_Functor&& __f)\n'}
+[11.032522] (camera1-2) StderrLine: {'line': b'      |  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.032933] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/std_function.h:523:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[11.033325] (camera1-2) StderrLine: {'line': b'/usr/include/c++/9/bits/std_function.h: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Res, class ... _ArgTypes> template<class _Cond, class _Tp> using _Requires = typename std::enable_if<_Cond::value, _Tp>::type [with _Cond = std::function<void(std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)>::_Callable<std::_Bind<void (*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>, cv::VideoWriter))(std::shared_ptr<rclcpp::Node>, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)>, std::__invoke_result<std::_Bind<void (*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>, cv::VideoWriter))(std::shared_ptr<rclcpp::Node>, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)>&, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > > > >; _Tp = std::function<void(std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)>&; _Res = void; _ArgTypes = {std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >}]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.033795] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/std_function.h:523:2:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Functor> std::function<void(std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)>::_Requires<std::function<void(std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)>::_Callable<typename std::decay<_Tp>::type, std::__invoke_result<typename std::decay<_Tp>::type&, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > > > >, std::function<void(std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)>&> std::function<void(std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)>::operator=<_Functor>(_Functor&&) [with _Functor = std::_Bind<void (*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>, cv::VideoWriter))(std::shared_ptr<rclcpp::Node>, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.034175] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:58:57:\x1b[m\x1b[K   required from here\n'}
+[11.034496] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/std_function.h:385:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, std::function<void(std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.034829] (camera1-2) StderrLine: {'line': b'  385 |  using \x1b[01;31m\x1b[K_Requires\x1b[m\x1b[K = typename enable_if<_Cond::value, _Tp>::type;\n'}
+[11.035152] (camera1-2) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[11.035458] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/std_function.h:532:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Functor> std::function<_Res(_ArgTypes ...)>& std::function<_Res(_ArgTypes ...)>::operator=(std::reference_wrapper<_Functor>) [with _Functor = _Functor; _Res = void; _ArgTypes = {std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.035815] (camera1-2) StderrLine: {'line': b'  532 |  \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(reference_wrapper<_Functor> __f) noexcept\n'}
+[11.036135] (camera1-2) StderrLine: {'line': b'      |  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.036445] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/std_function.h:532:2:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[11.036826] (camera1-2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:58:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind<void (*(std::shared_ptr<rclcpp::Node>, std::_Placeholder<1>, cv::VideoWriter))(std::shared_ptr<rclcpp::Node>, std::shared_ptr<sensor_msgs::msg::CompressedImage_<std::allocator<void> > >)>\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::reference_wrapper<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.037272] (camera1-2) StderrLine: {'line': b'   58 |     fn = std::bind(mysub_callback, node, _1, outputVideo\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[11.037626] (camera1-2) StderrLine: {'line': b'      |                                                         \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[11.082117] (-) TimerEvent: {}
+[11.182883] (-) TimerEvent: {}
+[11.283633] (-) TimerEvent: {}
+[11.384373] (-) TimerEvent: {}
+[11.485142] (-) TimerEvent: {}
+[11.585861] (-) TimerEvent: {}
+[11.686579] (-) TimerEvent: {}
+[11.787299] (-) TimerEvent: {}
+[11.888074] (-) TimerEvent: {}
+[11.988832] (-) TimerEvent: {}
+[12.089564] (-) TimerEvent: {}
+[12.190294] (-) TimerEvent: {}
+[12.291047] (-) TimerEvent: {}
+[12.391804] (-) TimerEvent: {}
+[12.492572] (-) TimerEvent: {}
+[12.593345] (-) TimerEvent: {}
+[12.694073] (-) TimerEvent: {}
+[12.794824] (-) TimerEvent: {}
+[12.895545] (-) TimerEvent: {}
+[12.996300] (-) TimerEvent: {}
+[13.097797] (-) TimerEvent: {}
+[13.198555] (-) TimerEvent: {}
+[13.299290] (-) TimerEvent: {}
+[13.399998] (-) TimerEvent: {}
+[13.500746] (-) TimerEvent: {}
+[13.601451] (-) TimerEvent: {}
+[13.702176] (-) TimerEvent: {}
+[13.802907] (-) TimerEvent: {}
+[13.903639] (-) TimerEvent: {}
+[14.004390] (-) TimerEvent: {}
+[14.105121] (-) TimerEvent: {}
+[14.205843] (-) TimerEvent: {}
+[14.306578] (-) TimerEvent: {}
+[14.407336] (-) TimerEvent: {}
+[14.508057] (-) TimerEvent: {}
+[14.608838] (-) TimerEvent: {}
+[14.709597] (-) TimerEvent: {}
+[14.810341] (-) TimerEvent: {}
+[14.911122] (-) TimerEvent: {}
+[15.011851] (-) TimerEvent: {}
+[15.112625] (-) TimerEvent: {}
+[15.213383] (-) TimerEvent: {}
+[15.314104] (-) TimerEvent: {}
+[15.414831] (-) TimerEvent: {}
+[15.515604] (-) TimerEvent: {}
+[15.616350] (-) TimerEvent: {}
+[15.717101] (-) TimerEvent: {}
+[15.817812] (-) TimerEvent: {}
+[15.918549] (-) TimerEvent: {}
+[16.019316] (-) TimerEvent: {}
+[16.120117] (-) TimerEvent: {}
+[16.220851] (-) TimerEvent: {}
+[16.321560] (-) TimerEvent: {}
+[16.422275] (-) TimerEvent: {}
+[16.523005] (-) TimerEvent: {}
+[16.623771] (-) TimerEvent: {}
+[16.724515] (-) TimerEvent: {}
+[16.825282] (-) TimerEvent: {}
+[16.926015] (-) TimerEvent: {}
+[17.026788] (-) TimerEvent: {}
+[17.127598] (-) TimerEvent: {}
+[17.228714] (-) TimerEvent: {}
+[17.329734] (-) TimerEvent: {}
+[17.430433] (-) TimerEvent: {}
+[17.531190] (-) TimerEvent: {}
+[17.631966] (-) TimerEvent: {}
+[17.732744] (-) TimerEvent: {}
+[17.833494] (-) TimerEvent: {}
+[17.934274] (-) TimerEvent: {}
+[17.964405] (camera1-2) StderrLine: {'line': b'make[2]: *** [CMakeFiles/sub_jetson.dir/build.make:63: CMakeFiles/sub_jetson.dir/src/sub_jetson.cpp.o] Error 1\n'}
+[17.965406] (camera1-2) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/sub_jetson.dir/all] Error 2\n'}
+[17.966197] (camera1-2) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[17.972950] (camera1-2) CommandEnded: {'returncode': 2}
+[18.034434] (-) TimerEvent: {}
+[18.056514] (camera1-2) JobEnded: {'identifier': 'camera1-2', 'rc': 2}
+[18.071186] (-) EventReactorShutdown: {}

@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "camera1-1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "camera1-1_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-camera1-1_uninstall-4a9af103dca52acbffcd.json",
+					"name" : "camera1-1_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pub::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pub-a4bd05b9d719331edb21.json",
+					"name" : "pub",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sub_jetson::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sub_jetson-501cdb52464f8ad607aa.json",
+					"name" : "sub_jetson",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sub_wsl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sub_wsl-06389bb5e5fd34b09c5b.json",
+					"name" : "sub_wsl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-62ead02dac477e5fc8d2.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/ros2_ws/build/camera1-1",
+		"source" : "/home/ubuntu/ros2_ws/src/camera1-1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

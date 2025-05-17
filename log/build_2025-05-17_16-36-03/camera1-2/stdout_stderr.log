@@ -1,0 +1,30 @@
+[35m[1mScanning dependencies of target sub_jetson[0m
+[ 33%] Built target sub_wsl
+[ 66%] Built target pub
+[ 83%] [32mBuilding CXX object CMakeFiles/sub_jetson.dir/src/sub_jetson.cpp.o[0m
+[01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:[m[K In function ‘[01m[Kvoid keyboard_handler(int)[m[K’:
+[01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:14:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   14 | void keyboard_handler([01;35m[Kint signum[m[K)
+      |                       [01;35m[K~~~~^~~~~~[m[K
+[100%] [32m[1mLinking CXX executable sub_jetson[0m
+[100%] Built target sub_jetson
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/lib/camera1-2/pub
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/lib/camera1-2/sub_jetson
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/lib/camera1-2/sub_wsl
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/share/ament_index/resource_index/package_run_dependencies/camera1-2
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/share/ament_index/resource_index/parent_prefix_path/camera1-2
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/environment/ament_prefix_path.sh
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/environment/path.sh
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/environment/path.dsv
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/local_setup.bash
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/local_setup.sh
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/local_setup.zsh
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/local_setup.dsv
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/package.dsv
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/share/ament_index/resource_index/packages/camera1-2
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/cmake/camera1-2Config.cmake
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/cmake/camera1-2Config-version.cmake
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/package.xml

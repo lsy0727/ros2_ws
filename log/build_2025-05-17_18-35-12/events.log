@@ -1,0 +1,597 @@
+[0.000000] (-) TimerEvent: {}
+[0.001188] (-) JobUnselected: {'identifier': 'camera1-1'}
+[0.001541] (-) JobUnselected: {'identifier': 'camera1-2'}
+[0.002401] (camera1-3) JobQueued: {'identifier': 'camera1-3', 'dependencies': OrderedDict()}
+[0.003079] (camera1-3) JobStarted: {'identifier': 'camera1-3'}
+[0.045396] (camera1-3) JobProgress: {'identifier': 'camera1-3', 'progress': 'cmake'}
+[0.048563] (camera1-3) JobProgress: {'identifier': 'camera1-3', 'progress': 'build'}
+[0.051315] (camera1-3) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/build/camera1-3', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_ws/build/camera1-3', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.0.61 63178 22'), ('ROS_NAMESPACE', 'robot0'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-a7f75301-4684-4604-a9b0-a57b63ee3d91.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/ubuntu/ros2_ws'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/remote-cli:/home/ubuntu/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-924e80d648.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/camera1-3:/home/ubuntu/ros2_ws/install/camera1-2:/home/ubuntu/ros2_ws/install/camera1-1:/home/ubuntu/ros2_ws/install/camera:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/ubuntu/ros2_ws/build/camera1-3'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.61 63178 192.168.0.78 22'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/camera1-3:/home/ubuntu/ros2_ws/install/camera1-2:/home/ubuntu/ros2_ws/install/camera1-1:/home/ubuntu/ros2_ws/install/camera:/opt/ros/foxy')]), 'shell': False}
+[0.099187] (-) TimerEvent: {}
+[0.200134] (-) TimerEvent: {}
+[0.239151] (camera1-3) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sub\x1b[0m\n'}
+[0.240263] (camera1-3) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pub\x1b[0m\n'}
+[0.300342] (-) TimerEvent: {}
+[0.401912] (-) TimerEvent: {}
+[0.448929] (camera1-3) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/pub.dir/src/pub.cpp.o\x1b[0m\n'}
+[0.487313] (camera1-3) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/pub.dir/src/pmain.cpp.o\x1b[0m\n'}
+[0.502133] (-) TimerEvent: {}
+[0.565098] (camera1-3) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/sub.dir/src/sub.cpp.o\x1b[0m\n'}
+[0.567958] (camera1-3) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/sub.dir/src/smain.cpp.o\x1b[0m\n'}
+[0.602404] (-) TimerEvent: {}
+[0.703416] (-) TimerEvent: {}
+[0.805063] (-) TimerEvent: {}
+[0.906651] (-) TimerEvent: {}
+[1.008649] (-) TimerEvent: {}
+[1.110264] (-) TimerEvent: {}
+[1.211265] (-) TimerEvent: {}
+[1.312298] (-) TimerEvent: {}
+[1.415347] (-) TimerEvent: {}
+[1.516702] (-) TimerEvent: {}
+[1.618075] (-) TimerEvent: {}
+[1.719095] (-) TimerEvent: {}
+[1.821549] (-) TimerEvent: {}
+[1.922461] (-) TimerEvent: {}
+[2.023441] (-) TimerEvent: {}
+[2.124523] (-) TimerEvent: {}
+[2.226313] (-) TimerEvent: {}
+[2.328325] (-) TimerEvent: {}
+[2.430175] (-) TimerEvent: {}
+[2.531262] (-) TimerEvent: {}
+[2.632262] (-) TimerEvent: {}
+[2.733491] (-) TimerEvent: {}
+[2.834592] (-) TimerEvent: {}
+[2.935748] (-) TimerEvent: {}
+[3.036627] (-) TimerEvent: {}
+[3.137917] (-) TimerEvent: {}
+[3.238953] (-) TimerEvent: {}
+[3.340822] (-) TimerEvent: {}
+[3.442661] (-) TimerEvent: {}
+[3.544578] (-) TimerEvent: {}
+[3.645614] (-) TimerEvent: {}
+[3.747560] (-) TimerEvent: {}
+[3.848520] (-) TimerEvent: {}
+[3.950616] (-) TimerEvent: {}
+[4.052443] (-) TimerEvent: {}
+[4.153602] (-) TimerEvent: {}
+[4.255289] (-) TimerEvent: {}
+[4.357317] (-) TimerEvent: {}
+[4.458503] (-) TimerEvent: {}
+[4.559611] (-) TimerEvent: {}
+[4.660785] (-) TimerEvent: {}
+[4.762578] (-) TimerEvent: {}
+[4.864404] (-) TimerEvent: {}
+[4.966578] (-) TimerEvent: {}
+[5.068397] (-) TimerEvent: {}
+[5.169336] (-) TimerEvent: {}
+[5.270328] (-) TimerEvent: {}
+[5.371431] (-) TimerEvent: {}
+[5.472479] (-) TimerEvent: {}
+[5.573428] (-) TimerEvent: {}
+[5.674375] (-) TimerEvent: {}
+[5.776207] (-) TimerEvent: {}
+[5.878120] (-) TimerEvent: {}
+[5.979109] (-) TimerEvent: {}
+[6.080084] (-) TimerEvent: {}
+[6.182023] (-) TimerEvent: {}
+[6.284049] (-) TimerEvent: {}
+[6.385505] (-) TimerEvent: {}
+[6.487935] (-) TimerEvent: {}
+[6.588947] (-) TimerEvent: {}
+[6.690818] (-) TimerEvent: {}
+[6.792630] (-) TimerEvent: {}
+[6.894481] (-) TimerEvent: {}
+[6.996020] (-) TimerEvent: {}
+[7.096946] (-) TimerEvent: {}
+[7.197849] (-) TimerEvent: {}
+[7.299516] (-) TimerEvent: {}
+[7.400516] (-) TimerEvent: {}
+[7.502274] (-) TimerEvent: {}
+[7.604123] (-) TimerEvent: {}
+[7.706104] (-) TimerEvent: {}
+[7.807940] (-) TimerEvent: {}
+[7.908900] (-) TimerEvent: {}
+[8.010767] (-) TimerEvent: {}
+[8.112532] (-) TimerEvent: {}
+[8.214447] (-) TimerEvent: {}
+[8.316263] (-) TimerEvent: {}
+[8.418257] (-) TimerEvent: {}
+[8.520049] (-) TimerEvent: {}
+[8.621962] (-) TimerEvent: {}
+[8.723802] (-) TimerEvent: {}
+[8.824702] (-) TimerEvent: {}
+[8.925640] (-) TimerEvent: {}
+[9.026652] (-) TimerEvent: {}
+[9.127728] (-) TimerEvent: {}
+[9.228817] (-) TimerEvent: {}
+[9.333761] (-) TimerEvent: {}
+[9.434804] (-) TimerEvent: {}
+[9.535754] (-) TimerEvent: {}
+[9.636813] (-) TimerEvent: {}
+[9.737798] (-) TimerEvent: {}
+[9.838950] (-) TimerEvent: {}
+[9.939978] (-) TimerEvent: {}
+[10.041006] (-) TimerEvent: {}
+[10.141975] (-) TimerEvent: {}
+[10.243139] (-) TimerEvent: {}
+[10.344165] (-) TimerEvent: {}
+[10.445287] (-) TimerEvent: {}
+[10.546278] (-) TimerEvent: {}
+[10.647322] (-) TimerEvent: {}
+[10.748348] (-) TimerEvent: {}
+[10.849422] (-) TimerEvent: {}
+[10.950391] (-) TimerEvent: {}
+[11.051427] (-) TimerEvent: {}
+[11.152469] (-) TimerEvent: {}
+[11.253519] (-) TimerEvent: {}
+[11.354558] (-) TimerEvent: {}
+[11.455633] (-) TimerEvent: {}
+[11.557513] (-) TimerEvent: {}
+[11.659308] (-) TimerEvent: {}
+[11.761049] (-) TimerEvent: {}
+[11.862696] (-) TimerEvent: {}
+[11.964502] (-) TimerEvent: {}
+[12.068194] (-) TimerEvent: {}
+[12.170261] (-) TimerEvent: {}
+[12.271934] (-) TimerEvent: {}
+[12.373697] (-) TimerEvent: {}
+[12.475601] (-) TimerEvent: {}
+[12.577454] (-) TimerEvent: {}
+[12.679091] (-) TimerEvent: {}
+[12.781341] (-) TimerEvent: {}
+[12.883573] (-) TimerEvent: {}
+[12.985424] (-) TimerEvent: {}
+[13.087221] (-) TimerEvent: {}
+[13.188200] (-) TimerEvent: {}
+[13.289346] (-) TimerEvent: {}
+[13.390501] (-) TimerEvent: {}
+[13.491929] (-) TimerEvent: {}
+[13.592933] (-) TimerEvent: {}
+[13.694791] (-) TimerEvent: {}
+[13.796716] (-) TimerEvent: {}
+[13.898393] (-) TimerEvent: {}
+[14.000211] (-) TimerEvent: {}
+[14.102066] (-) TimerEvent: {}
+[14.203850] (-) TimerEvent: {}
+[14.305693] (-) TimerEvent: {}
+[14.407561] (-) TimerEvent: {}
+[14.509729] (-) TimerEvent: {}
+[14.610804] (-) TimerEvent: {}
+[14.711863] (-) TimerEvent: {}
+[14.813827] (-) TimerEvent: {}
+[14.916027] (-) TimerEvent: {}
+[15.017018] (-) TimerEvent: {}
+[15.118069] (-) TimerEvent: {}
+[15.219111] (-) TimerEvent: {}
+[15.321418] (-) TimerEvent: {}
+[15.423497] (-) TimerEvent: {}
+[15.525239] (-) TimerEvent: {}
+[15.626238] (-) TimerEvent: {}
+[15.728069] (-) TimerEvent: {}
+[15.830386] (-) TimerEvent: {}
+[15.931313] (-) TimerEvent: {}
+[16.032277] (-) TimerEvent: {}
+[16.133431] (-) TimerEvent: {}
+[16.234471] (-) TimerEvent: {}
+[16.336265] (-) TimerEvent: {}
+[16.438119] (-) TimerEvent: {}
+[16.539969] (-) TimerEvent: {}
+[16.642136] (-) TimerEvent: {}
+[16.743899] (-) TimerEvent: {}
+[16.845746] (-) TimerEvent: {}
+[16.947551] (-) TimerEvent: {}
+[17.049627] (-) TimerEvent: {}
+[17.151833] (-) TimerEvent: {}
+[17.253937] (-) TimerEvent: {}
+[17.355886] (-) TimerEvent: {}
+[17.457701] (-) TimerEvent: {}
+[17.559696] (-) TimerEvent: {}
+[17.665234] (-) TimerEvent: {}
+[17.767694] (-) TimerEvent: {}
+[17.869451] (-) TimerEvent: {}
+[17.971305] (-) TimerEvent: {}
+[18.073273] (-) TimerEvent: {}
+[18.174598] (-) TimerEvent: {}
+[18.278216] (-) TimerEvent: {}
+[18.381992] (-) TimerEvent: {}
+[18.484048] (-) TimerEvent: {}
+[18.586439] (-) TimerEvent: {}
+[18.688838] (-) TimerEvent: {}
+[18.791083] (-) TimerEvent: {}
+[18.893548] (-) TimerEvent: {}
+[18.995568] (-) TimerEvent: {}
+[19.097771] (-) TimerEvent: {}
+[19.199802] (-) TimerEvent: {}
+[19.301886] (-) TimerEvent: {}
+[19.404814] (-) TimerEvent: {}
+[19.506874] (-) TimerEvent: {}
+[19.596165] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/smain.cpp:1\x1b[m\x1b[K:\n'}
+[19.597396] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/sub.hpp:10:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KCameraSubscriber\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[19.598221] (camera1-3) StderrLine: {'line': b'   10 |     CameraSubscriber(bool use_wsl_display = false\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[19.598949] (camera1-3) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[19.607118] (-) TimerEvent: {}
+[19.709265] (-) TimerEvent: {}
+[19.729605] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/smain.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.731261] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/smain.cpp:8:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCameraSubscriber\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[19.732935] (camera1-3) StderrLine: {'line': b'    8 |     auto node = std::make_shared<\x1b[01;31m\x1b[KCameraSubscriber\x1b[m\x1b[K>(use_wsl_display);\n'}
+[19.734521] (camera1-3) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.738527] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/smain.cpp:8:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >(bool&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.740146] (camera1-3) StderrLine: {'line': b'    8 |     auto node = std::make_shared<CameraSubscriber>(use_wsl_display\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[19.742154] (camera1-3) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[19.744518] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:81\x1b[m\x1b[K,\n'}
+[19.746353] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144\x1b[m\x1b[K,\n'}
+[19.752678] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/sub.hpp:4\x1b[m\x1b[K,\n'}
+[19.753710] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/smain.cpp:1\x1b[m\x1b[K:\n'}
+[19.754609] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:714:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.755539] (camera1-3) StderrLine: {'line': b'  714 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[19.764156] (camera1-3) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.765473] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:714:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[19.766377] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/smain.cpp:8:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[19.767315] (camera1-3) StderrLine: {'line': b'    8 |     auto node = std::make_shared<CameraSubscriber>(use_wsl_display\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[19.768343] (camera1-3) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[19.809526] (-) TimerEvent: {}
+[19.910684] (-) TimerEvent: {}
+[20.011723] (-) TimerEvent: {}
+[20.112866] (-) TimerEvent: {}
+[20.213997] (-) TimerEvent: {}
+[20.317919] (-) TimerEvent: {}
+[20.419162] (-) TimerEvent: {}
+[20.520227] (-) TimerEvent: {}
+[20.589793] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pmain.cpp:1\x1b[m\x1b[K:\n'}
+[20.590641] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/pub.hpp:11:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KCameraPublisher\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[20.591513] (camera1-3) StderrLine: {'line': b'   11 |     CameraPublisher(\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[20.592522] (camera1-3) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[20.620504] (-) TimerEvent: {}
+[20.720750] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:1\x1b[m\x1b[K:\n'}
+[20.721618] (-) TimerEvent: {}
+[20.722354] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/pub.hpp:11:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KCameraPublisher\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[20.723218] (camera1-3) StderrLine: {'line': b'   11 |     CameraPublisher(\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[20.724008] (camera1-3) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[20.779259] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:4:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCameraPublisher\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[20.780943] (camera1-3) StderrLine: {'line': b'    4 | \x1b[01;31m\x1b[KCameraPublisher\x1b[m\x1b[K::CameraPublisher() : Node("campub"), cap_(src_, cv::CAP_GSTREAMER) {\n'}
+[20.782318] (camera1-3) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.783999] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:21:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCameraPublisher\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[20.785287] (camera1-3) StderrLine: {'line': b'   21 | void \x1b[01;31m\x1b[KCameraPublisher\x1b[m\x1b[K::publish_image() {\n'}
+[20.786493] (camera1-3) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.796693] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid publish_image()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[20.797930] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:22:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcap_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[20.798755] (camera1-3) StderrLine: {'line': b'   22 |     \x1b[01;31m\x1b[Kcap_\x1b[m\x1b[K >> frame_;\n'}
+[20.799513] (camera1-3) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[20.811769] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:22:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kframe_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[20.812897] (camera1-3) StderrLine: {'line': b'   22 |     cap_ >> \x1b[01;31m\x1b[Kframe_\x1b[m\x1b[K;\n'}
+[20.814091] (camera1-3) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[20.818342] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[20.819622] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[20.820922] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[20.821728] (-) TimerEvent: {}
+[20.822863] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[20.824042] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[20.825328] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[20.826460] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[20.827606] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[20.828630] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[20.829667] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[20.831367] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/pub.hpp:4\x1b[m\x1b[K,\n'}
+[20.836672] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:1\x1b[m\x1b[K:\n'}
+[20.837526] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:24:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[20.838318] (camera1-3) StderrLine: {'line': b'   24 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Frame empty!");\n'}
+[20.839071] (camera1-3) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.839813] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/logging.hpp:23\x1b[m\x1b[K,\n'}
+[20.840614] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[20.841391] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[20.842153] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[20.842905] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[20.843825] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[20.844819] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[20.845726] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[20.846698] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[20.847500] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[20.848385] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[20.869767] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/pub.hpp:4\x1b[m\x1b[K,\n'}
+[20.870605] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:1\x1b[m\x1b[K:\n'}
+[20.871463] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/logger.hpp:80:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[20.872184] (camera1-3) StderrLine: {'line': b'   80 |   friend Logger \x1b[01;36m\x1b[Krclcpp\x1b[m\x1b[K::get_logger(const std::string & name);\n'}
+[20.872998] (camera1-3) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[20.873811] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[20.874636] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[20.875478] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[20.876345] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[20.877324] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[20.878207] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[20.879123] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[20.880085] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[20.890914] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[20.892208] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[20.893337] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/pub.hpp:4\x1b[m\x1b[K,\n'}
+[20.894360] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:1\x1b[m\x1b[K:\n'}
+[20.895513] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:24:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[20.896623] (camera1-3) StderrLine: {'line': b'   24 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(get_logger(), "Frame empty!");\n'}
+[20.897451] (camera1-3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.898251] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:24:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[20.899010] (camera1-3) StderrLine: {'line': b'   24 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(get_logger(), "Frame empty!");\n'}
+[20.899780] (camera1-3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.905439] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:24:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[20.917308] (camera1-3) StderrLine: {'line': b'   24 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(get_logger(), "Frame empty!");\n'}
+[20.918102] (camera1-3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.918892] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:28:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kheader_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[20.919652] (camera1-3) StderrLine: {'line': b'   28 |     auto msg = cv_bridge::CvImage(\x1b[01;31m\x1b[Kheader_\x1b[m\x1b[K, "bgr8", frame_).toCompressedImageMsg();\n'}
+[20.920488] (camera1-3) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[20.921265] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:29:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[20.922017] (-) TimerEvent: {}
+[20.922744] (camera1-3) StderrLine: {'line': b'   29 |     \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K->publish(*msg);\n'}
+[20.923603] (camera1-3) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.924377] (camera1-3) StderrLine: {'line': b'      |     \x1b[32m\x1b[Krcl_publisher_t\x1b[m\x1b[K\n'}
+[20.925219] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[20.925969] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[20.926762] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[20.927540] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[20.928275] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[20.929114] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[20.929870] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[20.930599] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[20.941117] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[20.941921] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[20.942684] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/pub.hpp:4\x1b[m\x1b[K,\n'}
+[20.943494] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:1\x1b[m\x1b[K:\n'}
+[20.944250] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:30:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[20.945062] (camera1-3) StderrLine: {'line': b'   30 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Published image: %dx%d", frame_.cols, frame_.rows);\n'}
+[20.945843] (camera1-3) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.946598] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/logging.hpp:23\x1b[m\x1b[K,\n'}
+[20.947374] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[20.948127] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[20.948937] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[20.949654] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[20.950369] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[20.951134] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[20.951921] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[20.965025] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[20.965924] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[20.966746] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[20.967604] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/pub.hpp:4\x1b[m\x1b[K,\n'}
+[20.968392] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:1\x1b[m\x1b[K:\n'}
+[20.969241] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/logger.hpp:80:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[20.970073] (camera1-3) StderrLine: {'line': b'   80 |   friend Logger \x1b[01;36m\x1b[Krclcpp\x1b[m\x1b[K::get_logger(const std::string & name);\n'}
+[20.970888] (camera1-3) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[20.971672] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[20.972469] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[20.973248] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[20.974011] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[20.974768] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[20.975504] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[20.976222] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[20.989228] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[20.990008] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[20.990775] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[20.991532] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/pub.hpp:4\x1b[m\x1b[K,\n'}
+[20.992291] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:1\x1b[m\x1b[K:\n'}
+[20.993072] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:30:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[20.993692] (camera1-3) StderrLine: {'line': b'   30 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "Published image: %dx%d", frame_.cols, frame_.rows);\n'}
+[20.994250] (camera1-3) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.994777] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:30:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[20.995362] (camera1-3) StderrLine: {'line': b'   30 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "Published image: %dx%d", frame_.cols, frame_.rows);\n'}
+[20.995937] (camera1-3) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.996585] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:30:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[20.997228] (camera1-3) StderrLine: {'line': b'   30 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "Published image: %dx%d", frame_.cols, frame_.rows);\n'}
+[20.997867] (camera1-3) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.998460] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:1\x1b[m\x1b[K:\n'}
+[20.999210] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/sub.hpp:10:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KCameraSubscriber\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[20.999857] (camera1-3) StderrLine: {'line': b'   10 |     CameraSubscriber(bool use_wsl_display = false\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[21.012503] (camera1-3) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[21.015464] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:4:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCameraSubscriber\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[21.016947] (camera1-3) StderrLine: {'line': b'    4 | \x1b[01;31m\x1b[KCameraSubscriber\x1b[m\x1b[K::CameraSubscriber(bool use_wsl_display)\n'}
+[21.017725] (camera1-3) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.018450] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:23:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCameraSubscriber\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[21.019190] (camera1-3) StderrLine: {'line': b'   23 | void \x1b[01;31m\x1b[KCameraSubscriber\x1b[m\x1b[K::image_callback(const sensor_msgs::msg::CompressedImage::SharedPtr msg) {\n'}
+[21.019965] (camera1-3) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.032637] (-) TimerEvent: {}
+[21.034591] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[21.036614] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[21.037520] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[21.038414] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[21.039301] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[21.040160] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[21.041012] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[21.042332] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[21.043242] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[21.044156] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[21.044933] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/sub.hpp:4\x1b[m\x1b[K,\n'}
+[21.045578] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:1\x1b[m\x1b[K:\n'}
+[21.046228] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid image_callback(sensor_msgs::msg::CompressedImage_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[21.046885] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:26:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[21.047508] (camera1-3) StderrLine: {'line': b'   26 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Failed to decode image!");\n'}
+[21.048080] (camera1-3) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.048756] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/logging.hpp:23\x1b[m\x1b[K,\n'}
+[21.049372] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[21.049947] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[21.050516] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[21.051129] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[21.051828] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[21.064645] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[21.065987] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[21.066694] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[21.067418] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[21.068244] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[21.069590] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/sub.hpp:4\x1b[m\x1b[K,\n'}
+[21.070586] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:1\x1b[m\x1b[K:\n'}
+[21.071504] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/logger.hpp:80:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[21.072452] (camera1-3) StderrLine: {'line': b'   80 |   friend Logger \x1b[01;36m\x1b[Krclcpp\x1b[m\x1b[K::get_logger(const std::string & name);\n'}
+[21.073341] (camera1-3) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[21.085627] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[21.086491] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[21.087255] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[21.087975] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[21.088775] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[21.089542] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[21.090307] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[21.091026] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[21.091736] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[21.092466] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[21.093200] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/sub.hpp:4\x1b[m\x1b[K,\n'}
+[21.093945] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:1\x1b[m\x1b[K:\n'}
+[21.094624] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:26:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[21.095339] (camera1-3) StderrLine: {'line': b'   26 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(get_logger(), "Failed to decode image!");\n'}
+[21.096061] (camera1-3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.109159] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:26:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[21.109997] (camera1-3) StderrLine: {'line': b'   26 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(get_logger(), "Failed to decode image!");\n'}
+[21.110822] (camera1-3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.111614] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:26:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[21.112398] (camera1-3) StderrLine: {'line': b'   26 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(get_logger(), "Failed to decode image!");\n'}
+[21.113271] (camera1-3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.114035] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:30:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kuse_wsl_display_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[21.114761] (camera1-3) StderrLine: {'line': b'   30 |     if (\x1b[01;31m\x1b[Kuse_wsl_display_\x1b[m\x1b[K) {\n'}
+[21.115444] (camera1-3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.116216] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:37:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwriter_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[21.117036] (camera1-3) StderrLine: {'line': b'   37 |         \x1b[01;31m\x1b[Kwriter_\x1b[m\x1b[K << thresh;\n'}
+[21.117759] (camera1-3) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[21.118515] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[21.119237] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[21.119934] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[21.132816] (-) TimerEvent: {}
+[21.133532] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[21.134393] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[21.135225] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[21.135998] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[21.136842] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[21.137628] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[21.138401] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[21.139174] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/sub.hpp:4\x1b[m\x1b[K,\n'}
+[21.140002] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:1\x1b[m\x1b[K:\n'}
+[21.140818] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:40:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[21.141576] (camera1-3) StderrLine: {'line': b'   40 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Received Image: %s, %d, %d",\n'}
+[21.153428] (camera1-3) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.154285] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/logging.hpp:23\x1b[m\x1b[K,\n'}
+[21.155063] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[21.155855] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[21.156638] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[21.157448] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[21.158219] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[21.158981] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[21.159700] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[21.160406] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[21.161227] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[21.161963] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[21.162712] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/sub.hpp:4\x1b[m\x1b[K,\n'}
+[21.163429] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:1\x1b[m\x1b[K:\n'}
+[21.164137] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/logger.hpp:80:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[21.177096] (camera1-3) StderrLine: {'line': b'   80 |   friend Logger \x1b[01;36m\x1b[Krclcpp\x1b[m\x1b[K::get_logger(const std::string & name);\n'}
+[21.177881] (camera1-3) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[21.178680] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[21.179476] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[21.180245] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[21.181113] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[21.181873] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[21.182616] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[21.183343] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[21.184054] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[21.184976] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[21.185720] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[21.186475] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/sub.hpp:4\x1b[m\x1b[K,\n'}
+[21.187205] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:1\x1b[m\x1b[K:\n'}
+[21.187992] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:40:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[21.188770] (camera1-3) StderrLine: {'line': b'   40 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "Received Image: %s, %d, %d",\n'}
+[21.189488] (camera1-3) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.190189] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:40:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[21.190905] (camera1-3) StderrLine: {'line': b'   40 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "Received Image: %s, %d, %d",\n'}
+[21.191586] (camera1-3) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.192306] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:40:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[21.193140] (camera1-3) StderrLine: {'line': b'   40 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "Received Image: %s, %d, %d",\n'}
+[21.193848] (camera1-3) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[21.233060] (-) TimerEvent: {}
+[21.334023] (-) TimerEvent: {}
+[21.435035] (-) TimerEvent: {}
+[21.536186] (-) TimerEvent: {}
+[21.637190] (-) TimerEvent: {}
+[21.738126] (-) TimerEvent: {}
+[21.839145] (-) TimerEvent: {}
+[21.940205] (-) TimerEvent: {}
+[22.041167] (-) TimerEvent: {}
+[22.142103] (-) TimerEvent: {}
+[22.243105] (-) TimerEvent: {}
+[22.344040] (-) TimerEvent: {}
+[22.445015] (-) TimerEvent: {}
+[22.545995] (-) TimerEvent: {}
+[22.646965] (-) TimerEvent: {}
+[22.747921] (-) TimerEvent: {}
+[22.848868] (-) TimerEvent: {}
+[22.949778] (-) TimerEvent: {}
+[23.050727] (-) TimerEvent: {}
+[23.151700] (-) TimerEvent: {}
+[23.253484] (-) TimerEvent: {}
+[23.355406] (-) TimerEvent: {}
+[23.456393] (-) TimerEvent: {}
+[23.557404] (-) TimerEvent: {}
+[23.658413] (-) TimerEvent: {}
+[23.759381] (-) TimerEvent: {}
+[23.860368] (-) TimerEvent: {}
+[23.962334] (-) TimerEvent: {}
+[24.064376] (-) TimerEvent: {}
+[24.161066] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/aarch64-linux-gnu/c++/9/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[24.162301] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[24.163070] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/memory:63\x1b[m\x1b[K,\n'}
+[24.163874] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144\x1b[m\x1b[K,\n'}
+[24.164638] (-) TimerEvent: {}
+[24.166409] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/pub.hpp:4\x1b[m\x1b[K,\n'}
+[24.167243] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pmain.cpp:1\x1b[m\x1b[K:\n'}
+[24.168009] (camera1-3) StderrLine: {'line': b'/usr/include/c++/9/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = Pub; _Args = {}; _Tp = Pub]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.168894] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/alloc_traits.h:483:4:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = Pub; _Args = {}; _Tp = Pub; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<Pub>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.169662] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_base.h:548:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = Pub; _Alloc = std::allocator<Pub>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.171116] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_base.h:679:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = Pub; _Alloc = std::allocator<Pub>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.171973] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_base.h:1344:71:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<Pub>; _Args = {}; _Tp = Pub; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.174727] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:359:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<Pub>; _Args = {}; _Tp = Pub]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.183098] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:701:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = Pub; _Alloc = std::allocator<Pub>; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.183776] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:717:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = Pub; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.184464] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pmain.cpp:7:39:\x1b[m\x1b[K   required from here\n'}
+[24.185141] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ext/new_allocator.h:146:4:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[KPub::Pub()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.185860] (camera1-3) StderrLine: {'line': b'  146 |  { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[24.186601] (camera1-3) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.187339] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pmain.cpp:1\x1b[m\x1b[K:\n'}
+[24.188108] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/pub.hpp:9:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPub::Pub()\x1b[m\x1b[K\xe2\x80\x99 is implicitly deleted because the default definition would be ill-formed:\n'}
+[24.189027] (camera1-3) StderrLine: {'line': b'    9 | class \x1b[01;36m\x1b[KPub\x1b[m\x1b[K : public rclcpp::Node {\n'}
+[24.189745] (camera1-3) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[24.190524] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/pub.hpp:9:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.191259] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[24.191986] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[24.202942] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[24.213200] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/pub.hpp:4\x1b[m\x1b[K,\n'}
+[24.213960] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pmain.cpp:1\x1b[m\x1b[K:\n'}
+[24.214718] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:1193:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&, const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.215460] (camera1-3) StderrLine: {'line': b' 1193 |   \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[24.216193] (camera1-3) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[24.216973] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:1193:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[24.217684] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:98:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.218419] (camera1-3) StderrLine: {'line': b'   98 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[24.219131] (camera1-3) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[24.219840] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:98:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 0 provided\n'}
+[24.231104] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:86:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.233182] (camera1-3) StderrLine: {'line': b'   86 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[24.234022] (camera1-3) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[24.234810] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:86:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[24.264874] (-) TimerEvent: {}
+[24.365820] (-) TimerEvent: {}
+[24.466858] (-) TimerEvent: {}
+[24.568649] (-) TimerEvent: {}
+[24.670327] (-) TimerEvent: {}
+[24.771257] (-) TimerEvent: {}
+[24.872326] (-) TimerEvent: {}
+[24.942158] (camera1-3) StderrLine: {'line': b'make[2]: *** [CMakeFiles/sub.dir/build.make:76: CMakeFiles/sub.dir/src/smain.cpp.o] Error 1\n'}
+[24.943001] (camera1-3) StderrLine: {'line': b'make[2]: *** Waiting for unfinished jobs....\n'}
+[24.972640] (-) TimerEvent: {}
+[25.073602] (-) TimerEvent: {}
+[25.174631] (-) TimerEvent: {}
+[25.211787] (camera1-3) StderrLine: {'line': b'make[2]: *** [CMakeFiles/pub.dir/build.make:76: CMakeFiles/pub.dir/src/pmain.cpp.o] Error 1\n'}
+[25.212686] (camera1-3) StderrLine: {'line': b'make[2]: *** Waiting for unfinished jobs....\n'}
+[25.274858] (-) TimerEvent: {}
+[25.375830] (-) TimerEvent: {}
+[25.476927] (-) TimerEvent: {}
+[25.578277] (-) TimerEvent: {}
+[25.679407] (-) TimerEvent: {}
+[25.781561] (-) TimerEvent: {}
+[25.816595] (camera1-3) StderrLine: {'line': b'make[2]: *** [CMakeFiles/pub.dir/build.make:63: CMakeFiles/pub.dir/src/pub.cpp.o] Error 1\n'}
+[25.817900] (camera1-3) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/pub.dir/all] Error 2\n'}
+[25.818740] (camera1-3) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[25.881847] (-) TimerEvent: {}
+[25.892149] (camera1-3) StderrLine: {'line': b'make[2]: *** [CMakeFiles/sub.dir/build.make:63: CMakeFiles/sub.dir/src/sub.cpp.o] Error 1\n'}
+[25.893149] (camera1-3) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/sub.dir/all] Error 2\n'}
+[25.893857] (camera1-3) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[25.900634] (camera1-3) CommandEnded: {'returncode': 2}
+[25.960011] (camera1-3) JobEnded: {'identifier': 'camera1-3', 'rc': 2}
+[25.975305] (-) EventReactorShutdown: {}

@@ -1,0 +1,11 @@
+/home/ubuntu/ros2_ws/build/camera1-3/CMakeFiles/install/strip.dir
+/home/ubuntu/ros2_ws/build/camera1-3/CMakeFiles/install/local.dir
+/home/ubuntu/ros2_ws/build/camera1-3/CMakeFiles/edit_cache.dir
+/home/ubuntu/ros2_ws/build/camera1-3/CMakeFiles/test.dir
+/home/ubuntu/ros2_ws/build/camera1-3/CMakeFiles/install.dir
+/home/ubuntu/ros2_ws/build/camera1-3/CMakeFiles/list_install_components.dir
+/home/ubuntu/ros2_ws/build/camera1-3/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/ros2_ws/build/camera1-3/CMakeFiles/pub.dir
+/home/ubuntu/ros2_ws/build/camera1-3/CMakeFiles/sub.dir
+/home/ubuntu/ros2_ws/build/camera1-3/CMakeFiles/camera1-3_uninstall.dir
+/home/ubuntu/ros2_ws/build/camera1-3/CMakeFiles/uninstall.dir

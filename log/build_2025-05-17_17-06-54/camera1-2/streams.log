@@ -1,0 +1,55 @@
+[0.049s] Invoking command in '/home/ubuntu/ros2_ws/build/camera1-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/camera1-2 -- -j4 -l4
+[0.253s] [35m[1mScanning dependencies of target sub_jetson[0m
+[0.374s] [ 33%] Built target sub_wsl
+[0.385s] [ 66%] Built target pub
+[0.431s] [ 83%] [32mBuilding CXX object CMakeFiles/sub_jetson.dir/src/sub_jetson.cpp.o[0m
+[1.240s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:52:42:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K-Wmultichar[m[K]
+[1.240s]    52 |     int fourcc = cv::VideoWriter::fourcc([01;35m[K'ｘ'[m[K, '２', '６', '４');
+[1.241s]       |                                          [01;35m[K^~~~~[m[K
+[1.241s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:52:49:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K-Wmultichar[m[K]
+[1.242s]    52 |     int fourcc = cv::VideoWriter::fourcc('ｘ', [01;35m[K'２'[m[K, '６', '４');
+[1.242s]       |                                                 [01;35m[K^~~~~[m[K
+[1.243s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:52:56:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K-Wmultichar[m[K]
+[1.243s]    52 |     int fourcc = cv::VideoWriter::fourcc('ｘ', '２', [01;35m[K'６'[m[K, '４');
+[1.244s]       |                                                        [01;35m[K^~~~~[m[K
+[1.244s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:52:63:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K-Wmultichar[m[K]
+[1.245s]    52 |     int fourcc = cv::VideoWriter::fourcc('ｘ', '２', '６', [01;35m[K'４'[m[K);
+[1.245s]       |                                                               [01;35m[K^~~~~[m[K
+[12.460s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[12.460s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:52:42:[m[K [01;35m[Kwarning: [m[Kunsigned conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ changes value from ‘[01m[K15711640[m[K’ to ‘[01m[K'\230'[m[K’ [[01;35m[K-Woverflow[m[K]
+[12.461s]    52 |     int fourcc = cv::VideoWriter::fourcc([01;35m[K'ｘ'[m[K, '２', '６', '４');
+[12.461s]       |                                          [01;35m[K^~~~~[m[K
+[12.462s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:52:49:[m[K [01;35m[Kwarning: [m[Kunsigned conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ changes value from ‘[01m[K15711378[m[K’ to ‘[01m[K'\222'[m[K’ [[01;35m[K-Woverflow[m[K]
+[12.462s]    52 |     int fourcc = cv::VideoWriter::fourcc('ｘ', [01;35m[K'２'[m[K, '６', '４');
+[12.463s]       |                                                 [01;35m[K^~~~~[m[K
+[12.463s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:52:56:[m[K [01;35m[Kwarning: [m[Kunsigned conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ changes value from ‘[01m[K15711382[m[K’ to ‘[01m[K'\226'[m[K’ [[01;35m[K-Woverflow[m[K]
+[12.464s]    52 |     int fourcc = cv::VideoWriter::fourcc('ｘ', '２', [01;35m[K'６'[m[K, '４');
+[12.464s]       |                                                        [01;35m[K^~~~~[m[K
+[12.465s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:52:63:[m[K [01;35m[Kwarning: [m[Kunsigned conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ changes value from ‘[01m[K15711380[m[K’ to ‘[01m[K'\224'[m[K’ [[01;35m[K-Woverflow[m[K]
+[12.465s]    52 |     int fourcc = cv::VideoWriter::fourcc('ｘ', '２', '６', [01;35m[K'４'[m[K);
+[12.466s]       |                                                               [01;35m[K^~~~~[m[K
+[29.944s] [100%] [32m[1mLinking CXX executable sub_jetson[0m
+[32.278s] [100%] Built target sub_jetson
+[32.318s] Invoked command in '/home/ubuntu/ros2_ws/build/camera1-2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/camera1-2 -- -j4 -l4
+[32.366s] Invoking command in '/home/ubuntu/ros2_ws/build/camera1-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/camera1-2
+[32.398s] -- Install configuration: ""
+[32.399s] -- Execute custom install script
+[32.401s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/lib/camera1-2/pub
+[32.402s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/lib/camera1-2/sub_jetson
+[32.404s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/lib/camera1-2/sub_wsl
+[32.405s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/ament_index/resource_index/package_run_dependencies/camera1-2
+[32.406s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/ament_index/resource_index/parent_prefix_path/camera1-2
+[32.408s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/environment/ament_prefix_path.sh
+[32.409s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/environment/ament_prefix_path.dsv
+[32.410s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/environment/path.sh
+[32.411s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/environment/path.dsv
+[32.412s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/local_setup.bash
+[32.414s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/local_setup.sh
+[32.415s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/local_setup.zsh
+[32.416s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/local_setup.dsv
+[32.417s] -- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/package.dsv
+[32.450s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/ament_index/resource_index/packages/camera1-2
+[32.451s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/cmake/camera1-2Config.cmake
+[32.452s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/cmake/camera1-2Config-version.cmake
+[32.454s] -- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/package.xml
+[32.460s] Invoked command in '/home/ubuntu/ros2_ws/build/camera1-2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/ros2_ws/build/camera1-2

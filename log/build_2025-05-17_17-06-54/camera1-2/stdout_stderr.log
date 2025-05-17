@@ -1,0 +1,51 @@
+[35m[1mScanning dependencies of target sub_jetson[0m
+[ 33%] Built target sub_wsl
+[ 66%] Built target pub
+[ 83%] [32mBuilding CXX object CMakeFiles/sub_jetson.dir/src/sub_jetson.cpp.o[0m
+[01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:52:42:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K-Wmultichar[m[K]
+   52 |     int fourcc = cv::VideoWriter::fourcc([01;35m[K'ｘ'[m[K, '２', '６', '４');
+      |                                          [01;35m[K^~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:52:49:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K-Wmultichar[m[K]
+   52 |     int fourcc = cv::VideoWriter::fourcc('ｘ', [01;35m[K'２'[m[K, '６', '４');
+      |                                                 [01;35m[K^~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:52:56:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K-Wmultichar[m[K]
+   52 |     int fourcc = cv::VideoWriter::fourcc('ｘ', '２', [01;35m[K'６'[m[K, '４');
+      |                                                        [01;35m[K^~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:52:63:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K-Wmultichar[m[K]
+   52 |     int fourcc = cv::VideoWriter::fourcc('ｘ', '２', '６', [01;35m[K'４'[m[K);
+      |                                                               [01;35m[K^~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:52:42:[m[K [01;35m[Kwarning: [m[Kunsigned conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ changes value from ‘[01m[K15711640[m[K’ to ‘[01m[K'\230'[m[K’ [[01;35m[K-Woverflow[m[K]
+   52 |     int fourcc = cv::VideoWriter::fourcc([01;35m[K'ｘ'[m[K, '２', '６', '４');
+      |                                          [01;35m[K^~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:52:49:[m[K [01;35m[Kwarning: [m[Kunsigned conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ changes value from ‘[01m[K15711378[m[K’ to ‘[01m[K'\222'[m[K’ [[01;35m[K-Woverflow[m[K]
+   52 |     int fourcc = cv::VideoWriter::fourcc('ｘ', [01;35m[K'２'[m[K, '６', '４');
+      |                                                 [01;35m[K^~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:52:56:[m[K [01;35m[Kwarning: [m[Kunsigned conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ changes value from ‘[01m[K15711382[m[K’ to ‘[01m[K'\226'[m[K’ [[01;35m[K-Woverflow[m[K]
+   52 |     int fourcc = cv::VideoWriter::fourcc('ｘ', '２', [01;35m[K'６'[m[K, '４');
+      |                                                        [01;35m[K^~~~~[m[K
+[01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:52:63:[m[K [01;35m[Kwarning: [m[Kunsigned conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ changes value from ‘[01m[K15711380[m[K’ to ‘[01m[K'\224'[m[K’ [[01;35m[K-Woverflow[m[K]
+   52 |     int fourcc = cv::VideoWriter::fourcc('ｘ', '２', '６', [01;35m[K'４'[m[K);
+      |                                                               [01;35m[K^~~~~[m[K
+[100%] [32m[1mLinking CXX executable sub_jetson[0m
+[100%] Built target sub_jetson
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/lib/camera1-2/pub
+-- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/lib/camera1-2/sub_jetson
+-- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/lib/camera1-2/sub_wsl
+-- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/ament_index/resource_index/package_run_dependencies/camera1-2
+-- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/ament_index/resource_index/parent_prefix_path/camera1-2
+-- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/environment/path.sh
+-- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/environment/path.dsv
+-- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/local_setup.bash
+-- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/local_setup.sh
+-- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/local_setup.zsh
+-- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/local_setup.dsv
+-- Symlinking: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/package.dsv
+-- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/ament_index/resource_index/packages/camera1-2
+-- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/cmake/camera1-2Config.cmake
+-- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/cmake/camera1-2Config-version.cmake
+-- Up-to-date symlink: /home/ubuntu/ros2_ws/install/camera1-2/share/camera1-2/package.xml

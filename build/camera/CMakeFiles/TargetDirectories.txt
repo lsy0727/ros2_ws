@@ -1,0 +1,12 @@
+/home/ubuntu/ros2_ws/build/camera/CMakeFiles/install/strip.dir
+/home/ubuntu/ros2_ws/build/camera/CMakeFiles/install/local.dir
+/home/ubuntu/ros2_ws/build/camera/CMakeFiles/edit_cache.dir
+/home/ubuntu/ros2_ws/build/camera/CMakeFiles/test.dir
+/home/ubuntu/ros2_ws/build/camera/CMakeFiles/sub_wsl.dir
+/home/ubuntu/ros2_ws/build/camera/CMakeFiles/install.dir
+/home/ubuntu/ros2_ws/build/camera/CMakeFiles/list_install_components.dir
+/home/ubuntu/ros2_ws/build/camera/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/ros2_ws/build/camera/CMakeFiles/sub_jetson.dir
+/home/ubuntu/ros2_ws/build/camera/CMakeFiles/pub.dir
+/home/ubuntu/ros2_ws/build/camera/CMakeFiles/camera_uninstall.dir
+/home/ubuntu/ros2_ws/build/camera/CMakeFiles/uninstall.dir

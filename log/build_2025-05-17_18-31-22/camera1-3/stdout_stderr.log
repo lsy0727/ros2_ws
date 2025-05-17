@@ -1,0 +1,48 @@
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/ros2_ws/build/camera1-3
+[ 33%] [32mBuilding CXX object CMakeFiles/sub.dir/src/sub.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/pub.dir/src/pub.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pub.dir/src/pmain.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/sub.dir/src/smain.cpp.o[0m
+[01m[K/home/ubuntu/ros2_ws/src/camera1-3/src/pmain.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kcamera1-3pub.hpp: No such file or directory
+    1 | #include [01;31m[K"camera1-3pub.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/pub.dir/build.make:76: CMakeFiles/pub.dir/src/pmain.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/pub.hpp:6[m[K,
+                 from [01m[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:1[m[K:
+[01m[K/opt/ros/foxy/include/cv_bridge/cv_bridge.h:43:10:[m[K [01;31m[Kfatal error: [m[Kopencv2/core/core.hpp: No such file or directory
+   43 | #include [01;31m[K<opencv2/core/core.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/pub.dir/build.make:63: CMakeFiles/pub.dir/src/pub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/pub.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/ubuntu/ros2_ws/src/camera1-3/src/smain.cpp:1[m[K:
+[01m[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/sub.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Kopencv2/opencv.hpp: No such file or directory
+    6 | #include [01;31m[K"opencv2/opencv.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:1[m[K:
+[01m[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/sub.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Kopencv2/opencv.hpp: No such file or directory
+    6 | #include [01;31m[K"opencv2/opencv.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/sub.dir/build.make:76: CMakeFiles/sub.dir/src/smain.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/sub.dir/build.make:63: CMakeFiles/sub.dir/src/sub.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/sub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,259 @@
+[0.052s] Invoking command in '/home/ubuntu/ros2_ws/build/camera1-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/camera1-2 -- -j4 -l4
+[0.246s] [35m[1mScanning dependencies of target sub_jetson[0m
+[0.375s] [ 33%] Built target pub
+[0.376s] [ 66%] Built target sub_wsl
+[0.427s] [ 83%] [32mBuilding CXX object CMakeFiles/sub_jetson.dir/src/sub_jetson.cpp.o[0m
+[12.614s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:[m[K In function ‘[01m[Kvoid keyboard_handler(int)[m[K’:
+[12.615s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:14:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[12.615s]    14 | void keyboard_handler([01;35m[Kint signum[m[K)
+[12.616s]       |                       [01;35m[K~~~~^~~~~~[m[K
+[12.633s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:[m[K In function ‘[01m[Kvoid mysub_callback(rclcpp::Node::SharedPtr, sensor_msgs::msg::CompressedImage_<std::allocator<void> >::SharedPtr)[m[K’:
+[12.634s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:29:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMat[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::Mat[m[K’?
+[12.635s]    29 |     [01;31m[KMat[m[K gray, thresh;
+[12.635s]       |     [01;31m[K^~~[m[K
+[12.636s]       |     [32m[Kcv::Mat[m[K
+[12.637s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[12.638s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[12.639s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.639s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:791:18:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::Mat[m[K’ declared here
+[12.640s]   791 | class CV_EXPORTS [01;36m[KMat[m[K
+[12.641s]       |                  [01;36m[K^~~[m[K
+[12.642s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:30:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kgray[m[K’ was not declared in this scope
+[12.642s]    30 |     cv::cvtColor(frame, [01;31m[Kgray[m[K, cv::COLOR_BGR2GRAY);
+[12.643s]       |                         [01;31m[K^~~~[m[K
+[12.649s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:31:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kthresh[m[K’ was not declared in this scope
+[12.651s]    31 |     cv::threshold(gray, [01;31m[Kthresh[m[K, 0, 255, cv::THRESH_BINARY | cv::THRESH_OTSU);
+[12.653s]       |                         [01;31m[K^~~~~~[m[K
+[12.658s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:12:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kcv::VideoWriter[m[K’ and ‘[01m[Kcv::VideoWriter[m[K’)
+[12.660s]    34 |     [32m[Kwriter[m[K [01;31m[K<<[m[K [34m[Koutput_video[m[K;
+[12.661s]       |     [32m[K~~~~~~[m[K [01;31m[K^~[m[K [34m[K~~~~~~~~~~~~[m[K
+[12.661s]       |     [32m[K|[m[K         [34m[K|[m[K
+[12.662s]       |     [32m[K|[m[K         [34m[Kcv::VideoWriter[m[K
+[12.663s]       |     [32m[Kcv::VideoWriter[m[K
+[12.663s] In file included from [01m[K/usr/include/opencv4/opencv2/highgui.hpp:51[m[K,
+[12.664s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:68[m[K,
+[12.664s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.665s] [01m[K/usr/include/opencv4/opencv2/videoio.hpp:921:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual cv::VideoWriter& cv::VideoWriter::operator<<(const cv::Mat&)[m[K’
+[12.665s]   921 |     virtual VideoWriter& [01;36m[Koperator[m[K << (const Mat& image);
+[12.666s]       |                          [01;36m[K^~~~~~~~[m[K
+[12.666s] [01m[K/usr/include/opencv4/opencv2/videoio.hpp:921:50:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::VideoWriter[m[K’ to ‘[01m[Kconst cv::Mat&[m[K’
+[12.667s]   921 |     virtual VideoWriter& operator << ([01;36m[Kconst Mat& image[m[K);
+[12.667s]       |                                       [01;36m[K~~~~~~~~~~~^~~~~[m[K
+[12.668s] [01m[K/usr/include/opencv4/opencv2/videoio.hpp:926:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual cv::VideoWriter& cv::VideoWriter::operator<<(const cv::UMat&)[m[K’
+[12.668s]   926 |     virtual VideoWriter& [01;36m[Koperator[m[K << (const UMat& image);
+[12.669s]       |                          [01;36m[K^~~~~~~~[m[K
+[12.670s] [01m[K/usr/include/opencv4/opencv2/videoio.hpp:926:51:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::VideoWriter[m[K’ to ‘[01m[Kconst cv::UMat&[m[K’
+[12.671s]   926 |     virtual VideoWriter& operator << ([01;36m[Kconst UMat& image[m[K);
+[12.671s]       |                                       [01;36m[K~~~~~~~~~~~~^~~~~[m[K
+[12.672s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[12.672s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[12.673s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.673s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:938:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _T2, int m, int n> cv::MatxCommaInitializer<_Tp, m, n> cv::operator<<(const cv::Matx<_Tp, m, n>&, _T2)[m[K’
+[12.674s]   938 | MatxCommaInitializer<_Tp, m, n> [01;36m[Koperator[m[K << (const Matx<_Tp, m, n>& mtx, _T2 val)
+[12.674s]       |                                 [01;36m[K^~~~~~~~[m[K
+[12.675s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:938:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.675s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::VideoWriter[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+[12.676s]    34 |     writer << [01;36m[Koutput_video[m[K;
+[12.676s]       |               [01;36m[K^~~~~~~~~~~~[m[K
+[12.677s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[12.678s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[12.678s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.678s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1151:30:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _T2, int cn> cv::VecCommaInitializer<_Tp, cn> cv::operator<<(const cv::Vec<_Tp, n>&, _T2)[m[K’
+[12.679s]  1151 | VecCommaInitializer<_Tp, cn> [01;36m[Koperator[m[K << (const Vec<_Tp, cn>& vec, _T2 val)
+[12.679s]       |                              [01;36m[K^~~~~~~~[m[K
+[12.680s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1151:30:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.681s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::VideoWriter[m[K’ is not derived from ‘[01m[Kconst cv::Vec<_Tp, n>[m[K’
+[12.681s]    34 |     writer << [01;36m[Koutput_video[m[K;
+[12.682s]       |               [01;36m[K^~~~~~~~~~~~[m[K
+[12.682s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3724[m[K,
+[12.683s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[12.683s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[12.684s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.684s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3345:27:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class T2> cv::MatCommaInitializer_<_Tp> cv::operator<<(const cv::Mat_<_Tp>&, T2)[m[K’
+[12.685s]  3345 | MatCommaInitializer_<_Tp> [01;36m[Koperator[m[K << (const Mat_<_Tp>& m, T2 val)
+[12.685s]       |                           [01;36m[K^~~~~~~~[m[K
+[12.686s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3345:27:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.686s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::VideoWriter[m[K’ is not derived from ‘[01m[Kconst cv::Mat_<_Tp>[m[K’
+[12.687s]    34 |     writer << [01;36m[Koutput_video[m[K;
+[12.687s]       |               [01;36m[K^~~~~~~~~~~~[m[K
+[12.688s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:60[m[K,
+[12.688s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[12.689s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.690s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:791:25:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::FileStorage& cv::operator<<(cv::FileStorage&, const String&)[m[K’
+[12.690s]   791 | CV_EXPORTS FileStorage& [01;36m[Koperator[m[K << (FileStorage& fs, const String& str);
+[12.691s]       |                         [01;36m[K^~~~~~~~[m[K
+[12.691s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:791:51:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::VideoWriter[m[K’ to ‘[01m[Kcv::FileStorage&[m[K’
+[12.692s]   791 | CV_EXPORTS FileStorage& operator << ([01;36m[KFileStorage& fs[m[K, const String& str);
+[12.692s]       |                                      [01;36m[K~~~~~~~~~~~~~^~[m[K
+[12.693s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1206:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::FileStorage& cv::operator<<(cv::FileStorage&, const _Tp&)[m[K’
+[12.694s]  1206 | FileStorage& [01;36m[Koperator[m[K << (FileStorage& fs, const _Tp& value)
+[12.694s]       |              [01;36m[K^~~~~~~~[m[K
+[12.695s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1206:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.695s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:5:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kwriter[m[K’ (type ‘[01m[Kcv::VideoWriter[m[K’) to type ‘[01m[Kcv::FileStorage&[m[K’
+[12.696s]    34 |     [01;36m[Kwriter[m[K << output_video;
+[12.696s]       |     [01;36m[K^~~~~~[m[K
+[12.697s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:60[m[K,
+[12.697s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[12.698s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.698s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1221:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::FileStorage& cv::operator<<(cv::FileStorage&, const char*)[m[K’
+[12.699s]  1221 | FileStorage& [01;36m[Koperator[m[K << (FileStorage& fs, const char* str)
+[12.699s]       |              [01;36m[K^~~~~~~~[m[K
+[12.700s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1221:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::VideoWriter[m[K’ to ‘[01m[Kcv::FileStorage&[m[K’
+[12.701s]  1221 | FileStorage& operator << ([01;36m[KFileStorage& fs[m[K, const char* str)
+[12.701s]       |                           [01;36m[K~~~~~~~~~~~~~^~[m[K
+[12.702s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1229:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::FileStorage& cv::operator<<(cv::FileStorage&, char*)[m[K’
+[12.702s]  1229 | FileStorage& [01;36m[Koperator[m[K << (FileStorage& fs, char* value)
+[12.703s]       |              [01;36m[K^~~~~~~~[m[K
+[12.703s] [01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1229:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::VideoWriter[m[K’ to ‘[01m[Kcv::FileStorage&[m[K’
+[12.704s]  1229 | FileStorage& operator << ([01;36m[KFileStorage& fs[m[K, char* value)
+[12.704s]       |                           [01;36m[K~~~~~~~~~~~~~^~[m[K
+[12.705s] In file included from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[12.707s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.707s] [01m[K/usr/include/opencv4/opencv2/core.hpp:3044:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::String& cv::operator<<(cv::String&, cv::Ptr<cv::Formatted>)[m[K’
+[12.708s]  3044 | String& [01;36m[Koperator[m[K << (String& out, Ptr<Formatted> fmtd)
+[12.708s]       |         [01;36m[K^~~~~~~~[m[K
+[12.709s] [01m[K/usr/include/opencv4/opencv2/core.hpp:3044:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::VideoWriter[m[K’ to ‘[01m[Kcv::String&[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>&[m[K’}
+[12.709s]  3044 | String& operator << ([01;36m[KString& out[m[K, Ptr<Formatted> fmtd)
+[12.710s]       |                      [01;36m[K~~~~~~~~^~~[m[K
+[12.710s] [01m[K/usr/include/opencv4/opencv2/core.hpp:3053:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::String& cv::operator<<(cv::String&, const cv::Mat&)[m[K’
+[12.711s]  3053 | String& [01;36m[Koperator[m[K << (String& out, const Mat& mtx)
+[12.712s]       |         [01;36m[K^~~~~~~~[m[K
+[12.713s] [01m[K/usr/include/opencv4/opencv2/core.hpp:3053:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::VideoWriter[m[K’ to ‘[01m[Kcv::String&[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>&[m[K’}
+[12.713s]  3053 | String& operator << ([01;36m[KString& out[m[K, const Mat& mtx)
+[12.714s]       |                      [01;36m[K~~~~~~~~^~~[m[K
+[12.715s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3292[m[K,
+[12.715s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[12.716s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.716s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:77:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& cv::operator<<(std::ostream&, cv::Ptr<cv::Formatted>)[m[K’
+[12.717s]    77 | std::ostream& [01;36m[Koperator[m[K << (std::ostream& out, Ptr<Formatted> fmtd)
+[12.717s]       |               [01;36m[K^~~~~~~~[m[K
+[12.718s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:77:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::VideoWriter[m[K’ to ‘[01m[Kstd::ostream&[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>&[m[K’}
+[12.718s]    77 | std::ostream& operator << ([01;36m[Kstd::ostream& out[m[K, Ptr<Formatted> fmtd)
+[12.719s]       |                            [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[12.720s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:86:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& cv::operator<<(std::ostream&, const cv::Mat&)[m[K’
+[12.720s]    86 | std::ostream& [01;36m[Koperator[m[K << (std::ostream& out, const Mat& mtx)
+[12.721s]       |               [01;36m[K^~~~~~~~[m[K
+[12.721s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:86:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::VideoWriter[m[K’ to ‘[01m[Kstd::ostream&[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>&[m[K’}
+[12.722s]    86 | std::ostream& operator << ([01;36m[Kstd::ostream& out[m[K, const Mat& mtx)
+[12.722s]       |                            [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[12.723s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:92:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& cv::operator<<(std::ostream&, const cv::UMat&)[m[K’
+[12.723s]    92 | std::ostream& [01;36m[Koperator[m[K << (std::ostream& out, const UMat& m)
+[12.724s]       |               [01;36m[K^~~~~~~~[m[K
+[12.724s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:92:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::VideoWriter[m[K’ to ‘[01m[Kstd::ostream&[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>&[m[K’}
+[12.725s]    92 | std::ostream& operator << ([01;36m[Kstd::ostream& out[m[K, const UMat& m)
+[12.726s]       |                            [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[12.726s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:98:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::ostream& cv::operator<<(std::ostream&, const cv::Complex<_Tp>&)[m[K’
+[12.727s]    98 | std::ostream& [01;36m[Koperator[m[K << (std::ostream& out, const Complex<_Tp>& c)
+[12.727s]       |               [01;36m[K^~~~~~~~[m[K
+[12.728s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:98:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.728s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::VideoWriter[m[K’ is not derived from ‘[01m[Kconst cv::Complex<_Tp>[m[K’
+[12.729s]    34 |     writer << [01;36m[Koutput_video[m[K;
+[12.729s]       |               [01;36m[K^~~~~~~~~~~~[m[K
+[12.730s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3292[m[K,
+[12.730s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[12.731s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.732s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:104:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::ostream& cv::operator<<(std::ostream&, const std::vector<cv::Point_<_Tp> >&)[m[K’
+[12.732s]   104 | std::ostream& [01;36m[Koperator[m[K << (std::ostream& out, const std::vector<Point_<_Tp> >& vec)
+[12.733s]       |               [01;36m[K^~~~~~~~[m[K
+[12.733s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:104:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.734s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::VideoWriter[m[K’ is not derived from ‘[01m[Kconst std::vector<cv::Point_<_Tp> >[m[K’
+[12.734s]    34 |     writer << [01;36m[Koutput_video[m[K;
+[12.735s]       |               [01;36m[K^~~~~~~~~~~~[m[K
+[12.735s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3292[m[K,
+[12.736s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[12.736s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.737s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:111:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::ostream& cv::operator<<(std::ostream&, const std::vector<cv::Point3_<_Tp> >&)[m[K’
+[12.737s]   111 | std::ostream& [01;36m[Koperator[m[K << (std::ostream& out, const std::vector<Point3_<_Tp> >& vec)
+[12.738s]       |               [01;36m[K^~~~~~~~[m[K
+[12.738s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:111:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.739s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::VideoWriter[m[K’ is not derived from ‘[01m[Kconst std::vector<cv::Point3_<_Tp> >[m[K’
+[12.739s]    34 |     writer << [01;36m[Koutput_video[m[K;
+[12.740s]       |               [01;36m[K^~~~~~~~~~~~[m[K
+[12.741s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3292[m[K,
+[12.741s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[12.742s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.742s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:118:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> std::ostream& cv::operator<<(std::ostream&, const cv::Matx<_Tp, m, n>&)[m[K’
+[12.743s]   118 | std::ostream& [01;36m[Koperator[m[K << (std::ostream& out, const Matx<_Tp, m, n>& matx)
+[12.743s]       |               [01;36m[K^~~~~~~~[m[K
+[12.744s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:118:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.744s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::VideoWriter[m[K’ is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+[12.745s]    34 |     writer << [01;36m[Koutput_video[m[K;
+[12.745s]       |               [01;36m[K^~~~~~~~~~~~[m[K
+[12.746s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3292[m[K,
+[12.746s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[12.747s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.747s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:124:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::ostream& cv::operator<<(std::ostream&, const cv::Point_<_Tp>&)[m[K’
+[12.748s]   124 | std::ostream& [01;36m[Koperator[m[K << (std::ostream& out, const Point_<_Tp>& p)
+[12.749s]       |               [01;36m[K^~~~~~~~[m[K
+[12.749s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:124:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.750s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::VideoWriter[m[K’ is not derived from ‘[01m[Kconst cv::Point_<_Tp>[m[K’
+[12.750s]    34 |     writer << [01;36m[Koutput_video[m[K;
+[12.751s]       |               [01;36m[K^~~~~~~~~~~~[m[K
+[12.751s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3292[m[K,
+[12.752s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[12.752s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.753s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:131:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::ostream& cv::operator<<(std::ostream&, const cv::Point3_<_Tp>&)[m[K’
+[12.754s]   131 | std::ostream& [01;36m[Koperator[m[K << (std::ostream& out, const Point3_<_Tp>& p)
+[12.754s]       |               [01;36m[K^~~~~~~~[m[K
+[12.755s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:131:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.755s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::VideoWriter[m[K’ is not derived from ‘[01m[Kconst cv::Point3_<_Tp>[m[K’
+[12.756s]    34 |     writer << [01;36m[Koutput_video[m[K;
+[12.756s]       |               [01;36m[K^~~~~~~~~~~~[m[K
+[12.757s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3292[m[K,
+[12.757s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[12.758s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.758s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:138:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int n> std::ostream& cv::operator<<(std::ostream&, const cv::Vec<_Tp, m>&)[m[K’
+[12.759s]   138 | std::ostream& [01;36m[Koperator[m[K << (std::ostream& out, const Vec<_Tp, n>& vec)
+[12.759s]       |               [01;36m[K^~~~~~~~[m[K
+[12.760s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:138:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.761s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::VideoWriter[m[K’ is not derived from ‘[01m[Kconst cv::Vec<_Tp, m>[m[K’
+[12.761s]    34 |     writer << [01;36m[Koutput_video[m[K;
+[12.762s]       |               [01;36m[K^~~~~~~~~~~~[m[K
+[12.762s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3292[m[K,
+[12.763s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[12.763s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.764s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:160:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::ostream& cv::operator<<(std::ostream&, const cv::Size_<_Tp>&)[m[K’
+[12.764s]   160 | std::ostream& [01;36m[Koperator[m[K << (std::ostream& out, const Size_<_Tp>& size)
+[12.765s]       |               [01;36m[K^~~~~~~~[m[K
+[12.765s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:160:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.766s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::VideoWriter[m[K’ is not derived from ‘[01m[Kconst cv::Size_<_Tp>[m[K’
+[12.766s]    34 |     writer << [01;36m[Koutput_video[m[K;
+[12.767s]       |               [01;36m[K^~~~~~~~~~~~[m[K
+[12.767s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3292[m[K,
+[12.768s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[12.768s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.769s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:166:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::ostream& cv::operator<<(std::ostream&, const cv::Rect_<_Tp>&)[m[K’
+[12.770s]   166 | std::ostream& [01;36m[Koperator[m[K << (std::ostream& out, const Rect_<_Tp>& rect)
+[12.770s]       |               [01;36m[K^~~~~~~~[m[K
+[12.771s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:166:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.772s] [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:34:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::VideoWriter[m[K’ is not derived from ‘[01m[Kconst cv::Rect_<_Tp>[m[K’
+[12.772s]    34 |     writer << [01;36m[Koutput_video[m[K;
+[12.773s]       |               [01;36m[K^~~~~~~~~~~~[m[K
+[12.773s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3292[m[K,
+[12.774s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[12.775s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.775s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:171:29:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& cv::operator<<(std::ostream&, const cv::MatSize&)[m[K’
+[12.776s]   171 | static inline std::ostream& [01;36m[Koperator[m[K << (std::ostream& out, const MatSize& msize)
+[12.776s]       |                             [01;36m[K^~~~~~~~[m[K
+[12.777s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:171:56:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::VideoWriter[m[K’ to ‘[01m[Kstd::ostream&[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>&[m[K’}
+[12.777s]   171 | static inline std::ostream& operator << ([01;36m[Kstd::ostream& out[m[K, const MatSize& msize)
+[12.778s]       |                                          [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[12.778s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:183:29:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& cv::operator<<(std::ostream&, cv::Range&)[m[K’
+[12.779s]   183 | static inline std::ostream &[01;36m[Koperator[m[K<< (std::ostream &s, cv::Range &r)
+[12.779s]       |                             [01;36m[K^~~~~~~~[m[K
+[12.780s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:183:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::VideoWriter[m[K’ to ‘[01m[Kstd::ostream&[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>&[m[K’}
+[12.780s]   183 | static inline std::ostream &operator<< ([01;36m[Kstd::ostream &s[m[K, cv::Range &r)
+[12.781s]       |                                         [01;36m[K~~~~~~~~~~~~~~^[m[K
+[12.782s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3293[m[K,
+[12.782s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[12.783s]                  from [01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:3[m[K:
+[12.783s] [01m[K/usr/include/opencv4/opencv2/core/utility.hpp:407:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& cv::operator<<(std::ostream&, const cv::TickMeter&)[m[K’
+[12.784s]   407 | std::ostream& [01;36m[Koperator[m[K << (std::ostream& out, const TickMeter& tm)
+[12.784s]       |               [01;36m[K^~~~~~~~[m[K
+[12.785s] [01m[K/usr/include/opencv4/opencv2/core/utility.hpp:407:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::VideoWriter[m[K’ to ‘[01m[Kstd::ostream&[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>&[m[K’}
+[12.786s]   407 | std::ostream& operator << ([01;36m[Kstd::ostream& out[m[K, const TickMeter& tm)
+[12.786s]       |                            [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[21.240s] make[2]: *** [CMakeFiles/sub_jetson.dir/build.make:63: CMakeFiles/sub_jetson.dir/src/sub_jetson.cpp.o] Error 1
+[21.242s] make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/sub_jetson.dir/all] Error 2
+[21.243s] make: *** [Makefile:141: all] Error 2
+[21.249s] Invoked command in '/home/ubuntu/ros2_ws/build/camera1-2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ros2_ws/build/camera1-2 -- -j4 -l4

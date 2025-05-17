@@ -1,0 +1,100 @@
+[0.000000] (-) TimerEvent: {}
+[0.000956] (-) JobUnselected: {'identifier': 'camera1-1'}
+[0.001242] (-) JobUnselected: {'identifier': 'camera1-2'}
+[0.001872] (camera1-3) JobQueued: {'identifier': 'camera1-3', 'dependencies': OrderedDict()}
+[0.002373] (camera1-3) JobStarted: {'identifier': 'camera1-3'}
+[0.041335] (camera1-3) JobProgress: {'identifier': 'camera1-3', 'progress': 'cmake'}
+[0.044190] (camera1-3) JobProgress: {'identifier': 'camera1-3', 'progress': 'build'}
+[0.047106] (camera1-3) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ros2_ws/build/camera1-3', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ros2_ws/build/camera1-3', 'env': OrderedDict([('RCUTILS_LOGGING_BUFFERED_STREAM', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.0.61 63178 22'), ('ROS_NAMESPACE', 'robot0'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.100.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-a7f75301-4684-4604-a9b0-a57b63ee3d91.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/ubuntu/ros2_ws'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.vscode-server/cli/servers/Stable-19e0f9e681ecb8e5c09d8784acaa601316ca4571/server/bin/remote-cli:/home/ubuntu/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-924e80d648.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/camera1-3:/home/ubuntu/ros2_ws/install/camera1-2:/home/ubuntu/ros2_ws/install/camera1-1:/home/ubuntu/ros2_ws/install/camera:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('RCUTILS_LOGGING_USE_STDOUT', '0'), ('PWD', '/home/ubuntu/ros2_ws/build/camera1-3'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.61 63178 192.168.0.78 22'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ros2_ws/install/camera1-3:/home/ubuntu/ros2_ws/install/camera1-2:/home/ubuntu/ros2_ws/install/camera1-1:/home/ubuntu/ros2_ws/install/camera:/opt/ros/foxy')]), 'shell': False}
+[0.099283] (-) TimerEvent: {}
+[0.161738] (camera1-3) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.199439] (-) TimerEvent: {}
+[0.252726] (camera1-3) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.299586] (-) TimerEvent: {}
+[0.400193] (-) TimerEvent: {}
+[0.500832] (-) TimerEvent: {}
+[0.601456] (-) TimerEvent: {}
+[0.702070] (-) TimerEvent: {}
+[0.802686] (-) TimerEvent: {}
+[0.903488] (-) TimerEvent: {}
+[0.955146] (camera1-3) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.984729] (camera1-3) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.003595] (-) TimerEvent: {}
+[1.104247] (-) TimerEvent: {}
+[1.140570] (camera1-3) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.152612] (camera1-3) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.204413] (-) TimerEvent: {}
+[1.305109] (-) TimerEvent: {}
+[1.405794] (-) TimerEvent: {}
+[1.506464] (-) TimerEvent: {}
+[1.607093] (-) TimerEvent: {}
+[1.707762] (-) TimerEvent: {}
+[1.808475] (-) TimerEvent: {}
+[1.909154] (-) TimerEvent: {}
+[1.991164] (camera1-3) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.009335] (-) TimerEvent: {}
+[2.109989] (-) TimerEvent: {}
+[2.165152] (camera1-3) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[2.170513] (camera1-3) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.210158] (-) TimerEvent: {}
+[2.310847] (-) TimerEvent: {}
+[2.411549] (-) TimerEvent: {}
+[2.512244] (-) TimerEvent: {}
+[2.612902] (-) TimerEvent: {}
+[2.667105] (camera1-3) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[2.713082] (-) TimerEvent: {}
+[2.813785] (-) TimerEvent: {}
+[2.914490] (-) TimerEvent: {}
+[3.015166] (-) TimerEvent: {}
+[3.055804] (camera1-3) StdoutLine: {'line': b'-- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)\n'}
+[3.115346] (-) TimerEvent: {}
+[3.216017] (-) TimerEvent: {}
+[3.316626] (-) TimerEvent: {}
+[3.417281] (-) TimerEvent: {}
+[3.419844] (camera1-3) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.457911] (camera1-3) StdoutLine: {'line': b'-- Generating done\n'}
+[3.477240] (camera1-3) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/ros2_ws/build/camera1-3\n'}
+[3.517498] (-) TimerEvent: {}
+[3.618247] (-) TimerEvent: {}
+[3.659527] (camera1-3) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/sub.dir/src/sub.cpp.o\x1b[0m\n'}
+[3.662064] (camera1-3) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/pub.dir/src/pub.cpp.o\x1b[0m\n'}
+[3.672971] (camera1-3) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pub.dir/src/pmain.cpp.o\x1b[0m\n'}
+[3.688557] (camera1-3) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/sub.dir/src/smain.cpp.o\x1b[0m\n'}
+[3.718599] (-) TimerEvent: {}
+[3.721641] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pmain.cpp:1:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcamera1-3pub.hpp: No such file or directory\n'}
+[3.723060] (camera1-3) StderrLine: {'line': b'    1 | #include \x1b[01;31m\x1b[K"camera1-3pub.hpp"\x1b[m\x1b[K\n'}
+[3.724273] (camera1-3) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.726176] (camera1-3) StderrLine: {'line': b'compilation terminated.\n'}
+[3.732906] (camera1-3) StderrLine: {'line': b'make[2]: *** [CMakeFiles/pub.dir/build.make:76: CMakeFiles/pub.dir/src/pmain.cpp.o] Error 1\n'}
+[3.733659] (camera1-3) StderrLine: {'line': b'make[2]: *** Waiting for unfinished jobs....\n'}
+[3.818817] (-) TimerEvent: {}
+[3.920570] (-) TimerEvent: {}
+[4.023761] (-) TimerEvent: {}
+[4.125163] (-) TimerEvent: {}
+[4.127394] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/pub.hpp:6\x1b[m\x1b[K,\n'}
+[4.128225] (camera1-3) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/pub.cpp:1\x1b[m\x1b[K:\n'}
+[4.128810] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/cv_bridge/cv_bridge.h:43:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kopencv2/core/core.hpp: No such file or directory\n'}
+[4.129458] (camera1-3) StderrLine: {'line': b'   43 | #include \x1b[01;31m\x1b[K<opencv2/core/core.hpp>\x1b[m\x1b[K\n'}
+[4.130138] (camera1-3) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.130789] (camera1-3) StderrLine: {'line': b'compilation terminated.\n'}
+[4.132685] (camera1-3) StderrLine: {'line': b'make[2]: *** [CMakeFiles/pub.dir/build.make:63: CMakeFiles/pub.dir/src/pub.cpp.o] Error 1\n'}
+[4.134357] (camera1-3) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/pub.dir/all] Error 2\n'}
+[4.135269] (camera1-3) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[4.142674] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/smain.cpp:1\x1b[m\x1b[K:\n'}
+[4.143960] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/sub.hpp:6:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kopencv2/opencv.hpp: No such file or directory\n'}
+[4.145203] (camera1-3) StderrLine: {'line': b'    6 | #include \x1b[01;31m\x1b[K"opencv2/opencv.hpp"\x1b[m\x1b[K\n'}
+[4.146166] (camera1-3) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.146848] (camera1-3) StderrLine: {'line': b'compilation terminated.\n'}
+[4.147536] (camera1-3) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/src/sub.cpp:1\x1b[m\x1b[K:\n'}
+[4.148290] (camera1-3) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/ros2_ws/src/camera1-3/include/camera1-3/sub.hpp:6:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kopencv2/opencv.hpp: No such file or directory\n'}
+[4.148909] (camera1-3) StderrLine: {'line': b'    6 | #include \x1b[01;31m\x1b[K"opencv2/opencv.hpp"\x1b[m\x1b[K\n'}
+[4.149254] (camera1-3) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.149504] (camera1-3) StderrLine: {'line': b'compilation terminated.\n'}
+[4.151747] (camera1-3) StderrLine: {'line': b'make[2]: *** [CMakeFiles/sub.dir/build.make:76: CMakeFiles/sub.dir/src/smain.cpp.o] Error 1\n'}
+[4.152394] (camera1-3) StderrLine: {'line': b'make[2]: *** Waiting for unfinished jobs....\n'}
+[4.152911] (camera1-3) StderrLine: {'line': b'make[2]: *** [CMakeFiles/sub.dir/build.make:63: CMakeFiles/sub.dir/src/sub.cpp.o] Error 1\n'}
+[4.153290] (camera1-3) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/sub.dir/all] Error 2\n'}
+[4.153806] (camera1-3) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[4.159822] (camera1-3) CommandEnded: {'returncode': 2}
+[4.214627] (camera1-3) JobEnded: {'identifier': 'camera1-3', 'rc': 2}
+[4.217891] (-) EventReactorShutdown: {}

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ubuntu/ros2_ws/build/camera1-1/pub" "/home/ubuntu/ros2_ws/build/camera1-1/sub_jetson" "/home/ubuntu/ros2_ws/build/camera1-1/sub_wsl" "TARGETS" "pub" "sub_jetson" "sub_wsl" "DESTINATION" "lib/camera1-1")

@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target sub_jetson[0m
+[ 33%] Built target pub
+[ 66%] Built target sub_wsl
+[ 83%] [32mBuilding CXX object CMakeFiles/sub_jetson.dir/src/sub_jetson.cpp.o[0m
