@@ -12,7 +12,7 @@ source ~/ros2_ws/install/local_setup.bash
 
 ros2 run camera1-3 sub
 
-ros2 run camera1-3 sub_jetson
+ros2 run camera1-3 sub
 
 - windows
 
