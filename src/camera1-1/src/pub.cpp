@@ -5,7 +5,6 @@
 #include <memory>
 #include <chrono>
 
-// TurtleBot3 CSI 카메라 파이프라인
 std::string src = "nvarguscamerasrc sensor-id=0 ! \
 	video/x-raw(memory:NVMM), width=(int)640, height=(int)360, \
     format=(string)NV12 ! nvvidconv flip-method=0 ! video/x-raw, \
