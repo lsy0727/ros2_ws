@@ -1,5 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.001364] (-) JobUnselected: {'identifier': 'camera'}
-[0.001820] (-) JobUnselected: {'identifier': 'camera1-1'}
-[0.002508] (-) JobUnselected: {'identifier': 'camera1-2'}
-[0.003862] (-) EventReactorShutdown: {}

@@ -1,4 +1,0 @@
-[01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:[m[K In function ‘[01m[Kvoid mysub_callback(rclcpp::Node::SharedPtr, sensor_msgs::msg::CompressedImage_<std::allocator<void> >::SharedPtr, cv::VideoWriter&)[m[K’:
-[01m[K/home/ubuntu/ros2_ws/src/camera1-2/src/sub_jetson.cpp:22:124:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Koutput[m[K’ [[01;35m[K-Wunused-parameter[m[K]
-   22 | void mysub_callback(rclcpp::Node::SharedPtr node, const sensor_msgs::msg::CompressedImage::SharedPtr msg, [01;35m[Kcv::VideoWriter& output[m[Kvideo)
-      |                                                                                                           [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~[m[K
