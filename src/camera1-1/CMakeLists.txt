@@ -1,35 +1,39 @@
-cmake_minimum_required(VERSION 3.16)
-project(camera1-1)
+#include "rclcpp/rclcpp.hpp"
+#include "sensor_msgs/msg/compressed_image.hpp"
+#include "opencv2/opencv.hpp"
+#include <memory>
+#include <functional>
+#include <iostream>
+using std::placeholders::_1;
 
-# Default to C++14
-if(NOT CMAKE_CXX_STANDARD)
-  set(CMAKE_CXX_STANDARD 14)
-endif()
+std::string dst = "appsrc ! videoconvert ! video/x-raw, format=BGRx ! \
+	nvvidconv ! nvv4l2h264enc insert-sps-pps=true ! \
+	h264parse ! rtph264pay pt=96 ! \
+	udpsink host = 192.168.0.2 port = 9007 sync=false";
 
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic)
-endif()
+cv::VideoWriter writer;
 
-# find dependencies
-find_package(ament_cmake REQUIRED)
-find_package(rclcpp REQUIRED)
-find_package(sensor_msgs REQUIRED)
-find_package(cv_bridge REQUIRED)
-find_package(OpenCV REQUIRED)
+void mysub_callback(rclcpp::Node::SharedPtr node, const sensor_msgs::msg::CompressedImage::SharedPtr msg)
+{
+    cv::Mat frame = cv::imdecode(cv::Mat(msg->data),  cv::IMREAD_COLOR);
+    cv::Mat gray, thresh;
+    cv::cvtColor(frame, gray, cv::COLOR_BGR2GRAY);
+    cv::threshold(gray, thresh, 0, 255, cv::THRESH_BINARY | cv::THRESH_OTSU);
+    writer << thresh;
+    RCLCPP_INFO(node->get_logger(), "Received Image : %s,%d,%d", msg->format.c_str(),frame.rows,frame.cols);
+}
+int main(int argc, char* argv[])
+{
+    rclcpp::init(argc, argv);
+    auto node = std::make_shared<rclcpp::Node>("camsub");
 
-#build
-add_executable(pub src/pub.cpp)
-ament_target_dependencies(pub rclcpp sensor_msgs cv_bridge OpenCV)
-add_executable(sub_jetson src/sub_jetson.cpp)
-ament_target_dependencies(sub_jetson rclcpp sensor_msgs OpenCV)
-add_executable(sub_wsl src/sub_wsl.cpp)
-ament_target_dependencies(sub_wsl rclcpp sensor_msgs OpenCV)
-
-# Install
-install(TARGETS
-  pub
-  sub_jetson
-  sub_wsl
-  DESTINATION lib/${PROJECT_NAME})
-
-ament_package()
+    writer.open(dst, 0, (double)30, cv::Size(640, 360), false);
+    if(!writer.isOpened()) { RCLCPP_ERROR(node->get_logger(), "Writer open failed!"); rclcpp::shutdown(); return -1; }
+    auto qos_profile = rclcpp::QoS(rclcpp::KeepLast(10)).best_effort();
+    std::function<void(const sensor_msgs::msg::CompressedImage::SharedPtr msg)> fn;
+    fn = std::bind(mysub_callback, node, _1);
+    auto mysub = node->create_subscription<sensor_msgs::msg::CompressedImage>("image/compressed",qos_profile,fn);
+    rclcpp::spin(node);
+    rclcpp::shutdown();
+    return 0;
+}
