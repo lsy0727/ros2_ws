@@ -1,5 +1,24 @@
 # dxl1
 
+## 빌드
+```
+cd ros2_ws/
+colcon build --symlink-install --packages-select dxl1
+. ros2_ws/install/local_setup.bash
+```
+
+## 실행
+
+- jetson
+```
+ros2 run dxl1 sub
+```
+
+- wsl
+```
+ros2 run dxl1 pub_wsl
+```
+
 ## 패키지 빌드 전 확인
 
 - dynamixel을 제어하려면 U2D2를 인식할 수 있도록 설정을 변경해야함
