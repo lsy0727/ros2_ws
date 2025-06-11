@@ -39,6 +39,9 @@ ros2 run camera1-1 sub_jetson
 gst-launch-1.0 -v udpsrc port=8001 ! ‘application/x-rtp,encodingname=(string)H264,payload=(int)96’ ! rtph264depay ! queue ! avdec_h264 ! videoconvert ! autovideosink
 ```
 
+### 실행결과 (유튜브 업로드)
+
+
 
 
 #  코드설명
