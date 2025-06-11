@@ -3,7 +3,7 @@
 ## 빌드
 ```
 cd ros2_ws/
-colcon build --symlink-install --packages-select dxl1
+colcon build --symlink-install --packages-select dxl_wsl
 . ros2_ws/install/local_setup.bash
 ```
 
@@ -11,12 +11,12 @@ colcon build --symlink-install --packages-select dxl1
 
 - jetson
 ```
-ros2 run dxl1 sub
+ros2 run dxl_wsl sub
 ```
 
 - wsl
 ```
-ros2 run dxl1 pub_wsl
+ros2 run dxl_wsl pub_wsl
 ```
 
 ## 패키지 빌드 전 확인
