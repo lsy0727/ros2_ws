@@ -14,7 +14,8 @@ void mysub_callback(rclcpp::Node::SharedPtr node, const sensor_msgs::msg::Compre
     cv::cvtColor(frame, gray, cv::BGR2GRAY);
     cv::threshold(gray, thresh, 0, 255, cv::THRESH_BINARY | cv::THRESH_OTSU);
 
-    cv::imshow("wsl",frame);
+    cv::imshow("frame",frame);
+    cv::imshow("gray", gray);
     cv::imshow("thresh", thresh);
     cv::waitKey(1);
     RCLCPP_INFO(node->get_logger(), "Received Image : %s,%d,%d", msg->format.c_str(),frame.rows,frame.cols);
