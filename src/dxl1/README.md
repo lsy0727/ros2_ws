@@ -1,5 +1,12 @@
 # dxl1
 
+pub : wsl
+
+sub : jetson
+
+1) pub이 dxl 제어값을 송신
+
+2) sub이 제어값을 수신해 dxl제어
 
 ### 패키지 설치
 ```
