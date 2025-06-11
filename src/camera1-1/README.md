@@ -12,7 +12,7 @@ sub : jetson
 
 3) 이진영상을 PC로 전송하여 출력
 
-## 패키지 설치
+### 패키지 설치
 ```
 cd ~/ros2_ws/src
 git clone https://github.com/2sungryul/camera.git
