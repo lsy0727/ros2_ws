@@ -39,6 +39,6 @@ ros2 topic echo /image/compressed
 ros2 topic hz /image/compressed
 # 토픽 메시지 크기
 ros2 topic bw /image/compressed
-# 토픽 정보
+# 토픽 정보 (DDS 통신시 QoS 설정을 확인하는 명령어, pub과 sub의 설정이 동일해야함)
 ros2 topic info /image/compressed -v
 ```
