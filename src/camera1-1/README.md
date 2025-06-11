@@ -1,5 +1,16 @@
 # camera1-1
 
+pub : jetson
+
+sub : jetson
+
+1) pub에서 송신한 영상을 sub에서 수신
+
+2) 컬러 영상 -> 그레이 영상 -> 이진 영상으로 변환
+
+3) 이진영상을 PC로 전송하여 출력
+
+
 ### build & 설정적용
 
 colcon build --symlink-install --packages-select camera1-1
