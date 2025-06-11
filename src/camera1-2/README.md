@@ -12,19 +12,19 @@ sub : jetson
 
 3) ctrl+c 입력 시 현재까지 수신한 동영상 파일 저장
 
-## 패키지 설치
+### 패키지 설치
 ```
 cd ~/ros2_ws/src
 git clone https://github.com/2sungryul/camera.git
 ```
 
-## build & 설정적용
+### build & 설정적용
 ```
 cd ~/ros2_ws
 colcon build --symlink-install --packages-select camera1-2
 source ~/ros2_ws/install/local_setup.bash
 ```
-## 실행
+### 실행
 
 - jetson
 ```
