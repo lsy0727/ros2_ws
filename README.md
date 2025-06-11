@@ -37,3 +37,9 @@ $ ros2 topic bw /<토픽이름>
 
 ros2_ws/install/<패키지 이름>/lib/<프로젝트 이름>/
 
+
+## message interface
+
+![image](https://github.com/user-attachments/assets/830af3e6-a91e-4625-ba7f-8796146f0ca0)
+
+
