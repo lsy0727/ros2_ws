@@ -21,7 +21,9 @@ source ~/ros2_ws/install/local_setup.bash
 
 - jetson
 ```
+# 터미널1
 ros2 run camera1-1 pub
+# 터미널2
 ros2 run camera1-1 sub_jetson
 ```
 - windows
