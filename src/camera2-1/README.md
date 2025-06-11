@@ -8,14 +8,20 @@ sub : wsl
 
 2) 3가지 영상 모두 출력
 
-## 빌드
+### 패키지 설치
+```
+cd ~/ros2_ws/src
+git clone https://github.com/2sungryul/camera.git
+```
+
+### 빌드
 ```
 cd ros2_ws
 colcon build --symlink-install --packages-select camera2-1
 . ros2_ws/install/local_setup.bash
 ```
 
-## 실행
+### 실행
 ```
 # jetson터미널
 ros2 run camera2-1 pub
@@ -23,7 +29,7 @@ ros2 run camera2-1 pub
 ros2 run camera2-1 sub_wsl
 ```
 
-## ros2 명령어
+### ros2 명령어
 
 - 토픽 확인
 ```
