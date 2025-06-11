@@ -20,6 +20,7 @@ git clone https://github.com/2sungryul/camera.git
 
 ### build & 설정적용
 ```
+cd ~/ros2_ws
 colcon build --symlink-install --packages-select camera1-1
 source ~/ros2_ws/install/local_setup.bash
 ```
