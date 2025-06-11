@@ -16,7 +16,7 @@ ros2 pkg create dxl1 --build-type ament_cmake --dependencies rclcpp geometry_msg
 
 ### 빌드
 ```
-cd ros2_ws/
+cd ~/ros2_ws/
 colcon build --symlink-install --packages-select dxl_wsl
 . ros2_ws/install/local_setup.bash
 ```
