@@ -29,6 +29,8 @@ ros2 run camera2-1 pub
 ros2 run camera2-1 sub_wsl
 ```
 
+### 실행결과(유튜브 업로드)
+
 ### ros2 명령어
 
 - 토픽 확인
