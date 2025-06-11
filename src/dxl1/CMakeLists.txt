@@ -23,11 +23,13 @@ add_executable(pub src/pub_wsl.cpp src/dxl.cpp )
 ament_target_dependencies(pub rclcpp geometry_msgs)
 target_link_libraries(pub dxl_x64_cpp)
 
-# add_executable(sub src/sub.cpp src/dxl.cpp)
-# ament_target_dependencies(sub rclcpp geometry_msgs)
-# target_link_libraries(sub dxl_x64_cpp)
+add_executable(sub src/sub.cpp src/dxl.cpp)
+ament_target_dependencies(sub rclcpp geometry_msgs)
+target_link_libraries(sub dxl_x64_cpp)
+
 install(TARGETS
-pub
-sub
-DESTINATION lib/${PROJECT_NAME})
+  pub_wsl
+  sub
+  DESTINATION lib/${PROJECT_NAME})
+
 ament_package()
