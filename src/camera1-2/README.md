@@ -4,6 +4,8 @@ pub : jetson
 
 sub : jetson
 
+-----
+
 1) pub이 송신한 영상을 sub이 수신
 
 2) 수신한 영상을 PC로 전송
