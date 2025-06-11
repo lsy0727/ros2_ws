@@ -19,7 +19,7 @@ include_directories(include)
 include_directories(/usr/local/include/dynamixel_sdk)
 
 # Build
-add_executable(pub src/pub_wsl.cpp src/dxl.cpp )
+add_executable(pub src/pub_wsl.cpp)
 ament_target_dependencies(pub rclcpp geometry_msgs)
 target_link_libraries(pub dxl_x64_cpp)
 
