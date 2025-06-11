@@ -33,6 +33,8 @@ ros2 run dxl_wsl sub
 ros2 run dxl_wsl pub_wsl
 ```
 
+### 실행결과 (유튜브 robot view 업로드)
+
 ### 패키지 빌드 전 확인
 
 - dynamixel을 제어하려면 U2D2를 인식할 수 있도록 설정을 변경해야함
