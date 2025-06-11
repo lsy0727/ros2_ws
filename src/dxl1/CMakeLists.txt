@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(dxl1)
+project(dxl_wsl)
 
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
