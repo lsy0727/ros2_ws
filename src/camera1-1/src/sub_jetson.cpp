@@ -9,7 +9,7 @@ using std::placeholders::_1;
 std::string dst = "appsrc ! videoconvert ! video/x-raw, format=BGRx ! \
 	nvvidconv ! nvv4l2h264enc insert-sps-pps=true ! \
 	h264parse ! rtph264pay pt=96 ! \
-	udpsink host = 192.168.0.2 port = 9007 sync=false";
+	udpsink host = 192.168.0.9 port = 9007 sync=false";
 
 cv::VideoWriter writer;
 
